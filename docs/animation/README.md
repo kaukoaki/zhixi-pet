@@ -18,4 +18,4 @@
 python scripts/audit-branding-library.py --output .cache/branding-review-next
 ```
 
-输出包含全帧透明度、帧数、首末海报检查与风险抽样图；抽样图仍需人工确认。根目录“预览新动作.cmd”直接读取正式库，不另存一套重复视频。
+输出包含全帧透明度、帧数、首末海报检查与风险抽样图；抽样图仍需人工确认。现用动作可在桌宠右键菜单中点播。

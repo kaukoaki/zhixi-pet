@@ -41,7 +41,7 @@ def public_source():
     top = ['.gitignore', '.gitattributes', 'package.json', 'package-lock.json', 'README.md',
            'CONTRIBUTING.md', 'SECURITY.md', 'LICENSE', 'LICENSE-ASSETS.md', 'NOTICE.md',
            'THIRD_PARTY_NOTICES.md', 'requirements-video.txt', 'install.cmd', 'INSTALL-WINDOWS.md',
-           '\u542f\u52a8\u77e5\u6816.cmd', '\u9884\u89c8\u65b0\u52a8\u4f5c.cmd']
+           '\u542f\u52a8\u77e5\u6816.cmd']
     files = [ROOT / file for file in top]
     for folder in ['.agents', 'codex-plugin', 'main', 'renderer', 'assets', 'scripts', 'test', 'docs/animation']:
         files.extend(file for file in safe_files(ROOT / folder) if file.name != 'clear-reviewed-cache.ps1')
