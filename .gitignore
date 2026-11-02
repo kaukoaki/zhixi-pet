@@ -44,6 +44,24 @@ pomodoro.json
 /actions/production/**/*.jpg
 /actions/production/**/*.jpeg
 
+# Public Markdown is maintained in scripts/public-documents.json.
+*.md
+!/README.md
+!/README.en.md
+!/INSTALL-WINDOWS.md
+!/CONTRIBUTING.md
+!/SECURITY.md
+!/LICENSE-ASSETS.md
+!/NOTICE.md
+!/THIRD_PARTY_NOTICES.md
+!/docs/USER-GUIDE.md
+!/docs/PRIVACY.md
+!/docs/RIGHTS.md
+!/actions/README.md
+!/assets/character/README.md
+!/codex-plugin/NOTICE.md
+!/codex-plugin/skills/zhixi-pet/SKILL.md
+
 # Production binaries and large QA snapshots ship in the assets ZIP.
 /actions/production/**
 !/actions/production/**/

@@ -38,18 +38,19 @@ def safe_files(folder):
 
 
 def public_source():
+    public_markdown = set(json.loads((ROOT / 'scripts/public-documents.json').read_text(encoding='utf-8'))['markdown'])
     top = ['.gitignore', '.gitattributes', 'package.json', 'package-lock.json', 'README.md', 'README.en.md',
            'CONTRIBUTING.md', 'SECURITY.md', 'LICENSE', 'LICENSE-ASSETS.md', 'NOTICE.md',
            'THIRD_PARTY_NOTICES.md', 'requirements-video.txt', 'install.cmd', 'INSTALL-WINDOWS.md',
            '\u542f\u52a8\u77e5\u6816.cmd']
     files = [ROOT / file for file in top]
     for folder in ['.agents', 'codex-plugin', 'main', 'renderer', 'assets', 'scripts', 'test']:
-        files.extend(file for file in safe_files(ROOT / folder) if file.name != 'clear-reviewed-cache.ps1')
-    files.extend(file for file in (ROOT / 'docs').glob('*.md') if file.name != 'CLEANUP.md')
-    files.extend(ROOT / file for file in ['docs/images/character-reference.png', 'docs/branding/README.md', 'docs/branding/release-summary.json'])
+        files.extend(file for file in safe_files(ROOT / folder) if file.name != 'clear-reviewed-cache.ps1'
+                     and (file.suffix != '.md' or file.relative_to(ROOT).as_posix() in public_markdown))
+    files.extend(ROOT / name for name in public_markdown)
+    files.append(ROOT / 'docs/images/character-reference.png')
     # Explicit runtime metadata only. Never recursively publish workshop files.
-    files.extend(ROOT / name for name in ['actions/README.md', 'actions/ASSET-LAYOUT.md',
-                 'actions/catalog.json', 'actions/branding-installation.json',
+    files.extend(ROOT / name for name in ['actions/catalog.json', 'actions/branding-installation.json',
                  'actions/production/14-garden/runtime.json'])
     return sorted(set(files))
 
@@ -202,7 +203,8 @@ def prepare(output, source_only=False):
     for folder in ['codex-plugin', '.agents']:
         entries.extend((file, prefix + file.relative_to(ROOT).as_posix()) for file in safe_files(ROOT / folder))
     notices = ['install.cmd', 'INSTALL-WINDOWS.md', 'scripts/install-desktop.ps1', 'scripts/install-codex-plugin.ps1',
-               'LICENSE', 'LICENSE-ASSETS.md', 'NOTICE.md', 'THIRD_PARTY_NOTICES.md', 'docs/RIGHTS.md']
+               'LICENSE', 'LICENSE-ASSETS.md', 'NOTICE.md', 'THIRD_PARTY_NOTICES.md',
+               'docs/RIGHTS.md', 'docs/PRIVACY.md', 'docs/USER-GUIDE.md']
     entries.extend((ROOT / name, prefix + name) for name in notices)
     readme = ('知栖 Zhixi ' + version + ' / Windows x64\r\n\r\n'
               '解压后双击 install.cmd，安装桌面程序与 Codex 本地插件。\r\n'

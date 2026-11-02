@@ -14,6 +14,19 @@ function fixture(t) {
   return { root, git, write };
 }
 
+test('only maintained public Markdown may enter the indexed source release', t => {
+  const f=fixture(t),skill='codex-plugin/skills/zhixi-pet/SKILL.md';
+  f.write('scripts/public-documents.json',JSON.stringify({schemaVersion:1,markdown:[skill,'README.md']}));
+  f.write('README.md','Public installation and use');
+  f.write('docs/completed-work.md','Completed development work');
+  f.git(['add','.']);
+  assert.ok(auditRelease({root:f.root}).errors.includes('Development document must remain local: docs/completed-work.md'));
+  f.git(['rm','--cached','docs/completed-work.md']);
+  assert.deepEqual(auditRelease({root:f.root}).errors,[]);
+  f.git(['rm','--cached','README.md']);
+  assert.ok(auditRelease({root:f.root}).errors.includes('Missing public document: README.md'));
+});
+
 test('release audit catches a staged secret even when the working copy is clean', t => {
   const f = fixture(t), secret = 'sk-' + 'A'.repeat(36);
   f.write('config.txt', secret); f.git(['add', 'config.txt']); f.write('config.txt', 'clean local edit');

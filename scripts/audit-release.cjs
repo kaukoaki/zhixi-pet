@@ -51,6 +51,14 @@ function auditRelease({ root = path.resolve(__dirname, '..'), maxFileBytes = 95 
   root = path.resolve(root);
   const indexed = indexedFiles(root), files = indexed || walk(root), paths = new Set(files.map(file => file.relative));
   const errors = [], secrets = [/\bsk-[A-Za-z0-9_-]{30,}\b/g, /\bgh[pousr]_[A-Za-z0-9]{30,}\b/g, /\bgithub_pat_[A-Za-z0-9_]{30,}\b/g, /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/g];
+  const documentPolicy=files.find(file=>file.relative==='scripts/public-documents.json');
+  if(documentPolicy){
+    const policy=JSON.parse(documentPolicy.read());
+    if(policy.schemaVersion!==1||!Array.isArray(policy.markdown))throw Error('Invalid public document policy');
+    const allowed=new Set(policy.markdown);
+    for(const file of files)if(file.relative.endsWith('.md')&&!allowed.has(file.relative))errors.push('Development document must remain local: '+file.relative);
+    for(const file of allowed)if(!paths.has(file))errors.push('Missing public document: '+file);
+  }
   // The lean repository declares files delivered by the separate media ZIP.
   // Read the indexed manifest too, so local edits cannot hide broken links.
   const externalPaths = new Set();

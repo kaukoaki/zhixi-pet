@@ -102,6 +102,8 @@ def organize():
         shutil.copy2(index, private / 'git-index-before-organization')
     for name in ['catalog.json', 'branding-installation.json', 'README.md', 'ASSET-LAYOUT.md']:
         source = ROOT / 'actions' / name
+        if not source.is_file():
+            continue
         target = private / 'metadata/original' / name
         target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(source, target)

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "markdown": [
+    "README.md",
+    "README.en.md",
+    "INSTALL-WINDOWS.md",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE-ASSETS.md",
+    "NOTICE.md",
+    "THIRD_PARTY_NOTICES.md",
+    "docs/USER-GUIDE.md",
+    "docs/PRIVACY.md",
+    "docs/RIGHTS.md",
+    "actions/README.md",
+    "assets/character/README.md",
+    "codex-plugin/NOTICE.md",
+    "codex-plugin/skills/zhixi-pet/SKILL.md"
+  ]
+}

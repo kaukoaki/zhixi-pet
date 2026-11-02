@@ -9,7 +9,7 @@ for(const folder of ['codex-plugin','.agents'])fs.cpSync(path.join(ROOT,folder),
 fs.mkdirSync(path.join(stage,'scripts'));for(const file of ['install-desktop.ps1','install-codex-plugin.ps1'])fs.copyFileSync(path.join(ROOT,'scripts',file),path.join(stage,'scripts',file));
 fs.copyFileSync(path.join(ROOT,'install.cmd'),path.join(stage,'install.cmd'));
 for(const notice of ['LICENSE','LICENSE-ASSETS.md','NOTICE.md','THIRD_PARTY_NOTICES.md','INSTALL-WINDOWS.md'])fs.copyFileSync(path.join(ROOT,notice),path.join(stage,notice));
-fs.mkdirSync(path.join(stage,'docs'));fs.copyFileSync(path.join(ROOT,'docs/RIGHTS.md'),path.join(stage,'docs/RIGHTS.md'));
+fs.mkdirSync(path.join(stage,'docs'));for(const file of ['RIGHTS.md','PRIVACY.md','USER-GUIDE.md'])fs.copyFileSync(path.join(ROOT,'docs',file),path.join(stage,'docs',file));
 fs.writeFileSync(path.join(stage,'README.txt'),'知栖 Zhixi / Windows x64\r\n\r\n解压后双击 install.cmd，安装桌面程序与 Codex 本地插件。\r\n需要可运行的 Codex CLI；只安装桌面程序可运行 scripts/install-desktop.ps1。\r\n安装后新开 Codex 聊天，使用 $zhixi-pet 或说“打开知栖桌宠”。\r\n个人数据保存在 %APPDATA%\\QiqiCodexPet，安装升级不覆盖。\r\n代码 MIT；有权授权的原创素材 CC BY 4.0，第三方标志除外。\r\nAI 辅助素材；本项目非 OpenAI 官方产品。当前37段使用小芽抱星胸章与编发挂饰；历史素材和来源说明见 docs/RIGHTS.md。\r\n项目声明在包顶层，Electron/Chromium 原始许可保留在 app/ 内。\r\n','utf8');
 // Build into a unique ZIP and atomically replace the published artifact only
 // after compression succeeds, keeping previous releases intact on failure.
