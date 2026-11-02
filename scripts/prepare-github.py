@@ -43,12 +43,14 @@ def public_source():
            'THIRD_PARTY_NOTICES.md', 'requirements-video.txt', 'install.cmd', 'INSTALL-WINDOWS.md',
            '\u542f\u52a8\u77e5\u6816.cmd']
     files = [ROOT / file for file in top]
-    for folder in ['.agents', 'codex-plugin', 'main', 'renderer', 'assets', 'scripts', 'test', 'docs/animation']:
+    for folder in ['.agents', 'codex-plugin', 'main', 'renderer', 'assets', 'scripts', 'test']:
         files.extend(file for file in safe_files(ROOT / folder) if file.name != 'clear-reviewed-cache.ps1')
     files.extend(file for file in (ROOT / 'docs').glob('*.md') if file.name != 'CLEANUP.md')
     files.extend(ROOT / file for file in ['docs/images/character-reference.png', 'docs/branding/README.md', 'docs/branding/release-summary.json'])
-    files.extend(file for file in safe_files(ROOT / 'actions')
-                 if file.suffix in {'.md', '.txt', '.json'} and not file.name.endswith('.qa.json'))
+    # Explicit runtime metadata only. Never recursively publish workshop files.
+    files.extend(ROOT / name for name in ['actions/README.md', 'actions/ASSET-LAYOUT.md',
+                 'actions/catalog.json', 'actions/branding-installation.json',
+                 'actions/production/14-garden/runtime.json'])
     return sorted(set(files))
 
 
@@ -96,7 +98,7 @@ def public_document_links(repository, media_paths):
             relative = destination.relative_to(repository.resolve()).as_posix()
             if destination.exists() or relative in media_paths:
                 return match[0]
-            if not relative.startswith('actions/production/'):
+            if not relative.startswith(('actions/production/', 'local-assets/')):
                 raise ValueError('Missing public documentation target: ' + relative)
             return match[1] + '（仅本地制作归档：`' + target + '`）'
         updated = pattern.sub(replace, text)
@@ -128,14 +130,14 @@ def make_zip(target, entries, extra=None):
     return {'file': target.name, 'bytes': target.stat().st_size, 'sha256': digest}
 
 
-def prepare(output):
+def prepare(output, source_only=False):
     version = json.loads((ROOT / 'package.json').read_text(encoding='utf-8'))['version']
     output = output.absolute()
     releases = ROOT / 'releases'
     if not output.is_relative_to(releases) or output == releases or output.exists() or output.resolve() != output:
         raise ValueError('Choose a fresh directory inside releases')
     runtime = ROOT / 'dist/QiqiCodexPet-win32-x64'
-    if not (runtime / 'QiqiCodexPet.exe').is_file():
+    if not source_only and not (runtime / 'QiqiCodexPet.exe').is_file():
         raise ValueError('Run npm run package first')
     # Snapshot the existing Git index checksum without changing that index.
     index = ROOT / '.git/index'
@@ -162,7 +164,7 @@ def prepare(output):
     with (repository / '.gitignore').open('a', encoding='utf-8') as stream:
         stream.write('\n# Production binaries and large QA snapshots ship in the assets ZIP.\n'
                      '/actions/production/**\n!/actions/production/**/\n'
-                     '!/actions/production/**/*.md\n!/actions/production/**/*.txt\n'
+                     '!/actions/production/**/*.md\n'
                      '!/actions/production/**/*.json\n/actions/production/**/*.qa.json\n'
                      '*.mp4\n*.webm\n*.mov\n*.mkv\n*.avi\n*.m4v\n')
     run(['git', 'init', '--quiet', '-b', 'main'], repository)
@@ -184,6 +186,14 @@ def prepare(output):
     digest = sha(source_zip)
     source_zip.with_suffix('.zip.sha256').write_text(f'{digest}  {source_zip.name}\n', encoding='utf-8')
     packages = [{'file': source_zip.name, 'bytes': source_zip.stat().st_size, 'sha256': digest}]
+    if source_only:
+        result = {'version': version, 'sourceAudit': audit, 'indexTree': tree,
+                  'scope': 'source-only', 'productionFiles': len(media), 'packages': packages}
+        if original_index_sha != (sha(index) if index.exists() else None):
+            raise ValueError('The original Git index changed during preparation')
+        (output / 'package-report.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+        print(json.dumps(result, ensure_ascii=False), flush=True)
+        return
     print('Writing production assets ZIP...', flush=True)
     packages.append(make_zip(output / asset_name, [(file, file.relative_to(ROOT).as_posix()) for file in media], {'media-assets.json': manifest_raw}))
     print('Writing Windows installation ZIP...', flush=True)
@@ -217,5 +227,6 @@ def prepare(output):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--source-only', action='store_true', help='Prepare reviewed source without rebuilding unchanged binary ZIPs')
     args = parser.parse_args()
-    prepare(ROOT / args.output)
+    prepare(ROOT / args.output, source_only=args.source_only)

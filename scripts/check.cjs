@@ -6,7 +6,7 @@ const root = path.resolve(__dirname, '..');
 let count = 0;
 function check(directory) {
   for (const item of fs.readdirSync(directory, { withFileTypes: true })) {
-    if (['node_modules', 'dist', 'releases', 'archive', 'reports', '.git', '.cache', '.smoke-data', 'protocol-temp'].includes(item.name)) continue;
+    if (['node_modules', 'dist', 'releases', 'archive', 'local-assets', 'reports', '.git', '.cache', '.smoke-data', 'protocol-temp'].includes(item.name)) continue;
     const file = path.join(directory, item.name);
     if (item.isDirectory()) check(file);
     else if (/\.(?:cjs|js|mjs)$/.test(item.name)) {

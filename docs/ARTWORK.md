@@ -1,6 +1,6 @@
 # 知栖角色与素材
 
-当前原画为 `assets/character/qiqi-chibi-v5-knot-sprout.png`：银白渐青长发、紫眼睛、侧编发、黑金蝴蝶结、黑白金服装、小芽抱星胸章和白结／双紫晶／流苏发饰。完整原始透明立绘、尺寸与SHA保存在 [人设清单](../assets/character/appearance.json)，后续动画使用[新版人设与提示词](animation/README.md)。旧生图记录见 [CHIBI-GENERATION.md](CHIBI-GENERATION.md)。
+当前原画为 `assets/character/qiqi-chibi-v5-knot-sprout.png`：银白渐青长发、紫眼睛、侧编发、黑金蝴蝶结、黑白金服装、小芽抱星胸章和白结／双紫晶／流苏发饰。完整原始透明立绘、尺寸与SHA保存在 [人设清单](../assets/character/appearance.json)，后续动画使用新版人设与提示词（仅本地制作归档：`../local-assets/workshop/docs/animation/README.md`）。旧生图记录见 [CHIBI-GENERATION.md](CHIBI-GENERATION.md)。
 
 当前渲染导出的 [角色参考图](images/character-reference.png) 放在 `docs/images/`；README展示当前V5原画，历史截图留在本地。番茄钟连续视频仍使用对应制作包里的桌椅场景参考。
 

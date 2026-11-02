@@ -1,6 +1,6 @@
 'use strict';
 const fs = require('node:fs'), path = require('node:path'), { spawnSync } = require('node:child_process');
-const ignored = new Set(['.git', 'node_modules', 'dist', '.cache', '.smoke-data', 'archive', 'releases', 'reports', '__pycache__']);
+const ignored = new Set(['.git', 'node_modules', 'dist', '.cache', '.smoke-data', 'local-assets', 'archive', 'releases', 'reports', '__pycache__']);
 const textFile = /\.(?:md|json|txt|js|cjs|py|ps1|cmd|html|css|toml|ya?ml)$/;
 const requiredFiles = ['codex-plugin/skills/zhixi-pet/SKILL.md', 'codex-plugin/scripts/zhixi.ps1', '.agents/plugins/marketplace.json', 'scripts/install-desktop.ps1', 'scripts/install-codex-plugin.ps1'];
 
@@ -72,6 +72,7 @@ function auditRelease({ root = path.resolve(__dirname, '..'), maxFileBytes = 95 
   const exists = relative => paths.has(relative) || externalPaths.has(relative) || [...paths, ...externalPaths].some(file => file.startsWith(relative.replace(/\/$/, '') + '/'));
   for (const file of files) {
     const relative = file.relative;
+    if (/(?:^|\/)(?:prompts?[^/]*\.txt|prompts\/)/i.test(relative)) errors.push('Local production prompt must not enter source repository: ' + relative);
     if(currentMediaOnly&&/\.(?:mp4|webm|mov|mkv|avi|m4v)$/i.test(relative))errors.push('Video must not enter source repository: '+relative);
     total += file.size;
     if (file.stage) errors.push('Unmerged indexed file: ' + relative);

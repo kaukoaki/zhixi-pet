@@ -1,9 +1,0 @@
-Attach the approved character reference and prepend character-lock.txt.
-
-Create a 10-second full-body turn-and-return test, fixed camera, fixed scale and level foot placement, square canvas with 8% safety margin. Transparent background if supported, otherwise uniform pure white. This is one continuous motion, never a pose montage or dissolve.
-0-2s: Front-facing calm idle with one natural blink.
-2-4s: She turns gently toward the braid side into a clear three-quarter/profile view. The star-and-sprout chest badge foreshortens with the fabric; the braid ornament rotates and sways from its real attachment.
-4-6s: Continue briefly toward a rear three-quarter view. Correctly hide the chest badge and far-side hair ornament when physically occluded. Do not display a front-facing badge through the back or switch the ornament to the other side.
-6-9s: Reverse the same turn smoothly, restoring both decorations to their original front-view placement.
-9-10s: Settle into the starting idle pose with matching silhouette and scale.
-Keep the same face, silver-mint hair, ivory/charcoal/gold outfit, white cord rosette, two lavender gems and tassel. No mirrored braid, duplicated body, missing jewelry, morphing badge, corporate logo, camera motion or crossfade.

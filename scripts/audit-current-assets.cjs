@@ -29,6 +29,9 @@ function auditCurrentAssets(root){
     assert.equal(fs.statSync(file).size,entry.bytes);assert.equal(sha(file),entry.sha256);
   }
   assert.equal(seen.size,expected.size,'Missing current media declaration');
+  const production=path.join(root,'actions/production');
+  const walk=directory=>fs.readdirSync(directory,{withFileTypes:true}).flatMap(item=>item.isDirectory()?walk(path.join(directory,item.name)):[path.relative(root,path.join(directory,item.name)).split(path.sep).join('/')]);
+  for(const file of walk(production))assert.ok(expected.has(file)||file==='actions/production/14-garden/runtime.json','Non-current file in production: '+file);
   assert.equal(sha(path.join(root,branding.reference.path)),branding.reference.sha256);
   return {scope:manifest.scope,registeredActions:catalog.actions.length,productionVideos:branding.clips.length,historyVersions:0,originalVideos:0,gardenPosters:garden.clips.length,verifiedFiles:seen.size,currentChecksumsVerified:true};
 }

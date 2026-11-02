@@ -3,7 +3,7 @@
   "version": "0.1.18",
   "archive": "Zhixi-0.1.18-current-media.zip",
   "scope": "current-installed-only",
-  "layout": "Extract inside source repository root; paths begin with actions/production/.",
+  "layout": "Extract inside the source repository root; paths begin with actions/production/.",
   "files": [
     {
       "path": "actions/production/00-idle/processed/idle-loop-branding-v2.webm",

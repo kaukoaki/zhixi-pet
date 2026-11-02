@@ -16,296 +16,259 @@
       "media": "actions/production/00-idle/processed/idle-loop-branding-v2.webm",
       "mediaSha256": "30e3957810abef5e137638838aee0afc4e61588ea33352203b20e8dc40e64f62",
       "frames": 113,
-      "fps": 24,
-      "qa": "actions/production/00-idle/processed/idle-loop-branding-v2.qa.json"
+      "fps": 24
     },
     {
       "id": "working",
       "media": "actions/production/04-working/processed/working-loop-branding-v2.webm",
       "mediaSha256": "8d0a9850579225306f971cf6646ce404a09c309745809f39f43243522233a390",
       "frames": 149,
-      "fps": 24,
-      "qa": "actions/production/04-working/processed/working-loop-branding-v2.qa.json"
+      "fps": 24
     },
     {
       "id": "greeting",
       "media": "actions/production/01-greeting/processed/greeting-branding-v2.webm",
       "mediaSha256": "abc850b933fbb54da8f0c3b4d18da007158b1a7b1e3200d08cfd2f87b18d6e11",
       "frames": 121,
-      "fps": 24.0,
-      "qa": "actions/production/01-greeting/processed/greeting-branding-v2.qa.json"
+      "fps": 24.0
     },
     {
       "id": "drag-hold",
       "media": "actions/production/02-drag/processed/drag-hold-branding-v3.webm",
       "mediaSha256": "b8cf24113dfcd076ac7f0c7456f872231692b0893d727322b8c44a258ab56cd1",
       "frames": 146,
-      "fps": 24.0,
-      "qa": "actions/production/02-drag/processed/drag-hold-branding-v3.qa.json"
+      "fps": 24.0
     },
     {
       "id": "return",
       "media": "actions/production/08-return/processed/return-branding-v2.webm",
       "mediaSha256": "347ea9b47d860b5db55c07518243413edc0d54a65e2ec1eea356faa744d4bd12",
       "frames": 241,
-      "fps": 24.0,
-      "qa": "actions/production/08-return/processed/return-branding-v2.qa.json"
+      "fps": 24.0
     },
     {
       "id": "drag",
       "media": "actions/production/02-drag/processed/drag-preview-branding-v3.webm",
       "mediaSha256": "4b6acd048594477a1f02ef7a3e86ae81f1b317364c04f0ce10586eb1bbaa961f",
       "frames": 241,
-      "fps": 24.0,
-      "qa": "actions/production/02-drag/processed/drag-preview-branding-v3.qa.json"
+      "fps": 24.0
     },
     {
       "id": "drag-enter",
       "media": "actions/production/02-drag/processed/drag-enter-branding-v3.webm",
       "mediaSha256": "c3e103ef9994cbd827fd5f97d8a15169f128d0f8e05414f328e14ee0cefc8d6c",
       "frames": 8,
-      "fps": 24.0,
-      "qa": "actions/production/02-drag/processed/drag-enter-branding-v3.qa.json"
+      "fps": 24.0
     },
     {
       "id": "drag-exit",
       "media": "actions/production/02-drag/processed/drag-exit-branding-v3.webm",
       "mediaSha256": "09a59d629e0adb1943557a803fe06f84ed6d4f22cd0bd43d436932158d6f2765",
       "frames": 12,
-      "fps": 24.0,
-      "qa": "actions/production/02-drag/processed/drag-exit-branding-v3.qa.json"
+      "fps": 24.0
     },
     {
       "id": "thinking",
       "media": "actions/production/03-thinking/processed/thinking-branding-v2.webm",
       "mediaSha256": "df2b2fb984dfa75c925106f35cb021912adea45927f4dcbf50e2febe566b07c6",
       "frames": 241,
-      "fps": 24.0,
-      "qa": "actions/production/03-thinking/processed/thinking-branding-v2.qa.json"
+      "fps": 24.0
     },
     {
       "id": "garden-plant",
       "media": "actions/production/14-garden/processed/garden-plant-branding-v2.webm",
       "mediaSha256": "73e05dd7c6262de047f829fdfbcdf093a5d433615d8d540f1a5b64e359da4a5b",
       "frames": 600,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-plant-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-strawberry-bloom",
       "media": "actions/production/14-garden/processed/garden-strawberry-bloom-branding-v2.webm",
       "mediaSha256": "9cfd616342bd9f600797cea091263dd7db245b0cfb2f1fc848b07ff404bc3c3f",
       "frames": 390,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-strawberry-bloom-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-strawberry-ripe",
       "media": "actions/production/14-garden/processed/garden-strawberry-ripe-branding-v2.webm",
       "mediaSha256": "90a945615f508492a16597558c78f0f71bfab20613e8f76fe1cc2ece7742270c",
       "frames": 510,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-strawberry-ripe-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-tomato-bloom",
       "media": "actions/production/14-garden/processed/garden-tomato-bloom-branding-v2.webm",
       "mediaSha256": "bd027d177798b61f30af8cb67c5288a55e31e19ea63df50041b361b1e885e4cf",
       "frames": 378,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-tomato-bloom-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-tomato-grow",
       "media": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.webm",
       "mediaSha256": "8bc87288cd36ff48f16ca8aa339c5d0206b6a198bac99867bb7694625a2fba6a",
       "frames": 600,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-watermelon-bloom",
       "media": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.webm",
       "mediaSha256": "b60f6abc02bcffde1aea49f8c87e26da65f7bfeb2cb96847f53f1dcd0e8cfebc",
       "frames": 360,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "focus",
       "media": "actions/production/09-focus/processed/focus-branding-v3.webm",
       "mediaSha256": "1d724228f4dc4747cc3accbafdbfdb0e392bed52befabacf56859143848de0fb",
       "frames": 241,
-      "fps": 24,
-      "qa": "actions/production/09-focus/processed/focus-branding-v3.qa.json"
+      "fps": 24
     },
     {
       "id": "error",
       "media": "actions/production/06-error/processed/error-branding-v2.webm",
       "mediaSha256": "7554c92842ea4ff838825eaae90fb4cf2696a857e056fc52b48042c1f635a1f0",
       "frames": 241,
-      "fps": 24,
-      "qa": "actions/production/06-error/processed/error-branding-v2.qa.json"
+      "fps": 24
     },
     {
       "id": "pat",
       "media": "actions/production/11-pat/processed/pat-branding-v2.webm",
       "mediaSha256": "349932a9e92df6d82cfcb2549e42dfbd535ebff27eb91925d1c41b142d6c1802",
       "frames": 241,
-      "fps": 24.0,
-      "qa": "actions/production/11-pat/processed/pat-branding-v2.qa.json"
+      "fps": 24.0
     },
     {
       "id": "wallet",
       "media": "actions/production/12-wallet/processed/wallet-branding-v2.webm",
       "mediaSha256": "db67f7aa125ba87e60a6b2f4f1029486d776f9fa7ef7428c14c1fde9a6e8da11",
       "frames": 300,
-      "fps": 30.0,
-      "qa": "actions/production/12-wallet/processed/wallet-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "success",
       "media": "actions/production/05-success/processed/success-branding-v2.webm",
       "mediaSha256": "3641d2e0cfb3b655e1c89999e38f3507071b512f134c7c8af371fb85a5ae16e2",
       "frames": 241,
-      "fps": 24.0,
-      "qa": "actions/production/05-success/processed/success-branding-v2.qa.json"
+      "fps": 24.0
     },
     {
       "id": "sleep",
       "media": "actions/production/07-sleep/processed/sleep-branding-v2.webm",
       "mediaSha256": "019c671c23839687327810158b20bd2b3d4beb73621975507d92831e3e26dc10",
       "frames": 241,
-      "fps": 24.0,
-      "qa": "actions/production/07-sleep/processed/sleep-branding-v2.qa.json"
+      "fps": 24.0
     },
     {
       "id": "celebrate",
       "media": "actions/production/10-celebrate/processed/celebrate-branding-v2.webm",
       "mediaSha256": "81354cda62ec933f159e5ef71d65c3890034a182ab2214c9b79abafc43221d89",
       "frames": 241,
-      "fps": 24.0,
-      "qa": "actions/production/10-celebrate/processed/celebrate-branding-v2.qa.json"
+      "fps": 24.0
     },
     {
       "id": "pomodoro-study",
       "media": "actions/production/13-pomodoro/processed/pomodoro-study-branding-v3.webm",
       "mediaSha256": "cc8d9c44f918b623c7454329590f5d368b950c61107a06fa32bf93202e30bc4d",
       "frames": 888,
-      "fps": 30.0,
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-study-branding-v3.qa.json"
+      "fps": 30.0
     },
     {
       "id": "pomodoro-remind",
       "media": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.webm",
       "mediaSha256": "e827f6d218b6aeec12b5d8a1aaf8722f7b807bce668544d4408b888ef661ce9a",
       "frames": 400,
-      "fps": 30.0,
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "pomodoro-start",
       "media": "actions/production/13-pomodoro/processed/pomodoro-start-branding-v2.webm",
       "mediaSha256": "a67cb17d2aca1b31caf8a930f6628533eef29f4aae28c5330dc7620029578ef5",
       "frames": 252,
-      "fps": 30.0,
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-start-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "pomodoro-doze",
       "media": "actions/production/13-pomodoro/processed/pomodoro-doze-branding-v2.webm",
       "mediaSha256": "76346a9b17ba81ed57ffc91e117036f5a282f2542983d2c803b7a837f065bc9f",
       "frames": 300,
-      "fps": 30.0,
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-doze-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "pomodoro-peek",
       "media": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.webm",
       "mediaSha256": "643211841fb15f3d3df62c86ed062e52f795d1375f655a4aeabdeb2c786508ed",
       "frames": 360,
-      "fps": 30.0,
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-watermelon-ripe",
       "media": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.webm",
       "mediaSha256": "26261e96ef0d06ef002661c86b66cb6fac7d1673dc9391cab2f87fe3fc5ee9f7",
       "frames": 540,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-tomato-ripe",
       "media": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.webm",
       "mediaSha256": "a81f5f69765d261bc09358a153f374c2cec2c77d67289e4c371faf2f50dae44c",
       "frames": 522,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "pomodoro-finish",
       "media": "actions/production/13-pomodoro/processed/pomodoro-finish-branding-v3.webm",
       "mediaSha256": "23b18ac154523325eb9cb25e20fed675caacfdc8fb445d42fc1d1e10296f76ee",
       "frames": 450,
-      "fps": 30,
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-finish-branding-v3.qa.json"
+      "fps": 30
     },
     {
       "id": "garden-water",
       "media": "actions/production/14-garden/processed/garden-water-branding-v2.webm",
       "mediaSha256": "f28043651ebd8090308220071841c6df08a28189223b2bd6948ef8446c1fa15b",
       "frames": 600,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-water-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "wallet-low",
       "media": "actions/production/12-wallet/variants/03-low/processed/wallet-low-branding-v2.webm",
       "mediaSha256": "0b2791f63e899522ee51dc97d69673e3256b5fd37b550babc9d7fd20a9dfbd12",
       "frames": 300,
-      "fps": 30.0,
-      "qa": "actions/production/12-wallet/variants/03-low/processed/wallet-low-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-watermelon-grow",
       "media": "actions/production/14-garden/processed/garden-watermelon-grow-branding-v2.webm",
       "mediaSha256": "15eb9cddae244380c45b3282b33608fcc888042907670c0f526fdff7fbe31638",
       "frames": 594,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-watermelon-grow-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "wallet-wait",
       "media": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.webm",
       "mediaSha256": "af7bd1e3907b676a35e6352e7c7984669e3e8103d9239dd7b179ab851ff38b45",
       "frames": 300,
-      "fps": 30.0,
-      "qa": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "garden-strawberry-grow",
       "media": "actions/production/14-garden/processed/garden-strawberry-grow-branding-v2.webm",
       "mediaSha256": "a70a009311b1eaf747262b5951eb617f19cbec2c9d33de5390b07b89592e578c",
       "frames": 594,
-      "fps": 30.0,
-      "qa": "actions/production/14-garden/processed/garden-strawberry-grow-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "wallet-careful",
       "media": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.webm",
       "mediaSha256": "0f4490328c838a9ed19fa0a47c42c8d5ae27b5da9dcd42cd1f0f1b023c5e4e75",
       "frames": 300,
-      "fps": 30.0,
-      "qa": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.qa.json"
+      "fps": 30.0
     },
     {
       "id": "wallet-empty",
       "media": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-branding-v2.webm",
       "mediaSha256": "298489ac326bf96c4e55d472feb6d00b1d4a6e6c3e3fcfb7819e6b552caed01b",
       "frames": 300,
-      "fps": 30.0,
-      "qa": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-branding-v2.qa.json"
+      "fps": 30.0
     }
   ]
 }

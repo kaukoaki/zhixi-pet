@@ -84,7 +84,7 @@ def audit(output, ids=None):
     if not output.is_relative_to(ROOT/'.cache') or output.exists():
         raise ValueError('Choose a fresh output directory inside project .cache')
     output.mkdir(parents=True)
-    installation=json.loads((ROOT/'actions/branding-installation.json').read_text(encoding='utf-8'))
+    installation=json.loads((ROOT/'local-assets/metadata/branding-installation.json').read_text(encoding='utf-8'))
     result={'status':'running','visualApproval':False,'clips':[],'source':'production media and embedded QA snapshots'}
     for clip in installation['clips']:
         if ids and clip['id'] not in ids:continue

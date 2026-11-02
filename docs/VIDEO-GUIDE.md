@@ -2,11 +2,11 @@
 
 **当前制作约束：后续新生成视频单条最多15秒，优先5–10秒，先复用已有片段或程序动画。小花园主要素材已齐备，当前无需新生成；历史20秒、30秒原片和提示词保留作来源记录，不再要求重做。**
 
-当前人物模板为 `assets/character/qiqi-chibi-v5-knot-sprout.png`：银白渐青长发、紫眼睛、黑白金服装、黑色短靴、小芽抱星胸章和白结／双紫晶／流苏发饰。新动作从[新版提示词模板](animation/README.md)开始，旧动作提示词仅作历史来源。默认待机视频有独立导入口，未配置时使用原画轻微网格动画。最初十个非待机槽已全部装配，现已增加第 11 条「摸摸头 · 蹭蹭」，保留互动手、脸红、中文气泡与爱心，见 [11-pat](../actions/production/11-pat/README.md)。完整制作进度见 [动作库](../actions/README.md)。
+当前人物模板为 `assets/character/qiqi-chibi-v5-knot-sprout.png`：银白渐青长发、紫眼睛、黑白金服装、黑色短靴、小芽抱星胸章和白结／双紫晶／流苏发饰。新动作从新版提示词模板（仅本地制作归档：`../local-assets/workshop/docs/animation/README.md`）开始，旧动作提示词仅作历史来源。默认待机视频有独立导入口，未配置时使用原画轻微网格动画。最初十个非待机槽已全部装配，现已增加第 11 条「摸摸头 · 蹭蹭」，保留互动手、脸红、中文气泡与爱心，见 11-pat（仅本地制作归档：`../local-assets/notes/11-pat/README.md`）。完整制作进度见 [动作库](../actions/README.md)。
 
 ## 历史制作记录：首条待机循环
 
-最初的制作包在 [actions/production/00-idle](../actions/production/00-idle/README.md)，当时使用历史共用角色参考（仅本地制作归档：`../actions/production/shared/character-design.png`）与旧提示词。该图保留旧胸标，仅用于溯源；新动作统一使用[当前V5立绘](../assets/character/qiqi-chibi-v5-knot-sprout.png)与[新版固定人设和模板](animation/README.md)。下文保留原处理流程，不再要求重新生成已有待机。
+最初的制作包在 actions/production/00-idle（仅本地制作归档：`../local-assets/notes/00-idle/README.md`），当时使用历史共用角色参考（仅本地制作归档：`../local-assets/references/shared/character-design.png`）与旧提示词。该图保留旧胸标，仅用于溯源；新动作统一使用[当前V5立绘](../assets/character/qiqi-chibi-v5-knot-sprout.png)与新版固定人设和模板（仅本地制作归档：`../local-assets/workshop/docs/animation/README.md`）。下文保留原处理流程，不再要求重新生成已有待机。
 
 在你使用的豆包视频创作入口上传参考图，作为图生视频的起始画面；如果界面提供首帧和尾帧设置，两处使用同一张参考图，有助于首尾回到同姿势。不同账号、版本的入口与参数可能不同，以实际界面为准。这里没有调用火山引擎 API，也不需要你为本项目配置视频 API Key。
 
@@ -44,7 +44,7 @@
 
 ## 角色一致性基础提示词
 
-后续动作同时参考 [角色动画演出原则](ANIMATION-DIRECTION.md)：保持人设和构图，让眼神、眉眼嘴角、手势与发梢跟随共同表现情绪。通过连续的小情绪推进和柔软起落增加日系 Q 版的可爱与灵动，避免长时间固定同一表情或重复同一大动作。完整示例见 [小小困惑提示词](../actions/production/06-error/prompt.txt)。
+后续动作同时参考 [角色动画演出原则](ANIMATION-DIRECTION.md)：保持人设和构图，让眼神、眉眼嘴角、手势与发梢跟随共同表现情绪。通过连续的小情绪推进和柔软起落增加日系 Q 版的可爱与灵动，避免长时间固定同一表情或重复同一大动作。完整示例见 小小困惑提示词（仅本地制作归档：`../local-assets/prompts/06-error/prompt.txt`）。
 
 使用当前栖栖的角色截图作为图生视频参考，并在每个动作中保留以下设定。以下文字是制作模板，不代表项目已调用视频生成模型：
 
@@ -67,7 +67,7 @@
 
 如果所用模型不能直接输出透明视频，先在你的制作流程中完成背景分离，再编码为包含 alpha 的 WebM。仅在提示词里写“透明”不会让普通 MP4 获得透明通道。
 
-漫画符号和气泡应有清楚的实色轮廓，放在人物旁的画布空白处，避免盖脸或超出安全边界。处理透明背景时保留这些设计元素；本地脚本默认只保留最大连通人物，已增加可重复的 `--keep-region X,Y,W,H` 参数，用像素坐标指定经过检查的前景区域，保留完整落在区域内的气泡、字符和尾巴，而非保留整块背景。区域需按实际成片选择，避免包含水印。打盹成片使用 `--keep-region 480,20,225,240`。完整演出示例见 [打个盹提示词](../actions/production/07-sleep/prompt.txt) 和 [欢迎回来提示词](../actions/production/08-return/prompt.txt)。
+漫画符号和气泡应有清楚的实色轮廓，放在人物旁的画布空白处，避免盖脸或超出安全边界。处理透明背景时保留这些设计元素；本地脚本默认只保留最大连通人物，已增加可重复的 `--keep-region X,Y,W,H` 参数，用像素坐标指定经过检查的前景区域，保留完整落在区域内的气泡、字符和尾巴，而非保留整块背景。区域需按实际成片选择，避免包含水印。打盹成片使用 `--keep-region 480,20,225,240`。完整演出示例见 打个盹提示词（仅本地制作归档：`../local-assets/prompts/07-sleep/prompt.txt`） 和 欢迎回来提示词（仅本地制作归档：`../local-assets/prompts/08-return/prompt.txt`）。
 
 ## 动作增量提示词
 

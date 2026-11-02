@@ -12,7 +12,7 @@ function walk(folder){return fs.readdirSync(folder,{withFileTypes:true}).flatMap
 function main(){
   const externalManifest=path.join(ROOT,'media-assets.json');
   if(fs.existsSync(externalManifest)&&JSON.parse(fs.readFileSync(externalManifest,'utf8')).scope==='current-installed-only'){
-    if(process.argv.includes('--write'))throw Error('Public current-media catalog is release-managed; rebuild it from the local production workspace');
+    if(process.argv.includes('--write'))throw Error('Current-media catalog is release-managed; update the reviewed catalog and media-assets.json together');
     console.log(JSON.stringify(require('./audit-current-assets.cjs').auditCurrentAssets(ROOT)));return;
   }
   const paths={idle:'00-idle/processed/idle-loop-v1.webm',greeting:'01-greeting/processed/greeting-v1.webm',drag:'02-drag/processed/drag-preview-v2.webm',thinking:'03-thinking/processed/thinking-v1.webm',working:'04-working/processed/working-loop-v1.webm',success:'05-success/processed/success-v1.webm',error:'06-error/processed/error-v1.webm',sleep:'07-sleep/processed/sleep-v1.webm',return:'08-return/processed/return-v1.webm',focus:'09-focus/processed/focus-v2.webm',celebrate:'10-celebrate/processed/celebrate-v1.webm',pat:'11-pat/processed/pat-v1.webm',wallet:'12-wallet/processed/wallet-v1.webm'};

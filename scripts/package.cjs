@@ -23,7 +23,7 @@ async function main() {
   const outputs = await packager({
     dir: root, out: outputRoot, name: 'QiqiCodexPet', platform: 'win32', arch: 'x64',
     asar: true, prune: true, overwrite: true, electronZipDir,
-    ignore: [/^\/(?:dist|releases|reports|test|docs|actions|archive|codex-plugin|\.agents|\.cache|\.smoke-data|\.git|scripts)(?:\/|$)/,/^\/(?:auth|state|conversations|journal|garden)\.json(?:\.bak)?$/, /\.log$/, /__pycache__/, /qiqi-(?:idle|chibi-v2)\.png$/],
+    ignore: [/^\/(?:dist|releases|reports|test|docs|actions|local-assets|archive|codex-plugin|\.agents|\.cache|\.smoke-data|\.git|scripts)(?:\/|$)/,/^\/(?:auth|state|conversations|journal|garden)\.json(?:\.bak)?$/, /\.log$/, /__pycache__/, /qiqi-(?:idle|chibi-v2)\.png$/],
     afterCopy: [async ({buildPath}) => { const result=bundleLibrary(root,buildPath); console.log(`Bundled ${result.actions} actions / ${result.files} media files / ${result.gardenFiles} garden video and poster files`); }],
     appCopyright: 'Copyright 2026 Zhixi contributors; third-party rights reserved',
     win32metadata: { ProductName: '知栖 · Codex 桌面伙伴', FileDescription: '知栖桌面伙伴' }
@@ -33,7 +33,7 @@ async function main() {
     const archive=path.join(output,'resources/app.asar'),names=asar.listPackage(archive);
     for(const notice of ['LICENSE','LICENSES.chromium.html'])if(!fs.statSync(path.join(output,notice)).size)throw Error('Missing Electron license notice: '+notice);
     for(const notice of ['LICENSE','LICENSE-ASSETS.md','NOTICE.md','THIRD_PARTY_NOTICES.md'])if(!asar.extractFile(archive,notice).length)throw Error('Missing project license notice: '+notice);
-    if(names.some(name=>/^[/\\](?:actions|archive|releases|reports|test|docs|scripts|\.git|\.agents|\.cache|\.smoke-data)(?:[/\\]|$)/.test(name)))throw new Error('Development or build output leaked into the runtime archive');
+    if(names.some(name=>/^[/\\](?:actions|local-assets|archive|releases|reports|test|docs|scripts|\.git|\.agents|\.cache|\.smoke-data)(?:[/\\]|$)/.test(name)))throw new Error('Development or build output leaked into the runtime archive');
     const library=JSON.parse(asar.extractFile(archive,path.join('assets','library','catalog.json')).toString('utf8'));
     const garden=JSON.parse(asar.extractFile(archive,path.join('assets','library','garden.json')).toString('utf8'));
     if(garden.clips.length!==11)throw Error('Incomplete packaged garden scenes');

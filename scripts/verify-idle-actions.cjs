@@ -1,7 +1,7 @@
 'use strict';
 const path=require('node:path');
 module.exports=async function({ROOT,store,petWindow,pause,menu,broadcast,setTask,playAction,diagnostics}){
- const fixture=path.join(ROOT,'actions/production/00-idle/processed/idle-loop-v1.webm');
+ const fixture=path.join(ROOT,require(path.join(ROOT,'actions/catalog.json')).actions.find(action=>action.id==='idle').media);
  const js=source=>petWindow.webContents.executeJavaScript(source);
  try{
   for(const id of ['greeting','pat','pomodoro-start'])await store.importAction(id,fixture);

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "convention": "Each motion keeps source/, processed/, prompt/reference and versioned metadata together; wallet reactions are grouped under 12-wallet/variants/.",
+  "convention": "production/ contains current runtime media only; production material is kept locally in ignored local-assets/.",
   "actions": [
     {
       "id": "idle",
@@ -252,9 +252,6 @@
   "assets": [
     {
       "media": "actions/production/00-idle/processed/idle-loop-branding-v2.webm",
-      "source": "actions/production/00-idle/processed/idle-loop-v1.webm",
-      "metadata": "actions/production/00-idle/processed/idle-loop-branding-v2.json",
-      "qa": "actions/production/00-idle/processed/idle-loop-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -262,14 +259,10 @@
       "frames": 113,
       "seconds": 4.708333333333333,
       "bytes": 9691042,
-      "sourceSha256": "3b3b0f45446f51e5272c1c7bee8c936e8d16e2a84b4849f50bf1e0154101ac88",
       "mediaSha256": "30e3957810abef5e137638838aee0afc4e61588ea33352203b20e8dc40e64f62"
     },
     {
       "media": "actions/production/01-greeting/processed/greeting-branding-v2.webm",
-      "source": "actions/production/01-greeting/processed/greeting-v1.webm",
-      "metadata": "actions/production/01-greeting/processed/greeting-branding-v2.json",
-      "qa": "actions/production/01-greeting/processed/greeting-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -277,14 +270,10 @@
       "frames": 121,
       "seconds": 5.041666666666667,
       "bytes": 11032351,
-      "sourceSha256": "67f0ca5a88ce37e39b297505d1da5650e1460edd72261b08dd31b9a50f2476bf",
       "mediaSha256": "abc850b933fbb54da8f0c3b4d18da007158b1a7b1e3200d08cfd2f87b18d6e11"
     },
     {
       "media": "actions/production/02-drag/processed/drag-enter-branding-v3.webm",
-      "source": "actions/production/02-drag/processed/drag-enter-v2.webm",
-      "metadata": "actions/production/02-drag/processed/drag-enter-branding-v3.json",
-      "qa": "actions/production/02-drag/processed/drag-enter-branding-v3.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -292,14 +281,10 @@
       "frames": 8,
       "seconds": 0.3333333333333333,
       "bytes": 1384709,
-      "sourceSha256": "3924472930dd925cafb505f1e691f67a939cb5304575c5ba9371fa8a476a25e4",
       "mediaSha256": "c3e103ef9994cbd827fd5f97d8a15169f128d0f8e05414f328e14ee0cefc8d6c"
     },
     {
       "media": "actions/production/02-drag/processed/drag-exit-branding-v3.webm",
-      "source": "actions/production/02-drag/processed/drag-exit-v2.webm",
-      "metadata": "actions/production/02-drag/processed/drag-exit-branding-v3.json",
-      "qa": "actions/production/02-drag/processed/drag-exit-branding-v3.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -307,14 +292,10 @@
       "frames": 12,
       "seconds": 0.5,
       "bytes": 2099678,
-      "sourceSha256": "6d0a08aec19a795866aaa5f107f69fb36864175f58bbad16b90029924028f1d3",
       "mediaSha256": "09a59d629e0adb1943557a803fe06f84ed6d4f22cd0bd43d436932158d6f2765"
     },
     {
       "media": "actions/production/02-drag/processed/drag-hold-branding-v3.webm",
-      "source": "actions/production/02-drag/processed/drag-hold-v2.webm",
-      "metadata": "actions/production/02-drag/processed/drag-hold-branding-v3.json",
-      "qa": "actions/production/02-drag/processed/drag-hold-branding-v3.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -322,14 +303,10 @@
       "frames": 146,
       "seconds": 6.083333333333333,
       "bytes": 15352050,
-      "sourceSha256": "b6d10cbd1074944f4727656ae4782a2b8937e2f215d704634d0f654036bfc025",
       "mediaSha256": "b8cf24113dfcd076ac7f0c7456f872231692b0893d727322b8c44a258ab56cd1"
     },
     {
       "media": "actions/production/02-drag/processed/drag-preview-branding-v3.webm",
-      "source": "actions/production/02-drag/processed/drag-preview-v2.webm",
-      "metadata": "actions/production/02-drag/processed/drag-preview-branding-v3.json",
-      "qa": "actions/production/02-drag/processed/drag-preview-branding-v3.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -337,14 +314,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 26774876,
-      "sourceSha256": "80d1817f9db0ddc2bc962b0b776707f0ba5e40290e3a7b83f69bf0c18a006a60",
       "mediaSha256": "4b6acd048594477a1f02ef7a3e86ae81f1b317364c04f0ce10586eb1bbaa961f"
     },
     {
       "media": "actions/production/03-thinking/processed/thinking-branding-v2.webm",
-      "source": "actions/production/03-thinking/processed/thinking-v1.webm",
-      "metadata": "actions/production/03-thinking/processed/thinking-branding-v2.json",
-      "qa": "actions/production/03-thinking/processed/thinking-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -352,14 +325,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 19510420,
-      "sourceSha256": "092def7f00c3cfa582d405b190f1baba340adc4db3a4e76de7aecdd18095dc29",
       "mediaSha256": "df2b2fb984dfa75c925106f35cb021912adea45927f4dcbf50e2febe566b07c6"
     },
     {
       "media": "actions/production/04-working/processed/working-loop-branding-v2.webm",
-      "source": "actions/production/04-working/processed/working-loop-v1.webm",
-      "metadata": "actions/production/04-working/processed/working-loop-branding-v2.json",
-      "qa": "actions/production/04-working/processed/working-loop-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -367,14 +336,10 @@
       "frames": 149,
       "seconds": 6.208333333333333,
       "bytes": 15416521,
-      "sourceSha256": "5945bbdf772daa09beb6350a6b2aaecffeb503486f32e5672433bc67afea5892",
       "mediaSha256": "8d0a9850579225306f971cf6646ce404a09c309745809f39f43243522233a390"
     },
     {
       "media": "actions/production/05-success/processed/success-branding-v2.webm",
-      "source": "actions/production/05-success/processed/success-v1.webm",
-      "metadata": "actions/production/05-success/processed/success-branding-v2.json",
-      "qa": "actions/production/05-success/processed/success-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -382,14 +347,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 20555935,
-      "sourceSha256": "9bf11af5f7f6fc447056cb59bacd9bc2a36ec4d99fb2a0647df76b5485197f7e",
       "mediaSha256": "3641d2e0cfb3b655e1c89999e38f3507071b512f134c7c8af371fb85a5ae16e2"
     },
     {
       "media": "actions/production/06-error/processed/error-branding-v2.webm",
-      "source": "actions/production/06-error/processed/error-v1.webm",
-      "metadata": "actions/production/06-error/processed/error-branding-v2.json",
-      "qa": "actions/production/06-error/processed/error-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -397,14 +358,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 22832111,
-      "sourceSha256": "23572ae0e4c18148e8790eb4c3d2584a484ea78c04102500740cef0e3a33b8b0",
       "mediaSha256": "7554c92842ea4ff838825eaae90fb4cf2696a857e056fc52b48042c1f635a1f0"
     },
     {
       "media": "actions/production/07-sleep/processed/sleep-branding-v2.webm",
-      "source": "actions/production/07-sleep/processed/sleep-v1.webm",
-      "metadata": "actions/production/07-sleep/processed/sleep-branding-v2.json",
-      "qa": "actions/production/07-sleep/processed/sleep-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -412,14 +369,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 26337374,
-      "sourceSha256": "3d56580aa3ae8f968978be7349d9aa7d616a436c9dc5877c61f3ed315fde5829",
       "mediaSha256": "019c671c23839687327810158b20bd2b3d4beb73621975507d92831e3e26dc10"
     },
     {
       "media": "actions/production/08-return/processed/return-branding-v2.webm",
-      "source": "actions/production/08-return/processed/return-v1.webm",
-      "metadata": "actions/production/08-return/processed/return-branding-v2.json",
-      "qa": "actions/production/08-return/processed/return-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -427,14 +380,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 24563139,
-      "sourceSha256": "5124a488290e4a70197bc799fe460b99e0a3c77144658505cd0c55ad4a2539f0",
       "mediaSha256": "347ea9b47d860b5db55c07518243413edc0d54a65e2ec1eea356faa744d4bd12"
     },
     {
       "media": "actions/production/09-focus/processed/focus-branding-v3.webm",
-      "source": "actions/production/09-focus/processed/focus-v2.webm",
-      "metadata": "actions/production/09-focus/processed/focus-branding-v3.json",
-      "qa": "actions/production/09-focus/processed/focus-branding-v3.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -442,14 +391,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 29601863,
-      "sourceSha256": "ff44f656b9f3513b7223486cbd7430fddf6df7070a04f78181129ca29fabe892",
       "mediaSha256": "1d724228f4dc4747cc3accbafdbfdb0e392bed52befabacf56859143848de0fb"
     },
     {
       "media": "actions/production/10-celebrate/processed/celebrate-branding-v2.webm",
-      "source": "actions/production/10-celebrate/processed/celebrate-v1.webm",
-      "metadata": "actions/production/10-celebrate/processed/celebrate-branding-v2.json",
-      "qa": "actions/production/10-celebrate/processed/celebrate-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -457,14 +402,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 24864282,
-      "sourceSha256": "9a0b9200c5d982a1de4b625ab27f13f1781c8407e8efa675a2a30d2e35f0af39",
       "mediaSha256": "81354cda62ec933f159e5ef71d65c3890034a182ab2214c9b79abafc43221d89"
     },
     {
       "media": "actions/production/11-pat/processed/pat-branding-v2.webm",
-      "source": "actions/production/11-pat/processed/pat-v1.webm",
-      "metadata": "actions/production/11-pat/processed/pat-branding-v2.json",
-      "qa": "actions/production/11-pat/processed/pat-branding-v2.qa.json",
       "status": "active",
       "width": 720,
       "height": 720,
@@ -472,14 +413,10 @@
       "frames": 241,
       "seconds": 10.041666666666666,
       "bytes": 23412666,
-      "sourceSha256": "6bc44dd167c193a7ffbf2019e741b396ce3d1fa890ab41ac69a0d81c1ce9201a",
       "mediaSha256": "349932a9e92df6d82cfcb2549e42dfbd535ebff27eb91925d1c41b142d6c1802"
     },
     {
       "media": "actions/production/12-wallet/processed/wallet-branding-v2.webm",
-      "source": "actions/production/12-wallet/processed/wallet-v1.webm",
-      "metadata": "actions/production/12-wallet/processed/wallet-branding-v2.json",
-      "qa": "actions/production/12-wallet/processed/wallet-branding-v2.qa.json",
       "status": "active",
       "width": 960,
       "height": 960,
@@ -487,14 +424,10 @@
       "frames": 300,
       "seconds": 10,
       "bytes": 47371293,
-      "sourceSha256": "ecbc1be9389ee1d815a9cf411f769286553fed0d341e7bdde7ee628a588a4afb",
       "mediaSha256": "db67f7aa125ba87e60a6b2f4f1029486d776f9fa7ef7428c14c1fde9a6e8da11"
     },
     {
       "media": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.webm",
-      "source": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-v1.webm",
-      "metadata": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.json",
-      "qa": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.qa.json",
       "status": "active",
       "width": 960,
       "height": 960,
@@ -502,14 +435,10 @@
       "frames": 300,
       "seconds": 10,
       "bytes": 47957562,
-      "sourceSha256": "25421560e9e37b42e58c4015bc8e4e79aeaeff083c27614d2f3a4ddbfa030eb7",
       "mediaSha256": "0f4490328c838a9ed19fa0a47c42c8d5ae27b5da9dcd42cd1f0f1b023c5e4e75"
     },
     {
       "media": "actions/production/12-wallet/variants/03-low/processed/wallet-low-branding-v2.webm",
-      "source": "actions/production/12-wallet/variants/03-low/processed/wallet-low-v1.webm",
-      "metadata": "actions/production/12-wallet/variants/03-low/processed/wallet-low-branding-v2.json",
-      "qa": "actions/production/12-wallet/variants/03-low/processed/wallet-low-branding-v2.qa.json",
       "status": "active",
       "width": 960,
       "height": 960,
@@ -517,14 +446,10 @@
       "frames": 300,
       "seconds": 10,
       "bytes": 47439442,
-      "sourceSha256": "b4d4ca1a9fc3a416fd1d0064a378022b5cd8a88860e8f3482503a930a4b7e27d",
       "mediaSha256": "0b2791f63e899522ee51dc97d69673e3256b5fd37b550babc9d7fd20a9dfbd12"
     },
     {
       "media": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-branding-v2.webm",
-      "source": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-v1.webm",
-      "metadata": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-branding-v2.json",
-      "qa": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -532,14 +457,10 @@
       "frames": 300,
       "seconds": 10,
       "bytes": 23009001,
-      "sourceSha256": "cf063ff99fbf43604eca9d4a0ecfbafcfb7067347e2329a0bcf514820d518075",
       "mediaSha256": "298489ac326bf96c4e55d472feb6d00b1d4a6e6c3e3fcfb7819e6b552caed01b"
     },
     {
       "media": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.webm",
-      "source": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-v1.webm",
-      "metadata": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.json",
-      "qa": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -547,14 +468,10 @@
       "frames": 300,
       "seconds": 10,
       "bytes": 23834122,
-      "sourceSha256": "9e8082f58a6237af367016b1fd4dc46ea03420959f4d87508a439aa404fe8595",
       "mediaSha256": "af7bd1e3907b676a35e6352e7c7984669e3e8103d9239dd7b179ab851ff38b45"
     },
     {
       "media": "actions/production/13-pomodoro/processed/pomodoro-doze-branding-v2.webm",
-      "source": "actions/production/13-pomodoro/processed/pomodoro-doze-v1.webm",
-      "metadata": "actions/production/13-pomodoro/processed/pomodoro-doze-branding-v2.json",
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-doze-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -562,14 +479,10 @@
       "frames": 300,
       "seconds": 10,
       "bytes": 12915493,
-      "sourceSha256": "9bb45ce0e51c704923e8c4ef13931b113d79d356213498541bbe08b0b11cbe11",
       "mediaSha256": "76346a9b17ba81ed57ffc91e117036f5a282f2542983d2c803b7a837f065bc9f"
     },
     {
       "media": "actions/production/13-pomodoro/processed/pomodoro-finish-branding-v3.webm",
-      "source": "actions/production/13-pomodoro/processed/pomodoro-finish-v2.webm",
-      "metadata": "actions/production/13-pomodoro/processed/pomodoro-finish-branding-v3.json",
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-finish-branding-v3.qa.json",
       "status": "active",
       "width": 960,
       "height": 960,
@@ -577,14 +490,10 @@
       "frames": 450,
       "seconds": 15,
       "bytes": 38612541,
-      "sourceSha256": "135b9d7086bd6cd0cd599b5e2adbd984ae369f6fcf7571f52dc0b11058a73d70",
       "mediaSha256": "23b18ac154523325eb9cb25e20fed675caacfdc8fb445d42fc1d1e10296f76ee"
     },
     {
       "media": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.webm",
-      "source": "actions/production/13-pomodoro/processed/pomodoro-peek-v1.webm",
-      "metadata": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.json",
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -592,14 +501,10 @@
       "frames": 360,
       "seconds": 12,
       "bytes": 12453408,
-      "sourceSha256": "66da5dc57f8ca5cd5d19f278c0313b37716509c40c6bc59c2310e059c4291fd3",
       "mediaSha256": "643211841fb15f3d3df62c86ed062e52f795d1375f655a4aeabdeb2c786508ed"
     },
     {
       "media": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.webm",
-      "source": "actions/production/13-pomodoro/processed/pomodoro-remind-v1.webm",
-      "metadata": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.json",
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -607,14 +512,10 @@
       "frames": 400,
       "seconds": 13.333333333333334,
       "bytes": 18166065,
-      "sourceSha256": "3bcfa341812c7dc28530afc7ef887aaac3887db0a52de21845e8fb698c6f161e",
       "mediaSha256": "e827f6d218b6aeec12b5d8a1aaf8722f7b807bce668544d4408b888ef661ce9a"
     },
     {
       "media": "actions/production/13-pomodoro/processed/pomodoro-start-branding-v2.webm",
-      "source": "actions/production/13-pomodoro/processed/pomodoro-start-v1.webm",
-      "metadata": "actions/production/13-pomodoro/processed/pomodoro-start-branding-v2.json",
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-start-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -622,14 +523,10 @@
       "frames": 252,
       "seconds": 8.4,
       "bytes": 15680696,
-      "sourceSha256": "5c8679cf0cbb025477a873fa948361f48bd64173d44ce5932585f9db34b679c5",
       "mediaSha256": "a67cb17d2aca1b31caf8a930f6628533eef29f4aae28c5330dc7620029578ef5"
     },
     {
       "media": "actions/production/13-pomodoro/processed/pomodoro-study-branding-v3.webm",
-      "source": "actions/production/13-pomodoro/processed/pomodoro-study-v2.webm",
-      "metadata": "actions/production/13-pomodoro/processed/pomodoro-study-branding-v3.json",
-      "qa": "actions/production/13-pomodoro/processed/pomodoro-study-branding-v3.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -637,14 +534,10 @@
       "frames": 888,
       "seconds": 29.6,
       "bytes": 25818387,
-      "sourceSha256": "a4ab3ceff7daa004bb156115e35c05d19099301b1d10bae8ebb0e892f627240e",
       "mediaSha256": "cc8d9c44f918b623c7454329590f5d368b950c61107a06fa32bf93202e30bc4d"
     },
     {
       "media": "actions/production/14-garden/processed/garden-plant-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-plant-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-plant-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-plant-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -652,14 +545,10 @@
       "frames": 600,
       "seconds": 20,
       "bytes": 32796214,
-      "sourceSha256": "f9ea4e0e2c95af06260fe38c8dca2c31240605a04a752176adc12f3fe72104a8",
       "mediaSha256": "73e05dd7c6262de047f829fdfbcdf093a5d433615d8d540f1a5b64e359da4a5b"
     },
     {
       "media": "actions/production/14-garden/processed/garden-strawberry-bloom-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-strawberry-bloom-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-strawberry-bloom-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-strawberry-bloom-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -667,14 +556,10 @@
       "frames": 390,
       "seconds": 13,
       "bytes": 18279293,
-      "sourceSha256": "10fbd0c331452e71ee911adca429f911584968a661b0235b0269d50f8cf4cb98",
       "mediaSha256": "9cfd616342bd9f600797cea091263dd7db245b0cfb2f1fc848b07ff404bc3c3f"
     },
     {
       "media": "actions/production/14-garden/processed/garden-strawberry-grow-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-strawberry-grow-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-strawberry-grow-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-strawberry-grow-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -682,14 +567,10 @@
       "frames": 594,
       "seconds": 19.8,
       "bytes": 27652303,
-      "sourceSha256": "7a141b702c40d9d3cce26faa3c1758bf931b9a67e967721c9402c062f542a86d",
       "mediaSha256": "a70a009311b1eaf747262b5951eb617f19cbec2c9d33de5390b07b89592e578c"
     },
     {
       "media": "actions/production/14-garden/processed/garden-strawberry-ripe-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-strawberry-ripe-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-strawberry-ripe-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-strawberry-ripe-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -697,14 +578,10 @@
       "frames": 510,
       "seconds": 17,
       "bytes": 20866611,
-      "sourceSha256": "7db3790a6e949f3c9d1fbee0a0ca8f69238bf430f1e7509baebfc201a76b5cf4",
       "mediaSha256": "90a945615f508492a16597558c78f0f71bfab20613e8f76fe1cc2ece7742270c"
     },
     {
       "media": "actions/production/14-garden/processed/garden-tomato-bloom-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-tomato-bloom-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-tomato-bloom-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-tomato-bloom-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -712,14 +589,10 @@
       "frames": 378,
       "seconds": 12.6,
       "bytes": 14953473,
-      "sourceSha256": "e0bbb80d055f9af269e82abe0a6607c6d48657bcc38218d49cf0c20a320f3c26",
       "mediaSha256": "bd027d177798b61f30af8cb67c5288a55e31e19ea63df50041b361b1e885e4cf"
     },
     {
       "media": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-tomato-grow-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -727,14 +600,10 @@
       "frames": 600,
       "seconds": 20,
       "bytes": 29516944,
-      "sourceSha256": "76125cc1834b3a8ee7db37e2f657c5ca7d4229475b77e97e3af3b200f978bad6",
       "mediaSha256": "8bc87288cd36ff48f16ca8aa339c5d0206b6a198bac99867bb7694625a2fba6a"
     },
     {
       "media": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-tomato-ripe-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -742,14 +611,10 @@
       "frames": 522,
       "seconds": 17.4,
       "bytes": 15733185,
-      "sourceSha256": "66b08ca6420e28f6671e14cd13445cd2df25da09186449321d50d46e3961e68e",
       "mediaSha256": "a81f5f69765d261bc09358a153f374c2cec2c77d67289e4c371faf2f50dae44c"
     },
     {
       "media": "actions/production/14-garden/processed/garden-water-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-water-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-water-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-water-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -757,14 +622,10 @@
       "frames": 600,
       "seconds": 20,
       "bytes": 39110497,
-      "sourceSha256": "a756e7d3755949552f0223cddf11fa4c547644be35b92ef7f20fb0437f330cf2",
       "mediaSha256": "f28043651ebd8090308220071841c6df08a28189223b2bd6948ef8446c1fa15b"
     },
     {
       "media": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-watermelon-bloom-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -772,14 +633,10 @@
       "frames": 360,
       "seconds": 12,
       "bytes": 17674007,
-      "sourceSha256": "b9536f19f399d378cf5b6ae2e7446196d1309062c6f488a035a7ef5227c2527c",
       "mediaSha256": "b60f6abc02bcffde1aea49f8c87e26da65f7bfeb2cb96847f53f1dcd0e8cfebc"
     },
     {
       "media": "actions/production/14-garden/processed/garden-watermelon-grow-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-watermelon-grow-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-watermelon-grow-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-watermelon-grow-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -787,14 +644,10 @@
       "frames": 594,
       "seconds": 19.8,
       "bytes": 29183145,
-      "sourceSha256": "16e29b2f0247bee24c58fd500587e92bca6d98c81e8160cb646e1e123b9a9286",
       "mediaSha256": "15eb9cddae244380c45b3282b33608fcc888042907670c0f526fdff7fbe31638"
     },
     {
       "media": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.webm",
-      "source": "actions/production/14-garden/processed/garden-watermelon-ripe-v1.webm",
-      "metadata": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.json",
-      "qa": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.qa.json",
       "status": "active",
       "width": 640,
       "height": 640,
@@ -802,46 +655,7 @@
       "frames": 540,
       "seconds": 18,
       "bytes": 27072635,
-      "sourceSha256": "a5fc16cb639bae49abc28fcef3059bb49645b9484a9b03c41827f06875145f3f",
       "mediaSha256": "26261e96ef0d06ef002661c86b66cb6fac7d1673dc9391cab2f87fe3fc5ee9f7"
-    }
-  ],
-  "plannedPacks": [
-    {
-      "family": "番茄钟",
-      "manifest": "actions/production/13-pomodoro/manifest.json",
-      "status": "ready",
-      "actions": [],
-      "readyActions": [
-        "pomodoro-start",
-        "pomodoro-study",
-        "pomodoro-remind",
-        "pomodoro-doze",
-        "pomodoro-peek",
-        "pomodoro-finish"
-      ]
-    },
-    {
-      "family": "garden",
-      "manifest": "actions/production/14-garden/manifest.json",
-      "status": "ready",
-      "actions": [],
-      "readyActions": [
-        "garden-plant",
-        "garden-water",
-        "garden-tomato-grow",
-        "garden-tomato-bloom",
-        "garden-tomato-ripe",
-        "garden-strawberry-grow",
-        "garden-strawberry-bloom",
-        "garden-strawberry-ripe",
-        "garden-watermelon-grow",
-        "garden-watermelon-bloom",
-        "garden-watermelon-ripe",
-        "garden-tomato-harvest",
-        "garden-strawberry-harvest",
-        "garden-watermelon-harvest"
-      ]
     }
   ],
   "gardenScenes": {

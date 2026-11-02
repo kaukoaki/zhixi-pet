@@ -1,13 +1,13 @@
 'use strict';
 // Called only by --smoke-test --verify-pomodoro, against the isolated profile.
 const fs=require('node:fs'),path=require('node:path'),{screen}=require('electron');
-const {resolvePomodoroSegments}=require('./pomodoro-library.cjs');
 module.exports=async function({ROOT,store,pomodoro,petWindow,panelWindow,pause,menu,broadcast,getWindow,advance,cleanup,diagnostics}){
-  const fixture=path.join(ROOT,'actions/production/00-idle/processed/idle-loop-v1.webm');
+  const current=JSON.parse(fs.readFileSync(path.join(ROOT,'actions/catalog.json'),'utf8')).actions;
+  const fixture=path.join(ROOT,current.find(action=>action.id==='idle').media);
   const actual=process.argv.includes('--verify-pomodoro-media');
-  const segments=actual?resolvePomodoroSegments(JSON.parse(fs.readFileSync(path.join(ROOT,'actions/production/13-pomodoro/manifest.json'),'utf8'))).filter(segment=>segment.media):[];
+  const segments=actual?current.filter(action=>action.id.startsWith('pomodoro-')):[];
   const savedStats=structuredClone(store.state.stats);
-  if(actual){for(const segment of segments)await store.importAction(segment.id,path.join(ROOT,segment.media));await store.importAction('success',path.join(ROOT,'actions/production/05-success/processed/success-v1.webm'));}
+  if(actual){for(const segment of segments)await store.importAction(segment.id,path.join(ROOT,segment.media));await store.importAction('success',path.join(ROOT,current.find(action=>action.id==='success').media));}
   else for(const slot of store.state.pomodoroActions)await store.importAction(slot.id,fixture);
   await store.importAction('idle',fixture);broadcast();
   await panelWindow.webContents.executeJavaScript('document.getElementById("pomodoro-button").click()');

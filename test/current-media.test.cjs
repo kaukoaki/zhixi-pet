@@ -37,3 +37,10 @@ test('changed current media or a duplicate declaration fails verification',t=>{
   f.write(f.files[2][0],f.files[2][1]);f.manifest.files.push(f.manifest.files[0]);f.save('media-assets.json',f.manifest);
   assert.throws(()=>auditCurrentAssets(f.root),/Duplicate declared asset/);
 });
+
+test('undeclared old versions and prompts cannot hide in the production folder',t=>{
+  for(const name of ['actions/production/idle/processed/old.webm','actions/production/idle/prompt.txt']){
+    const f=fixture(t);f.write(name,'private production material');
+    assert.throws(()=>auditCurrentAssets(f.root),/Non-current file in production/);
+  }
+});

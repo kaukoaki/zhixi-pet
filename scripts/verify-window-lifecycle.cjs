@@ -36,8 +36,9 @@ module.exports=async function({ROOT,store,pomodoro,pause,menu,broadcast,createUs
   createUsage();await ready(getWindows().usage);getWindows().usage.destroy();
   await js('window.petAPI.petMoved({dx:1,dy:0})');await pause(80);await js('window.petAPI.showUsage()');await ready(getWindows().usage);
   results.dragAfterUsageDestroyed=true;
-  await store.importAction('idle',path.join(ROOT,'actions/production/00-idle/processed/idle-loop-v1.webm'));
-  await store.importAction('working',path.join(ROOT,'actions/production/04-working/processed/working-loop-v1.webm'));broadcast();
+  const current=JSON.parse(fs.readFileSync(path.join(ROOT,'actions/catalog.json'),'utf8')).actions;
+  await store.importAction('idle',path.join(ROOT,current.find(action=>action.id==='idle').media));
+  await store.importAction('working',path.join(ROOT,current.find(action=>action.id==='working').media));broadcast();
   await wait(()=>js('window.qiqiPlayback.current?.id==="idle"&&!window.qiqiPlayback.pending'));
   const source=fs.readFileSync(store.mediaPath('idle')),response=await fetch('pet-media://action/idle',{headers:{Range:'bytes=32-63'}});
   results.rangeStatus=response.status;assert.equal(response.status,206);assert.deepEqual(Buffer.from(await response.arrayBuffer()),source.subarray(32,64));

@@ -12,7 +12,8 @@ function contained(base,relative){
   return file;
 }
 const sha=file=>crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
-const manifestFile=contained(ROOT,arg),production=manifestFile===fs.realpathSync(path.join(ROOT,'actions/branding-installation.json'));
+const requested=arg==='actions/branding-installation.json'&&fs.existsSync(path.join(ROOT,'local-assets/metadata/branding-installation.json'))?'local-assets/metadata/branding-installation.json':arg;
+const manifestFile=contained(ROOT,requested),production=['actions/branding-installation.json','local-assets/metadata/branding-installation.json'].some(name=>fs.existsSync(path.join(ROOT,name))&&manifestFile===fs.realpathSync(path.join(ROOT,name)));
 const base=production?ROOT:path.dirname(manifestFile);
 if(!production&&!base.startsWith(path.join(ROOT,'.cache')+path.sep))throw Error('Choose the production manifest or a candidate under project .cache');
 const manifest=JSON.parse(fs.readFileSync(manifestFile,'utf8'));

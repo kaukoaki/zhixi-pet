@@ -95,7 +95,7 @@ npm start
 
 - [Windows安装教程](INSTALL-WINDOWS.md) · [安装与源码说明](docs/INSTALLATION.md)
 - [首次上传GitHub教程](docs/GITHUB-UPLOAD.md) · [分发与打包](docs/RELEASING.md)
-- [新版人物、固定人设与动画提示词](docs/animation/README.md) · [造型核验摘要](docs/branding/README.md)
+- 新版人物、固定人设与动画提示词（仅本地制作归档：`local-assets/workshop/docs/animation/README.md`） · [造型核验摘要](docs/branding/README.md)
 - [动作库](actions/README.md) · [素材规范](actions/ASSET-LAYOUT.md) · [视频制作](docs/VIDEO-GUIDE.md)
 - [番茄钟](docs/POMODORO.md) · [陪伴手账](docs/JOURNAL.md) · [小花园](docs/GARDEN.md) · [装扮商店](docs/SHOP.md)
 - [更新记录](docs/CHANGELOG.md) · [贡献说明](CONTRIBUTING.md) · [安全反馈](SECURITY.md)

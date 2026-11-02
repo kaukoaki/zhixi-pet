@@ -3,7 +3,7 @@
 当前版本0.1.18：胸口为小芽抱星胸章；编发的黑金蝴蝶结旁有白色盘结、两颗淡紫菱形宝石、细链与浅色流苏。正面参考图中挂饰位于画面右侧，转身时跟随同一编发，允许真实遮挡。
 
 - [原始透明立绘](../../assets/character/qiqi-chibi-v5-knot-sprout.png)与[人设清单](../../assets/character/appearance.json)：保留原始像素、透明度、尺寸与SHA。
-- [固定人设、动作模板与四个示例](../animation/README.md)：后续动画制作起点。
+- 固定人设、动作模板与四个示例（仅本地制作归档：`../../local-assets/workshop/docs/animation/README.md`）：后续动画制作起点。
 - [37段现用视频摘要](release-summary.json)：每段SHA、帧数与逐帧QA路径。
 - [正式实装索引](../../actions/branding-installation.json)：23个动作入口、拖动分段与11段花园素材。
 

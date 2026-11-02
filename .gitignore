@@ -32,11 +32,22 @@ pomodoro.json
 .vscode/
 .idea/
 
-# Public source never includes videos.
+# Local-only prompts, originals, historical clips and review material.
+/local-assets/
+/actions/production/**/source/
+/actions/production/**/prompt*.txt
+/actions/production/**/prompts/
+# Current binary assets are distributed in the reviewed media ZIP.
+/actions/production/**/*.webm
+/actions/production/**/*.mp4
+/actions/production/**/*.png
+/actions/production/**/*.jpg
+/actions/production/**/*.jpeg
+
+# Production binaries and large QA snapshots ship in the assets ZIP.
 /actions/production/**
 !/actions/production/**/
 !/actions/production/**/*.md
-!/actions/production/**/*.txt
 !/actions/production/**/*.json
 /actions/production/**/*.qa.json
 *.mp4

@@ -6,11 +6,11 @@
 
 | 文件 | 用途 | 上传位置 |
 | --- | --- | --- |
-| `Zhixi-0.1.18-source.zip` / `repository/` | 精简源码、插件、当前人物原画、未来动画提示词与轻量索引 | 提交解压后的文件到GitHub仓库 |
+| `Zhixi-0.1.18-source.zip` / `repository/` | 精简源码、插件、当前人物原画、轻量运行索引（提示词仅本地保存） | 提交解压后的文件到GitHub仓库 |
 | `Zhixi-0.1.18-current-media.zip` | 当前实装素材：37段修改后视频与11张花园末帧海报；不含原片或历史视频 | 同版本GitHub Release附件 |
 | `Zhixi-0.1.18-win32-x64.zip` | Windows程序、已内置的当前37段视频、安装脚本和插件 | 同版本GitHub Release附件 |
 
-运行桌宠只需Windows ZIP。原片和历史视频隔离保存在本地，不放入源码或Release；新动画使用[当前立绘与提示词](animation/README.md)。授权范围见[素材许可](../LICENSE-ASSETS.md)和[来源记录](RIGHTS.md)。
+运行桌宠只需Windows ZIP。原片和历史视频隔离保存在本地，不放入源码或Release；新动画使用当前立绘与提示词（仅本地制作归档：`../local-assets/workshop/docs/animation/README.md`）。授权范围见[素材许可](../LICENSE-ASSETS.md)和[来源记录](RIGHTS.md)。
 
 源码不带开发依赖、运行时、工作缓存、个人数据、本机交接文档或巨大的累计检查点。独立素材的逐文件大小与SHA-256记录在仓库根目录 `media-assets.json`，ZIP另附SHA-256文件。
 

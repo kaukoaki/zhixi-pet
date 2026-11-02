@@ -127,7 +127,7 @@ Zhixi is an independent desktop application and local plugin. It is not an offic
 
 Each release ZIP has a matching `.sha256` checksum file. The source repository is approximately 15 MiB; current media is distributed separately through Releases.
 
-Original footage, historical video versions, and per-frame production QA remain in the local production workspace. They are not included in the public repository or release assets. Future animations should use the current V5 reference and [character and motion prompt kit](docs/animation/README.md).
+Original footage, historical video versions, and per-frame production QA remain in the local production workspace. They are not included in the public repository or release assets. Future animations should use the current V5 reference and character and motion prompt kit（仅本地制作归档：`local-assets/workshop/docs/animation/README.md`）.
 
 ## Develop from source
 
@@ -175,7 +175,7 @@ Most of the following guides are in Chinese:
 
 - [Windows installation](INSTALL-WINDOWS.md) · [Source setup](docs/INSTALLATION.md)
 - [GitHub upload walkthrough](docs/GITHUB-UPLOAD.md) · [Packaging and distribution](docs/RELEASING.md)
-- [Current character reference and animation prompts](docs/animation/README.md) · [Appearance verification summary](docs/branding/README.md)
+- Current character reference and animation prompts（仅本地制作归档：`local-assets/workshop/docs/animation/README.md`） · [Appearance verification summary](docs/branding/README.md)
 - [Action library](actions/README.md) · [Asset layout](actions/ASSET-LAYOUT.md) · [Video production](docs/VIDEO-GUIDE.md)
 - [Pomodoro](docs/POMODORO.md) · [Journal](docs/JOURNAL.md) · [Garden](docs/GARDEN.md) · [Decorations](docs/SHOP.md)
 - [Changelog](docs/CHANGELOG.md) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md)
