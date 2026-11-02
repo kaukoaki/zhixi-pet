@@ -1,5 +1,7 @@
 # 知栖 Zhixi · Codex 桌面伙伴
 
+**简体中文** | [English](README.en.md)
+
 知意而栖，陪你把眼前的小事慢慢做好。
 
 <p align="center">

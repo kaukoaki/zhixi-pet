@@ -38,7 +38,7 @@ def safe_files(folder):
 
 
 def public_source():
-    top = ['.gitignore', '.gitattributes', 'package.json', 'package-lock.json', 'README.md',
+    top = ['.gitignore', '.gitattributes', 'package.json', 'package-lock.json', 'README.md', 'README.en.md',
            'CONTRIBUTING.md', 'SECURITY.md', 'LICENSE', 'LICENSE-ASSETS.md', 'NOTICE.md',
            'THIRD_PARTY_NOTICES.md', 'requirements-video.txt', 'install.cmd', 'INSTALL-WINDOWS.md',
            '\u542f\u52a8\u77e5\u6816.cmd']
