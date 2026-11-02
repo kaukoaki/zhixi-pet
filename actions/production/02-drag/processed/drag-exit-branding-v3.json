@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/02-drag/processed/drag-exit-v2.webm",
+  "source_sha256": "6d0a08aec19a795866aaa5f107f69fb36864175f58bbad16b90029924028f1d3",
+  "output": "actions/production/02-drag/processed/drag-exit-branding-v3.webm",
+  "media_sha256": "09a59d629e0adb1943557a803fe06f84ed6d4f22cd0bd43d436932158d6f2765",
+  "processor_revision": 2,
+  "width": 720,
+  "height": 720,
+  "fps": 24.0,
+  "source_frames": 12,
+  "frames": 12,
+  "seconds": 0.5,
+  "file_bytes": 2099678,
+  "decoded_frames": 12,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/02-drag/processed/drag-exit-branding-v3.first-frame.png",
+  "first_frame_sha256": "94b45c7fa5f7dadca79b709c8062ef9a10c275ec096969a84a16556684c52ed0",
+  "last_frame": "actions/production/02-drag/processed/drag-exit-branding-v3.last-frame.png",
+  "last_frame_sha256": "8cde9dd6446feb8701479b121d0ee9e570cf9d7ba3dbcd91cbc203636b818406",
+  "poster": "actions/production/02-drag/processed/drag-exit-branding-v3.first-frame.png",
+  "poster_sha256": "94b45c7fa5f7dadca79b709c8062ef9a10c275ec096969a84a16556684c52ed0",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/02-drag/source/drag-source-02.mp4",
+  "original_source_sha256": "245ef2f2a2d3fb12711f0f9755794c09ce357286f596c93158bfe009790e799a",
+  "branding": {
+    "release": "knot-sprout-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "bd49b27c687f605714d9d8f7974b84abbb2185de8e44b67c527d614c364e9a99",
+    "trialReport": ".cache/branding-trials/exit-preinstall-soft-20/drag-exit-branding-pilot-v1.json",
+    "trialReportSha256": "932ff67733f560750c324cc2a91f86eaeaf1e43308e02607a6729b864fbf4cc4",
+    "encodedAlpha": {
+      "verifiedFrames": 12,
+      "maxError": 1,
+      "changedPixels": 79596,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/02-drag/processed/drag-exit-branding-v3.qa.json",
+    "scope": "reviewed16-clip installation; original motion/timing unchanged"
+  }
+}

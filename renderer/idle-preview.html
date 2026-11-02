@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'" />
+  <title>知栖 · 原画待机预览</title>
+  <link rel="stylesheet" href="./portrait.css" />
+  <link rel="stylesheet" href="./idle-preview.css" />
+</head>
+<body>
+  <main class="preview">
+    <div class="stage pet-art" data-qiqi-art></div>
+    <nav class="controls" aria-label="待机动作">
+      <label class="auto"><input id="auto" type="checkbox" checked /> 原画轻呼吸</label>
+      <div id="buttons" class="buttons"></div>
+    </nav>
+  </main>
+  <script src="./portrait.js"></script>
+  <script src="./idle-preview.js"></script>
+</body>
+</html>

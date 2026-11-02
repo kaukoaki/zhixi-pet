@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/06-error/processed/error-v1.webm",
+  "source_sha256": "23572ae0e4c18148e8790eb4c3d2584a484ea78c04102500740cef0e3a33b8b0",
+  "output": "actions/production/06-error/processed/error-branding-v2.webm",
+  "media_sha256": "7554c92842ea4ff838825eaae90fb4cf2696a857e056fc52b48042c1f635a1f0",
+  "processor_revision": 2,
+  "width": 720,
+  "height": 720,
+  "fps": 24,
+  "source_frames": 241,
+  "frames": 241,
+  "seconds": 10.041666666666666,
+  "file_bytes": 22832111,
+  "decoded_frames": 241,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/06-error/processed/error-branding-v2.first-frame.png",
+  "first_frame_sha256": "1310fd225efbd28c93be4c3a5cf13bc3f6191832ad9317b76e2a923d6c426bef",
+  "last_frame": "actions/production/06-error/processed/error-branding-v2.last-frame.png",
+  "last_frame_sha256": "c00593e10bae6cedd004565dff7279e15ddde33e5b9fd7e84725a6a66ea9b7c1",
+  "poster": "actions/production/06-error/processed/error-branding-v2.first-frame.png",
+  "poster_sha256": "1310fd225efbd28c93be4c3a5cf13bc3f6191832ad9317b76e2a923d6c426bef",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/06-error/source/error-source-01.mp4",
+  "original_source_sha256": "9d1943c00ec034fae4b492c2bd777dd9a054ac990af02c17644eb1edeb6a6ffd",
+  "branding": {
+    "release": "knot-sprout-priority-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "6dc06ed1c5d930c021f4130223733131695ba32cc1b29a05aa52589e4f8aebf2",
+    "trialReport": ".cache/branding-trials/error-repair-20261029-v2/error-branding-pilot-v1.json",
+    "trialReportSha256": "f49d741a87bb6e7fa51e320c2d558139c59ad5dcc40e58d9e3b61bbc3157e7e7",
+    "encodedAlpha": {
+      "verifiedFrames": 241,
+      "maxError": 1,
+      "changedPixels": 1458212,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/06-error/processed/error-branding-v2.qa.json",
+    "scope": "wallet/error/pat user-reported repair"
+  }
+}

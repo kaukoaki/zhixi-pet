@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "version": "0.1.18",
+  "archive": "Zhixi-0.1.18-current-media.zip",
+  "scope": "current-installed-only",
+  "layout": "Extract inside source repository root; paths begin with actions/production/.",
+  "files": [
+    {
+      "path": "actions/production/00-idle/processed/idle-loop-branding-v2.webm",
+      "bytes": 9691042,
+      "sha256": "30e3957810abef5e137638838aee0afc4e61588ea33352203b20e8dc40e64f62"
+    },
+    {
+      "path": "actions/production/01-greeting/processed/greeting-branding-v2.webm",
+      "bytes": 11032351,
+      "sha256": "abc850b933fbb54da8f0c3b4d18da007158b1a7b1e3200d08cfd2f87b18d6e11"
+    },
+    {
+      "path": "actions/production/02-drag/processed/drag-enter-branding-v3.webm",
+      "bytes": 1384709,
+      "sha256": "c3e103ef9994cbd827fd5f97d8a15169f128d0f8e05414f328e14ee0cefc8d6c"
+    },
+    {
+      "path": "actions/production/02-drag/processed/drag-exit-branding-v3.webm",
+      "bytes": 2099678,
+      "sha256": "09a59d629e0adb1943557a803fe06f84ed6d4f22cd0bd43d436932158d6f2765"
+    },
+    {
+      "path": "actions/production/02-drag/processed/drag-hold-branding-v3.webm",
+      "bytes": 15352050,
+      "sha256": "b8cf24113dfcd076ac7f0c7456f872231692b0893d727322b8c44a258ab56cd1"
+    },
+    {
+      "path": "actions/production/02-drag/processed/drag-preview-branding-v3.webm",
+      "bytes": 26774876,
+      "sha256": "4b6acd048594477a1f02ef7a3e86ae81f1b317364c04f0ce10586eb1bbaa961f"
+    },
+    {
+      "path": "actions/production/03-thinking/processed/thinking-branding-v2.webm",
+      "bytes": 19510420,
+      "sha256": "df2b2fb984dfa75c925106f35cb021912adea45927f4dcbf50e2febe566b07c6"
+    },
+    {
+      "path": "actions/production/04-working/processed/working-loop-branding-v2.webm",
+      "bytes": 15416521,
+      "sha256": "8d0a9850579225306f971cf6646ce404a09c309745809f39f43243522233a390"
+    },
+    {
+      "path": "actions/production/05-success/processed/success-branding-v2.webm",
+      "bytes": 20555935,
+      "sha256": "3641d2e0cfb3b655e1c89999e38f3507071b512f134c7c8af371fb85a5ae16e2"
+    },
+    {
+      "path": "actions/production/06-error/processed/error-branding-v2.webm",
+      "bytes": 22832111,
+      "sha256": "7554c92842ea4ff838825eaae90fb4cf2696a857e056fc52b48042c1f635a1f0"
+    },
+    {
+      "path": "actions/production/07-sleep/processed/sleep-branding-v2.webm",
+      "bytes": 26337374,
+      "sha256": "019c671c23839687327810158b20bd2b3d4beb73621975507d92831e3e26dc10"
+    },
+    {
+      "path": "actions/production/08-return/processed/return-branding-v2.webm",
+      "bytes": 24563139,
+      "sha256": "347ea9b47d860b5db55c07518243413edc0d54a65e2ec1eea356faa744d4bd12"
+    },
+    {
+      "path": "actions/production/09-focus/processed/focus-branding-v3.webm",
+      "bytes": 29601863,
+      "sha256": "1d724228f4dc4747cc3accbafdbfdb0e392bed52befabacf56859143848de0fb"
+    },
+    {
+      "path": "actions/production/10-celebrate/processed/celebrate-branding-v2.webm",
+      "bytes": 24864282,
+      "sha256": "81354cda62ec933f159e5ef71d65c3890034a182ab2214c9b79abafc43221d89"
+    },
+    {
+      "path": "actions/production/11-pat/processed/pat-branding-v2.webm",
+      "bytes": 23412666,
+      "sha256": "349932a9e92df6d82cfcb2549e42dfbd535ebff27eb91925d1c41b142d6c1802"
+    },
+    {
+      "path": "actions/production/12-wallet/processed/wallet-branding-v2.webm",
+      "bytes": 47371293,
+      "sha256": "db67f7aa125ba87e60a6b2f4f1029486d776f9fa7ef7428c14c1fde9a6e8da11"
+    },
+    {
+      "path": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.webm",
+      "bytes": 47957562,
+      "sha256": "0f4490328c838a9ed19fa0a47c42c8d5ae27b5da9dcd42cd1f0f1b023c5e4e75"
+    },
+    {
+      "path": "actions/production/12-wallet/variants/03-low/processed/wallet-low-branding-v2.webm",
+      "bytes": 47439442,
+      "sha256": "0b2791f63e899522ee51dc97d69673e3256b5fd37b550babc9d7fd20a9dfbd12"
+    },
+    {
+      "path": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-branding-v2.webm",
+      "bytes": 23009001,
+      "sha256": "298489ac326bf96c4e55d472feb6d00b1d4a6e6c3e3fcfb7819e6b552caed01b"
+    },
+    {
+      "path": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.webm",
+      "bytes": 23834122,
+      "sha256": "af7bd1e3907b676a35e6352e7c7984669e3e8103d9239dd7b179ab851ff38b45"
+    },
+    {
+      "path": "actions/production/13-pomodoro/processed/pomodoro-doze-branding-v2.webm",
+      "bytes": 12915493,
+      "sha256": "76346a9b17ba81ed57ffc91e117036f5a282f2542983d2c803b7a837f065bc9f"
+    },
+    {
+      "path": "actions/production/13-pomodoro/processed/pomodoro-finish-branding-v3.webm",
+      "bytes": 38612541,
+      "sha256": "23b18ac154523325eb9cb25e20fed675caacfdc8fb445d42fc1d1e10296f76ee"
+    },
+    {
+      "path": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.webm",
+      "bytes": 12453408,
+      "sha256": "643211841fb15f3d3df62c86ed062e52f795d1375f655a4aeabdeb2c786508ed"
+    },
+    {
+      "path": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.webm",
+      "bytes": 18166065,
+      "sha256": "e827f6d218b6aeec12b5d8a1aaf8722f7b807bce668544d4408b888ef661ce9a"
+    },
+    {
+      "path": "actions/production/13-pomodoro/processed/pomodoro-start-branding-v2.webm",
+      "bytes": 15680696,
+      "sha256": "a67cb17d2aca1b31caf8a930f6628533eef29f4aae28c5330dc7620029578ef5"
+    },
+    {
+      "path": "actions/production/13-pomodoro/processed/pomodoro-study-branding-v3.webm",
+      "bytes": 25818387,
+      "sha256": "cc8d9c44f918b623c7454329590f5d368b950c61107a06fa32bf93202e30bc4d"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-plant-branding-v2.last-frame.png",
+      "bytes": 336169,
+      "sha256": "465f51c1980500a111fae353fbc66cc18ebe6e397920697cb1678e6f20b70968"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-plant-branding-v2.webm",
+      "bytes": 32796214,
+      "sha256": "73e05dd7c6262de047f829fdfbcdf093a5d433615d8d540f1a5b64e359da4a5b"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-strawberry-bloom-branding-v2.last-frame.png",
+      "bytes": 376951,
+      "sha256": "d95de6271cdf70f5260cb5ca9b47ea0de0434919dbf6ef0759e8f0744483224c"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-strawberry-bloom-branding-v2.webm",
+      "bytes": 18279293,
+      "sha256": "9cfd616342bd9f600797cea091263dd7db245b0cfb2f1fc848b07ff404bc3c3f"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-strawberry-grow-branding-v2.last-frame.png",
+      "bytes": 365684,
+      "sha256": "4b38a96a1314bd1b8e75314d68f7e8b7f7ba7407bd12d52f5a428c77f70d64c7"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-strawberry-grow-branding-v2.webm",
+      "bytes": 27652303,
+      "sha256": "a70a009311b1eaf747262b5951eb617f19cbec2c9d33de5390b07b89592e578c"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-strawberry-ripe-branding-v2.last-frame.png",
+      "bytes": 394272,
+      "sha256": "170093340dddb84f7338d55c85a5107b994778d5c9b9d8a2da384c516d67ca74"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-strawberry-ripe-branding-v2.webm",
+      "bytes": 20866611,
+      "sha256": "90a945615f508492a16597558c78f0f71bfab20613e8f76fe1cc2ece7742270c"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-tomato-bloom-branding-v2.last-frame.png",
+      "bytes": 370121,
+      "sha256": "e351c0ff57f36168c4af7361f77d2bc3e1fdd76e5a25dfeac8249df617100ef2"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-tomato-bloom-branding-v2.webm",
+      "bytes": 14953473,
+      "sha256": "bd027d177798b61f30af8cb67c5288a55e31e19ea63df50041b361b1e885e4cf"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.last-frame.png",
+      "bytes": 368315,
+      "sha256": "cc1ae88735adc84644a96e999b13016d0fd767ed54044dad7ad6510299bf9640"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.webm",
+      "bytes": 29516944,
+      "sha256": "8bc87288cd36ff48f16ca8aa339c5d0206b6a198bac99867bb7694625a2fba6a"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.last-frame.png",
+      "bytes": 353585,
+      "sha256": "0e2b21ed5375303ae55ecb145e193dc38b7eeb0de8f6465cc8102728c1f2c89f"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.webm",
+      "bytes": 15733185,
+      "sha256": "a81f5f69765d261bc09358a153f374c2cec2c77d67289e4c371faf2f50dae44c"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-water-branding-v2.last-frame.png",
+      "bytes": 338380,
+      "sha256": "6a74e71828ea087665a48a8d84e158ff5ca06e2ae9b490f44663acb184c26654"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-water-branding-v2.webm",
+      "bytes": 39110497,
+      "sha256": "f28043651ebd8090308220071841c6df08a28189223b2bd6948ef8446c1fa15b"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.last-frame.png",
+      "bytes": 404954,
+      "sha256": "cf9b68ad5564ce402de3d9b1c47eabd19dab291c10357437ff06463b5e4be928"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.webm",
+      "bytes": 17674007,
+      "sha256": "b60f6abc02bcffde1aea49f8c87e26da65f7bfeb2cb96847f53f1dcd0e8cfebc"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-watermelon-grow-branding-v2.last-frame.png",
+      "bytes": 401840,
+      "sha256": "c793d7f71b4d35dca102743ad523137c12eed73e0e3d1914d58ec9b5b65fe870"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-watermelon-grow-branding-v2.webm",
+      "bytes": 29183145,
+      "sha256": "15eb9cddae244380c45b3282b33608fcc888042907670c0f526fdff7fbe31638"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.last-frame.png",
+      "bytes": 398901,
+      "sha256": "c82d3ecbcc01daf9d27620aa7c86d9afffb9e90de34273d0ca633e39b357e898"
+    },
+    {
+      "path": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.webm",
+      "bytes": 27072635,
+      "sha256": "26261e96ef0d06ef002661c86b66cb6fac7d1673dc9391cab2f87fe3fc5ee9f7"
+    }
+  ]
+}

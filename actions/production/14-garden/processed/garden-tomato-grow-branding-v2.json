@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/14-garden/processed/garden-tomato-grow-v1.webm",
+  "source_sha256": "76125cc1834b3a8ee7db37e2f657c5ca7d4229475b77e97e3af3b200f978bad6",
+  "output": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.webm",
+  "media_sha256": "8bc87288cd36ff48f16ca8aa339c5d0206b6a198bac99867bb7694625a2fba6a",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 600,
+  "frames": 600,
+  "seconds": 20.0,
+  "file_bytes": 29516944,
+  "decoded_frames": 600,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.first-frame.png",
+  "first_frame_sha256": "5e38c433785af6d81f7b0ce8b460e5ce8327709ef0fd82f9ae79cbd5f92d6ad6",
+  "last_frame": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.last-frame.png",
+  "last_frame_sha256": "cc1ae88735adc84644a96e999b13016d0fd767ed54044dad7ad6510299bf9640",
+  "poster": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.last-frame.png",
+  "poster_sha256": "cc1ae88735adc84644a96e999b13016d0fd767ed54044dad7ad6510299bf9640",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/14-garden/source/garden-tomato-grow-v2-source.mp4",
+  "original_source_sha256": "81e05c6095a7d7b170c99c9002cd91dfe0018a40a163c9ee9b3202c362938d2d",
+  "branding": {
+    "release": "knot-sprout-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "bd49b27c687f605714d9d8f7974b84abbb2185de8e44b67c527d614c364e9a99",
+    "trialReport": ".cache/branding-trials/garden-relative-16/garden-tomato-grow-branding-pilot-v1.json",
+    "trialReportSha256": "57891e05412235e702e5742828857ca6541af025371beb8a0681ea883d7a1964",
+    "encodedAlpha": {
+      "verifiedFrames": 600,
+      "maxError": 1,
+      "changedPixels": 5204900,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/14-garden/processed/garden-tomato-grow-branding-v2.qa.json",
+    "scope": "reviewed16-clip installation; original motion/timing unchanged"
+  }
+}

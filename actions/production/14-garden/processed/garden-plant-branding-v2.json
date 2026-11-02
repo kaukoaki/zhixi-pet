@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/14-garden/processed/garden-plant-v1.webm",
+  "source_sha256": "f9ea4e0e2c95af06260fe38c8dca2c31240605a04a752176adc12f3fe72104a8",
+  "output": "actions/production/14-garden/processed/garden-plant-branding-v2.webm",
+  "media_sha256": "73e05dd7c6262de047f829fdfbcdf093a5d433615d8d540f1a5b64e359da4a5b",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 600,
+  "frames": 600,
+  "seconds": 20.0,
+  "file_bytes": 32796214,
+  "decoded_frames": 600,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-plant-branding-v2.first-frame.png",
+  "first_frame_sha256": "183911906facd674a64b7189757689cd83bf4c718aa6a2ffbdb332e9db166450",
+  "last_frame": "actions/production/14-garden/processed/garden-plant-branding-v2.last-frame.png",
+  "last_frame_sha256": "465f51c1980500a111fae353fbc66cc18ebe6e397920697cb1678e6f20b70968",
+  "poster": "actions/production/14-garden/processed/garden-plant-branding-v2.last-frame.png",
+  "poster_sha256": "465f51c1980500a111fae353fbc66cc18ebe6e397920697cb1678e6f20b70968",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/14-garden/source/garden-plant-v2-source.mp4",
+  "original_source_sha256": "4f89d632ee82a60ab5280b4fc022d1736784d2f824a7d7a905940bc32ed810ad",
+  "branding": {
+    "release": "knot-sprout-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "bd49b27c687f605714d9d8f7974b84abbb2185de8e44b67c527d614c364e9a99",
+    "trialReport": ".cache/branding-trials/garden-relative-16/garden-plant-branding-pilot-v1.json",
+    "trialReportSha256": "fa23aa0067f798e9ce425793a7fe5762fb2cd60b6360353d6c60b850c4dd3eb4",
+    "encodedAlpha": {
+      "verifiedFrames": 600,
+      "maxError": 1,
+      "changedPixels": 4251662,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/14-garden/processed/garden-plant-branding-v2.qa.json",
+    "scope": "reviewed16-clip installation; original motion/timing unchanged"
+  }
+}

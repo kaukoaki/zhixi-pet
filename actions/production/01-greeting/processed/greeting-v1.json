@@ -1,0 +1,17 @@
+{
+  "source": "actions/production/01-greeting/source/greeting-source-01.mp4",
+  "source_sha256": "c7828fd96830b250b85c23362f5598c393ca0414e847790fa665e1e7e6e8a928",
+  "output": "actions/production/01-greeting/processed/greeting-v1.webm",
+  "width": 720,
+  "height": 720,
+  "fps": 24.0,
+  "source_frames": 121,
+  "frames": 121,
+  "seconds": 5.041666666666667,
+  "overlap_frames": 0,
+  "white_threshold": 234,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "transparent_fraction": 0.4748900462962963,
+  "file_bytes": 1010167
+}

@@ -1,0 +1,35 @@
+{
+  "version": 3,
+  "status": "reuse-composed-and-decoded-awaiting-background-cleanup",
+  "sources": [
+    {
+      "media": "actions/production/14-garden/processed/garden-germination-common-v3.scene.mp4",
+      "sha256": "4c4c30195d408187d35da9335f226646799962229472ff6bd3d94714c46da097",
+      "seconds": 5
+    },
+    {
+      "media": "actions/production/14-garden/source/garden-strawberry-leaves-v3-source.mp4",
+      "sha256": "0ead58fbeef9de101c7186bdc2aa54afb8bba604dd22e0374a97f3f3c720db14",
+      "seconds": 15
+    }
+  ],
+  "transition": {
+    "kind": "six-frame linear crossfade",
+    "seconds": 0.2,
+    "startSeconds": 4.8,
+    "overlapFrames": 6,
+    "reason": "small generative redraw difference at shared cotyledon boundary"
+  },
+  "media": "actions/production/14-garden/processed/garden-strawberry-grow-v3.scene.mp4",
+  "mediaSha256": "70ab2a06bc2d9a7b90a7e2860a8c9fa87a1b970227e121381eeef0ae92581fe0",
+  "fps": 30,
+  "frames": 594,
+  "seconds": 19.8,
+  "width": 640,
+  "height": 640,
+  "decodedFrameCount": 594,
+  "alpha": false,
+  "audio": false,
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false
+}

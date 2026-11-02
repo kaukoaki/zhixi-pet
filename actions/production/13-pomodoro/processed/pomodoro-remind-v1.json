@@ -1,0 +1,41 @@
+{
+  "source": "actions/production/13-pomodoro/source/pomodoro-part-01-source.mp4",
+  "source_sha256": "99968a4f3e178b986ccc5cc82473fa39c2553b4404b8c678dc693cb332837269",
+  "output": "actions/production/13-pomodoro/processed/pomodoro-remind-v1.webm",
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 900,
+  "start_frame": 500,
+  "end_frame_exclusive": 900,
+  "selected_frames": 400,
+  "background": "white",
+  "frames": 400,
+  "seconds": 13.333333333333334,
+  "overlap_frames": 0,
+  "speed": 1,
+  "white_threshold": 210,
+  "shadow_threshold": 210,
+  "keep_regions": [
+    [
+      20,
+      105,
+      220,
+      170
+    ]
+  ],
+  "seal_effect_gaps": 3,
+  "clean_text_regions": [
+    [
+      380,
+      585,
+      260,
+      48
+    ]
+  ],
+  "decoded_alpha_min": 0,
+  "top_edge_contact_frames": 0,
+  "decoded_alpha_max": 255,
+  "transparent_fraction": 0.49200439453125,
+  "file_bytes": 1865623
+}

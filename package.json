@@ -1,0 +1,29 @@
+{
+  "name": "qiqi-codex-pet",
+  "productName": "QiqiCodexPet",
+  "version": "0.1.18",
+  "private": true,
+  "description": "知栖 · 原创二次元 Codex 桌面陪伴精灵",
+  "main": "main/index.cjs",
+  "scripts": {
+    "start": "electron .",
+    "panel": "electron . --panel",
+    "test": "node --test test/*.test.cjs",
+    "check": "node scripts/check.cjs",
+    "smoke": "electron . --smoke-test",
+    "capture:idle": "electron scripts/capture-idle.cjs",
+    "package": "node scripts/package.cjs",
+    "audit:assets": "node scripts/audit-action-library.cjs",
+    "audit:release": "node scripts/audit-release.cjs",
+    "release": "node scripts/release.cjs",
+    "source:zip": "node scripts/source-archive.cjs"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "45.0.0"
+  },
+  "license": "MIT"
+}

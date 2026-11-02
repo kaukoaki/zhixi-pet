@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/14-garden/processed/garden-tomato-ripe-v1.webm",
+  "source_sha256": "66b08ca6420e28f6671e14cd13445cd2df25da09186449321d50d46e3961e68e",
+  "output": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.webm",
+  "media_sha256": "a81f5f69765d261bc09358a153f374c2cec2c77d67289e4c371faf2f50dae44c",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 522,
+  "frames": 522,
+  "seconds": 17.4,
+  "file_bytes": 15733185,
+  "decoded_frames": 522,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.first-frame.png",
+  "first_frame_sha256": "4afc8f331e3a7a35f66e65bed88a6bce288c0181654bfcfc0d0f911aae38e685",
+  "last_frame": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.last-frame.png",
+  "last_frame_sha256": "0e2b21ed5375303ae55ecb145e193dc38b7eeb0de8f6465cc8102728c1f2c89f",
+  "poster": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.last-frame.png",
+  "poster_sha256": "0e2b21ed5375303ae55ecb145e193dc38b7eeb0de8f6465cc8102728c1f2c89f",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/14-garden/processed/garden-tomato-ripe-v3.scene.mp4",
+  "original_source_sha256": "10cb0781991216da4cc3a3a479b4834d7339b28143b1010c24a90bc4ea23ab9f",
+  "branding": {
+    "release": "knot-sprout-all37-20261101",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "42882273011c1d17cc3812f78352709c832f8bf48870b5189e4313d138b3a891",
+    "trialReport": ".cache/branding-trials/full18-tomatoripe-20261031-v2/garden-tomato-ripe-branding-pilot-v1.json",
+    "trialReportSha256": "94d84c2b13df9f797f364ab6aab3979b1bd568e44a22458bbc4cd68aac7161dd",
+    "encodedAlpha": {
+      "verifiedFrames": 522,
+      "maxError": 1,
+      "changedPixels": 3800039,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/14-garden/processed/garden-tomato-ripe-branding-v2.qa.json",
+    "scope": "all remaining eighteen clips; original motion and timing retained"
+  }
+}

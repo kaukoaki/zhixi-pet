@@ -1,0 +1,110 @@
+{
+  "version": 3,
+  "status": "source-reviewed-with-quality-cleanup-needed",
+  "source": "actions/production/14-garden/source/garden-strawberry-leaves-v3-source.mp4",
+  "sourceSha256": "0ead58fbeef9de101c7186bdc2aa54afb8bba604dd22e0374a97f3f3c720db14",
+  "seconds": 15,
+  "fps": 30,
+  "frames": 450,
+  "size": [
+    640,
+    640
+  ],
+  "technical": {
+    "fps": 30.0,
+    "frames": 450,
+    "width": 640,
+    "height": 640,
+    "duration": 15.0,
+    "firstFrameVsReferenceMeanAbsoluteDifference": 4.566761067708334,
+    "firstFrameVsReferencePsnr": 23.949997332129477,
+    "tailFrameDifferenceMedian": 0.2335302734375,
+    "tailFrameDifferenceMax": 5.2357568359375,
+    "tailCanRoiDifferenceMedian": 0.10392993979200876,
+    "potBboxTailMin": [
+      74,
+      444,
+      159,
+      133
+    ],
+    "potBboxTailMax": [
+      74,
+      445,
+      160,
+      134
+    ],
+    "blankTopLeftBackgroundMetrics": {
+      "reference": {
+        "mean": 200.57663333333332,
+        "std": 1.621191125547989,
+        "p95MinusP5": 4.0,
+        "laplacianVariance": 0.6339997822222222
+      },
+      "videoFirst": {
+        "mean": 198.47606666666667,
+        "std": 1.8954226957477205,
+        "p95MinusP5": 5.0,
+        "laplacianVariance": 0.8201999288888887
+      },
+      "videoLast": {
+        "mean": 190.5389,
+        "std": 3.5011074614565416,
+        "p95MinusP5": 8.0,
+        "laplacianVariance": 1.6532984788888891
+      }
+    },
+    "plantState": "low strawberry-like trifoliate serrated leaves; no flowers or fruit",
+    "recommendedTailFrame": 447,
+    "recommendedTailSeconds": 14.9,
+    "visualNotes": [
+      "frame0 preserves the two-cotyledon scene but re-renders pixels rather than exactly copying input",
+      "background mottling already present in reference, becomes stronger/rougher over clip",
+      "plant develops low rounded serrated three-leaf clusters, not tomato branching",
+      "pot and watering can stay anchored; girl returns to relaxed standing"
+    ]
+  },
+  "plantState": "low strawberry rosette, three-leaf serrated clusters; no flowers or fruit",
+  "reuse": {
+    "version": 3,
+    "status": "reuse-composed-and-decoded-awaiting-background-cleanup",
+    "sources": [
+      {
+        "media": "actions/production/14-garden/processed/garden-germination-common-v3.scene.mp4",
+        "sha256": "4c4c30195d408187d35da9335f226646799962229472ff6bd3d94714c46da097",
+        "seconds": 5
+      },
+      {
+        "media": "actions/production/14-garden/source/garden-strawberry-leaves-v3-source.mp4",
+        "sha256": "0ead58fbeef9de101c7186bdc2aa54afb8bba604dd22e0374a97f3f3c720db14",
+        "seconds": 15
+      }
+    ],
+    "transition": {
+      "kind": "six-frame linear crossfade",
+      "seconds": 0.2,
+      "startSeconds": 4.8,
+      "overlapFrames": 6,
+      "reason": "small generative redraw difference at shared cotyledon boundary"
+    },
+    "media": "actions/production/14-garden/processed/garden-strawberry-grow-v3.scene.mp4",
+    "mediaSha256": "70ab2a06bc2d9a7b90a7e2860a8c9fa87a1b970227e121381eeef0ae92581fe0",
+    "fps": 30,
+    "frames": 594,
+    "seconds": 19.8,
+    "width": 640,
+    "height": 640,
+    "decodedFrameCount": 594,
+    "alpha": false,
+    "audio": false,
+    "containsPlatformWatermark": true,
+    "runtimeInstalled": false
+  },
+  "rawContinuityFrame": "actions/production/14-garden/reference/07-strawberry-leaf-end-v3.png",
+  "beautifiedNextReference": "actions/production/14-garden/reference/07-strawberry-leaf-polished-v1.png",
+  "qualityNotes": [
+    "gray-green background mottling inherited and darkened",
+    "fine character detail softened across generated video chain",
+    "beautified reference is a redraw, not an exact video frame; retain raw continuity frame for alignment"
+  ],
+  "runtimeInstalled": false
+}

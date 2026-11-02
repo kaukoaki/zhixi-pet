@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/05-success/processed/success-v1.webm",
+  "source_sha256": "9bf11af5f7f6fc447056cb59bacd9bc2a36ec4d99fb2a0647df76b5485197f7e",
+  "output": "actions/production/05-success/processed/success-branding-v2.webm",
+  "media_sha256": "3641d2e0cfb3b655e1c89999e38f3507071b512f134c7c8af371fb85a5ae16e2",
+  "processor_revision": 2,
+  "width": 720,
+  "height": 720,
+  "fps": 24.0,
+  "source_frames": 241,
+  "frames": 241,
+  "seconds": 10.041666666666666,
+  "file_bytes": 20555935,
+  "decoded_frames": 241,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/05-success/processed/success-branding-v2.first-frame.png",
+  "first_frame_sha256": "b8b52010c22dc031c6202e8f28c6697161e1be4409db81678fc3f74da315b108",
+  "last_frame": "actions/production/05-success/processed/success-branding-v2.last-frame.png",
+  "last_frame_sha256": "446458ff42eadb5922cb8bc8fc6858546c6f140b22628abede16e6ff332d7aa0",
+  "poster": "actions/production/05-success/processed/success-branding-v2.first-frame.png",
+  "poster_sha256": "b8b52010c22dc031c6202e8f28c6697161e1be4409db81678fc3f74da315b108",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/05-success/source/success-source-01.mp4",
+  "original_source_sha256": "fafc6bb4353050d7965d7d71e05802a795f6c388d1ca8a11be539ec51960d7b5",
+  "branding": {
+    "release": "knot-sprout-all37-20261101",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "42882273011c1d17cc3812f78352709c832f8bf48870b5189e4313d138b3a891",
+    "trialReport": ".cache/branding-trials/full18-normal-20261030-v1/success-branding-pilot-v1.json",
+    "trialReportSha256": "2b5774d50a979f467c789fed7cbd563daf35144d20e4d0c9d02090f716d3a795",
+    "encodedAlpha": {
+      "verifiedFrames": 241,
+      "maxError": 1,
+      "changedPixels": 1401117,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/05-success/processed/success-branding-v2.qa.json",
+    "scope": "all remaining eighteen clips; original motion and timing retained"
+  }
+}

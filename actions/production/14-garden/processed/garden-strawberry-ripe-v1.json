@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/processed/garden-strawberry-ripe-v4.scene.mp4",
+  "source_sha256": "500f678fa5217ea94b9d821f026e53cb93dad16887843dc4856c133cbcee176d",
+  "output": "actions/production/14-garden/processed/garden-strawberry-ripe-v1.webm",
+  "media_sha256": "7db3790a6e949f3c9d1fbee0a0ca8f69238bf430f1e7509baebfc201a76b5cf4",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 510,
+  "frames": 510,
+  "seconds": 17.0,
+  "file_bytes": 3925822,
+  "decoded_frames": 510,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-strawberry-ripe-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-strawberry-ripe-v1.last-frame.png",
+  "poster_sha256": "957fb540eeea32f429fc33573e5953168c954cb0e8cc4fe878a105e9cbdae506",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

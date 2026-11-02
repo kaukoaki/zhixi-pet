@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/01-greeting/processed/greeting-v1.webm",
+  "source_sha256": "67f0ca5a88ce37e39b297505d1da5650e1460edd72261b08dd31b9a50f2476bf",
+  "output": "actions/production/01-greeting/processed/greeting-branding-v2.webm",
+  "media_sha256": "abc850b933fbb54da8f0c3b4d18da007158b1a7b1e3200d08cfd2f87b18d6e11",
+  "processor_revision": 2,
+  "width": 720,
+  "height": 720,
+  "fps": 24.0,
+  "source_frames": 121,
+  "frames": 121,
+  "seconds": 5.041666666666667,
+  "file_bytes": 11032351,
+  "decoded_frames": 121,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/01-greeting/processed/greeting-branding-v2.first-frame.png",
+  "first_frame_sha256": "05d0681861620f4757d6b82654efe594c7312e71a0c4f8eeefaa103b5cb04734",
+  "last_frame": "actions/production/01-greeting/processed/greeting-branding-v2.last-frame.png",
+  "last_frame_sha256": "fe020e2445faa9157299ddb2c5a7f5545d19b1667baf396510dcbe6b0d11b7b5",
+  "poster": "actions/production/01-greeting/processed/greeting-branding-v2.first-frame.png",
+  "poster_sha256": "05d0681861620f4757d6b82654efe594c7312e71a0c4f8eeefaa103b5cb04734",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/01-greeting/source/greeting-source-01.mp4",
+  "original_source_sha256": "c7828fd96830b250b85c23362f5598c393ca0414e847790fa665e1e7e6e8a928",
+  "branding": {
+    "release": "knot-sprout-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "bd49b27c687f605714d9d8f7974b84abbb2185de8e44b67c527d614c364e9a99",
+    "trialReport": ".cache/branding-trials/greeting-draghold-12/greeting-branding-pilot-v1.json",
+    "trialReportSha256": "cd18cb283215022903d9be70133f1859d802c8684dfd1284ef4a12e4e9c2d0cd",
+    "encodedAlpha": {
+      "verifiedFrames": 121,
+      "maxError": 1,
+      "changedPixels": 689278,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/01-greeting/processed/greeting-branding-v2.qa.json",
+    "scope": "reviewed16-clip installation; original motion/timing unchanged"
+  }
+}

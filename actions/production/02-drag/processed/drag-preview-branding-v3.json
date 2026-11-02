@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/02-drag/processed/drag-preview-v2.webm",
+  "source_sha256": "80d1817f9db0ddc2bc962b0b776707f0ba5e40290e3a7b83f69bf0c18a006a60",
+  "output": "actions/production/02-drag/processed/drag-preview-branding-v3.webm",
+  "media_sha256": "4b6acd048594477a1f02ef7a3e86ae81f1b317364c04f0ce10586eb1bbaa961f",
+  "processor_revision": 2,
+  "width": 720,
+  "height": 720,
+  "fps": 24.0,
+  "source_frames": 241,
+  "frames": 241,
+  "seconds": 10.041666666666666,
+  "file_bytes": 26774876,
+  "decoded_frames": 241,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/02-drag/processed/drag-preview-branding-v3.first-frame.png",
+  "first_frame_sha256": "af3506b60f5951b33eafadb59afaa69c43b5a1ce84f502fb37f269ce2e2404f8",
+  "last_frame": "actions/production/02-drag/processed/drag-preview-branding-v3.last-frame.png",
+  "last_frame_sha256": "5cf955cec1013173e9bf97c956dc000e78212399a930fef30794bb1ca2630e8e",
+  "poster": "actions/production/02-drag/processed/drag-preview-branding-v3.first-frame.png",
+  "poster_sha256": "af3506b60f5951b33eafadb59afaa69c43b5a1ce84f502fb37f269ce2e2404f8",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/02-drag/source/drag-source-02.mp4",
+  "original_source_sha256": "245ef2f2a2d3fb12711f0f9755794c09ce357286f596c93158bfe009790e799a",
+  "branding": {
+    "release": "knot-sprout-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "bd49b27c687f605714d9d8f7974b84abbb2185de8e44b67c527d614c364e9a99",
+    "trialReport": ".cache/branding-trials/drag-preinstall-soft-20/drag-branding-pilot-v1.json",
+    "trialReportSha256": "ca6b478cad24bf028256259ae16c82a9e3d96068bf17ac1c7145d28f5051e934",
+    "encodedAlpha": {
+      "verifiedFrames": 241,
+      "maxError": 1,
+      "changedPixels": 1460313,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/02-drag/processed/drag-preview-branding-v3.qa.json",
+    "scope": "reviewed16-clip installation; original motion/timing unchanged"
+  }
+}

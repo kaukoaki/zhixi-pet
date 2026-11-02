@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/processed/garden-watermelon-ripe-v4.scene.mp4",
+  "source_sha256": "279659cbc2bfeed3dc2aac8aea29a0e4fa65e368ccd8728fed7ab49e3b168dd3",
+  "output": "actions/production/14-garden/processed/garden-watermelon-ripe-v1.webm",
+  "media_sha256": "a5fc16cb639bae49abc28fcef3059bb49645b9484a9b03c41827f06875145f3f",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 540,
+  "frames": 540,
+  "seconds": 18.0,
+  "file_bytes": 4767379,
+  "decoded_frames": 540,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-watermelon-ripe-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-watermelon-ripe-v1.last-frame.png",
+  "poster_sha256": "0e867c2fae9cd292a8e3d796e73632627a63fb9f4b7b02122072719f7088e213",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

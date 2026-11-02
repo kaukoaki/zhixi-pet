@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "purpose": "fixed gardening scene reference, no video generated or installed",
+  "generator": "built-in image_gen",
+  "characterReference": "assets/character/qiqi-chibi-v3-gpt.png",
+  "characterSha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+  "reference": "actions/production/14-garden/reference/garden-stage-v2.png",
+  "referenceSha256": "a8dd5936e275833eaa7155e37ebf0f522ff7a9ad1b3d2b03999fa775e65e6f94",
+  "size": [
+    1254,
+    1254
+  ],
+  "layout": "character at right; filled soil pot at left; cream/lilac flower watering can at far right; one baseline; uploaded image geometry is authoritative",
+  "approvedForVideo": true,
+  "verifiedBySourceClip": "01"
+}

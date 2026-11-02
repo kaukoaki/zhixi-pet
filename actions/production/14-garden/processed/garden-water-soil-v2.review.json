@@ -1,0 +1,69 @@
+{
+  "version": 2,
+  "clipNumber": "02",
+  "actionId": "garden-water",
+  "status": "reviewed-continuity-reference-ready",
+  "source": "actions/production/14-garden/source/garden-water-soil-v2-source.mp4",
+  "sourceSha256": "1888853851145c6579e93c5f1551d9e1949f98816a7a590aed8ace5c2178eec3",
+  "seconds": 20.0,
+  "fps": 30.0,
+  "frames": 600,
+  "size": [
+    640,
+    640
+  ],
+  "referenceFrame": "actions/production/14-garden/reference/02-water-soil-end-v2.png",
+  "referenceFrameIndexZeroBased": 597,
+  "referenceSeconds": 19.9,
+  "referenceSha256": "399225952ae76dc287963c6d5be5b6a81bf72014f2e62028cdea27ec0fd6e4a3",
+  "frameEditing": "none: full decoded RGB frame, no crop, scaling, repainting or background replacement",
+  "containsPlatformWatermark": true,
+  "background": "light gray as in generated video",
+  "watermarkPolicy": "Retained in archived source and exact continuity reference; clean during later video processing.",
+  "runtimeInstalled": false,
+  "review": {
+    "waterTarget": "stream enters the original pot, not offscreen soil",
+    "character": "same identity and outfit; returns to standing pose",
+    "pot": "no visible spatial drift; tail edge detection varies about 2 pixels with shading/compression",
+    "wateringCan": "picked up and returned to the original right ground position",
+    "plantState": "slightly wet soil only, no sprouts, flowers or fruit",
+    "continuityReference": "eyes open; no stream or outside puddle at selected 19.9 seconds"
+  },
+  "technical": {
+    "fps": 30.0,
+    "frames": 600,
+    "duration": 20.0,
+    "size": [
+      640,
+      640
+    ],
+    "tailPotBoundingBoxMin": [
+      76,
+      448,
+      154,
+      130
+    ],
+    "tailPotBoundingBoxMax": [
+      76,
+      448,
+      156,
+      130
+    ],
+    "tailAdjacentGrayMeanMedian": 0.8015283346176147,
+    "tailAdjacentGrayMeanMax": 5.638691425323486,
+    "recommendedFrameZeroBased": 597,
+    "recommendedSeconds": 19.9,
+    "visualReview": "soil only, no sprouts; character standing with open eyes; can returned to right-side ground; a small isolated blue splash appears beside pot mid-action and is absent from final frame"
+  },
+  "cleanupRequired": [
+    {
+      "issue": "brief detached blue puddle near pot around 12 seconds",
+      "status": "pending-video-processing",
+      "presentInSelectedReference": false
+    },
+    {
+      "issue": "platform watermark and uniform pale background",
+      "status": "pending-video-processing"
+    }
+  ]
+}

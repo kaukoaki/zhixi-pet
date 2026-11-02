@@ -1,0 +1,32 @@
+{
+  "version": 3,
+  "status": "cut-and-decoded-awaiting-background-cleanup",
+  "source": "actions/production/14-garden/source/garden-tomato-flower-fruit-v3-source.mp4",
+  "sourceSha256": "92413ec823aedf2bb629820587f4c6df4f3f9d4667957b3fbe7ddc5c83ccbebd",
+  "media": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.mp4",
+  "mediaSha256": "58c857b32c9d58e032ef829787a80509a96698403867ac66731c74d43d939fce",
+  "sourceFrameRangeHalfOpen": [
+    0,
+    378
+  ],
+  "sourceSecondsRangeHalfOpen": [
+    0.0,
+    12.6
+  ],
+  "frames": 378,
+  "fps": 30.0,
+  "seconds": 12.6,
+  "width": 640,
+  "height": 640,
+  "codec": "h264",
+  "alpha": false,
+  "audio": false,
+  "decodedFrameCount": 378,
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false,
+  "timing": "one output per selected source frame; CFR timestamps at native 30 fps",
+  "firstLastSourceSamplePsnrDb": [
+    46.545,
+    43.847
+  ]
+}

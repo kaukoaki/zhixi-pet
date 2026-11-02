@@ -1,0 +1,487 @@
+{
+  "schemaVersion": 3,
+  "family": "garden",
+  "productionMode": "reuse-first-user-budget",
+  "status": "integrated-garden-scenes-v1",
+  "reference": "actions/production/14-garden/reference/garden-stage-v2.png",
+  "runtimeSceneReady": true,
+  "budget": {
+    "sourcesAlreadyGenerated": 8,
+    "previousPlannedSources": 20,
+    "previousRemainingSources": 12,
+    "newSourcesPrioritizedNow": 0,
+    "laterOptionalSources": 0,
+    "maximumFurtherSources": 0,
+    "fewerRemainingGenerationRequests": 12,
+    "note": "All main garden source footage received. No additional generation required. Reuse existing footage; future new sources must be at most15 seconds. Count comparison only; no monetary savings promised."
+  },
+  "format": {
+    "aspectRatio": "1:1",
+    "fpsTarget": 30,
+    "resolution": "Keep the same output size after the first video is approved",
+    "firstApprovedSourceSize": [
+      640,
+      640
+    ]
+  },
+  "stageMilestones": {
+    "soil": [
+      0,
+      1,
+      2
+    ],
+    "leaf": [
+      3,
+      4,
+      5
+    ],
+    "bloom": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "ripe": [
+      10
+    ]
+  },
+  "statePolicy": "One committed daily watering advances one day; video playback itself changes no progress, crop, coins or inventory.",
+  "reviewedSources": [
+    {
+      "number": "01",
+      "id": "garden-plant",
+      "status": "source-reviewed-awaiting-processing",
+      "source": "actions/production/14-garden/source/garden-plant-v2-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-plant-v2.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/01-plant-end-v2.png",
+      "actualSeconds": 20,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    },
+    {
+      "number": "02",
+      "id": "garden-water",
+      "status": "source-reviewed-awaiting-processing",
+      "source": "actions/production/14-garden/source/garden-water-soil-v2-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-water-soil-v2.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/02-water-soil-end-v2.png",
+      "actualSeconds": 20,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    },
+    {
+      "number": "03",
+      "id": "garden-tomato-grow",
+      "status": "source-reviewed-awaiting-processing",
+      "source": "actions/production/14-garden/source/garden-tomato-grow-v2-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-tomato-grow-v2.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/03-tomato-grow-end-v2.png",
+      "actualSeconds": 20,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    },
+    {
+      "number": "04-pack",
+      "id": "tomato-flower-fruit",
+      "status": "source-reviewed-and-frame-exact-cuts-decoded-awaiting-background-cleanup",
+      "source": "actions/production/14-garden/source/garden-tomato-flower-fruit-v3-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-tomato-flower-fruit-v3.review.json",
+      "referenceFrames": {
+        "bloom": "actions/production/14-garden/reference/04-tomato-bloom-end-v3.png",
+        "ripe": "actions/production/14-garden/reference/05-tomato-ripe-end-v3.png"
+      },
+      "actualSeconds": 30,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "observedVisibleFlowerCount": 3,
+      "observedRipeFruitCount": 4,
+      "segments": [
+        {
+          "id": "garden-tomato-bloom",
+          "media": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.mp4",
+          "metadata": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.json",
+          "sourceFrameRangeHalfOpen": [
+            0,
+            378
+          ],
+          "seconds": 12.6
+        },
+        {
+          "id": "garden-tomato-ripe",
+          "media": "actions/production/14-garden/processed/garden-tomato-ripe-v3.scene.mp4",
+          "metadata": "actions/production/14-garden/processed/garden-tomato-ripe-v3.scene.json",
+          "sourceFrameRangeHalfOpen": [
+            378,
+            900
+          ],
+          "seconds": 17.4
+        }
+      ],
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    },
+    {
+      "number": "07-suffix",
+      "id": "strawberry-grow",
+      "actionId": "garden-strawberry-grow",
+      "status": "source-reviewed-with-quality-cleanup-needed",
+      "source": "actions/production/14-garden/source/garden-strawberry-leaves-v3-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-strawberry-leaves-v3.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/07-strawberry-leaf-end-v3.png",
+      "qualityReference": "actions/production/14-garden/reference/07-strawberry-leaf-polished-v1.png",
+      "actualSeconds": 15,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "reusePrefix": "actions/production/14-garden/processed/garden-germination-common-v3.scene.mp4",
+      "composedScene": "actions/production/14-garden/processed/garden-strawberry-grow-v3.scene.mp4",
+      "composedSeconds": 19.8,
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    },
+    {
+      "number": "08-pack",
+      "id": "strawberry-flower-fruit",
+      "status": "source-reviewed-and-cuts-decoded-awaiting-background-cleanup",
+      "source": "actions/production/14-garden/source/garden-strawberry-flower-fruit-v4-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-strawberry-flower-fruit-v4.review.json",
+      "referenceFrames": {
+        "bloom": "actions/production/14-garden/reference/08-strawberry-bloom-end-v4.png",
+        "ripe": "actions/production/14-garden/reference/09-strawberry-ripe-end-v4.png"
+      },
+      "actualSeconds": 30,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "observedVisibleFlowerCount": 3,
+      "observedRipeFruitCount": 3,
+      "segments": [
+        {
+          "id": "garden-strawberry-bloom",
+          "media": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.mp4",
+          "metadata": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.json",
+          "sourceFrameRangeHalfOpen": [
+            0,
+            390
+          ],
+          "seconds": 13.0
+        },
+        {
+          "id": "garden-strawberry-ripe",
+          "media": "actions/production/14-garden/processed/garden-strawberry-ripe-v4.scene.mp4",
+          "metadata": "actions/production/14-garden/processed/garden-strawberry-ripe-v4.scene.json",
+          "sourceFrameRangeHalfOpen": [
+            390,
+            900
+          ],
+          "seconds": 17.0
+        }
+      ],
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    },
+    {
+      "number": "11-suffix",
+      "id": "watermelon-grow",
+      "actionId": "garden-watermelon-grow",
+      "status": "source-reviewed-and-reuse-preview-decoded-awaiting-scene-cleanup",
+      "source": "actions/production/14-garden/source/garden-watermelon-leaves-v4-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-watermelon-leaves-v4.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/11-watermelon-leaf-end-v4.png",
+      "actualSeconds": 15,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "reusePrefix": "actions/production/14-garden/processed/garden-germination-common-v3.scene.mp4",
+      "composedScene": "actions/production/14-garden/processed/garden-watermelon-grow-v4.scene.mp4",
+      "composedSeconds": 19.8,
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    },
+    {
+      "number": "12-pack",
+      "id": "watermelon-flower-fruit",
+      "status": "source-reviewed-and-cuts-decoded-awaiting-background-cleanup",
+      "source": "actions/production/14-garden/source/garden-watermelon-flower-fruit-v4-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-watermelon-flower-fruit-v4.review.json",
+      "referenceFrames": {
+        "bloom": "actions/production/14-garden/reference/12-watermelon-bloom-end-v4.png",
+        "ripe": "actions/production/14-garden/reference/13-watermelon-ripe-end-v4.png"
+      },
+      "actualSeconds": 30,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "observedVisibleFlowerCount": 1,
+      "observedRipeFruitCount": 1,
+      "segments": [
+        {
+          "id": "garden-watermelon-bloom",
+          "media": "actions/production/14-garden/processed/garden-watermelon-bloom-v4.scene.mp4",
+          "metadata": "actions/production/14-garden/processed/garden-watermelon-bloom-v4.scene.json",
+          "sourceFrameRangeHalfOpen": [
+            0,
+            360
+          ],
+          "seconds": 12.0
+        },
+        {
+          "id": "garden-watermelon-ripe",
+          "media": "actions/production/14-garden/processed/garden-watermelon-ripe-v4.scene.mp4",
+          "metadata": "actions/production/14-garden/processed/garden-watermelon-ripe-v4.scene.json",
+          "sourceFrameRangeHalfOpen": [
+            360,
+            900
+          ],
+          "seconds": 18.0
+        }
+      ],
+      "runtimeRouted": true,
+      "runtimeNote": "Original source stays archived unchanged. Runtime uses transparent derivative clips from runtimeManifest, not this raw MP4."
+    }
+  ],
+  "pendingGeneration": [],
+  "cutPolicy": "Inspect actual stable phase. Tomato split frame378/12.6s; strawberry frame390/13s; watermelon frame360/12s. Each flower/fruit source retained in contiguous phase cuts. Future new-generation limit15s does not require truncating existing received footage or local derivative cuts.",
+  "reuse": [
+    {
+      "purpose": "planting all three crops",
+      "sourceId": "garden-plant",
+      "state": "soil",
+      "status": "implemented-and-verified"
+    },
+    {
+      "purpose": "soil watering all three crops",
+      "sourceId": "garden-water",
+      "allowedStates": [
+        "soil"
+      ],
+      "forbiddenStates": [
+        "leaf",
+        "bloom",
+        "ripe"
+      ],
+      "status": "implemented-and-verified"
+    },
+    {
+      "purpose": "generic germination/cotyledons",
+      "sourceId": "garden-tomato-grow",
+      "status": "implemented-and-verified",
+      "restriction": "First 5 seconds only, smooth cotyledons; later serrated tomato leaves stay tomato-specific. Same first-frame geometry must be retained in the new 15-second branch.",
+      "sourceRangeSecondsHalfOpen": [
+        0,
+        5
+      ],
+      "sourceFrameRangeHalfOpen": [
+        0,
+        150
+      ],
+      "media": "actions/production/14-garden/processed/garden-germination-common-v3.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-germination-common-v3.scene.json",
+      "referenceFrame": "actions/production/14-garden/reference/common-cotyledons-end-v3.png",
+      "referenceSourceFrame": 149
+    },
+    {
+      "purpose": "quiet garden idle",
+      "source": "approved phase-end still frames plus subtle procedural motion",
+      "status": "implemented-and-verified"
+    },
+    {
+      "purpose": "harvest reaction",
+      "existingActionCandidates": [
+        "celebrate",
+        "success"
+      ],
+      "gardenFeedback": "animate only committed crop reward entering inventory; no crop-specific picking video required",
+      "status": "implemented-and-verified"
+    }
+  ],
+  "cancelledGeneration": {
+    "stageWateringNumbers": [
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20"
+    ],
+    "pickingNumbers": [
+      "06",
+      "10",
+      "14"
+    ],
+    "replacement": "procedural droplets on current plant state; existing celebration/success on the desktop pet plus inventory feedback"
+  },
+  "history": "actions/production/14-garden/storyboard-v2.json",
+  "reviewedCuts": [
+    {
+      "id": "garden-tomato-bloom",
+      "media": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        0,
+        378
+      ],
+      "seconds": 12.6
+    },
+    {
+      "id": "garden-tomato-ripe",
+      "media": "actions/production/14-garden/processed/garden-tomato-ripe-v3.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-tomato-ripe-v3.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        378,
+        900
+      ],
+      "seconds": 17.4
+    },
+    {
+      "id": "garden-germination-common",
+      "media": "actions/production/14-garden/processed/garden-germination-common-v3.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-germination-common-v3.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        0,
+        150
+      ],
+      "seconds": 5,
+      "referenceFrame": "actions/production/14-garden/reference/common-cotyledons-end-v3.png",
+      "runtimeInstalled": false
+    },
+    {
+      "id": "garden-strawberry-grow",
+      "media": "actions/production/14-garden/processed/garden-strawberry-grow-v3.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-strawberry-grow-v3.scene.json",
+      "seconds": 19.8,
+      "frames": 594,
+      "reusedPrefixSeconds": 5,
+      "newSourceSeconds": 15,
+      "overlapSeconds": 0.2,
+      "runtimeInstalled": false
+    },
+    {
+      "id": "garden-strawberry-bloom",
+      "media": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        0,
+        390
+      ],
+      "seconds": 13.0
+    },
+    {
+      "id": "garden-strawberry-ripe",
+      "media": "actions/production/14-garden/processed/garden-strawberry-ripe-v4.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-strawberry-ripe-v4.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        390,
+        900
+      ],
+      "seconds": 17.0
+    },
+    {
+      "id": "garden-watermelon-grow",
+      "media": "actions/production/14-garden/processed/garden-watermelon-grow-v4.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-watermelon-grow-v4.scene.json",
+      "seconds": 19.8,
+      "frames": 594,
+      "reusedPrefixSeconds": 5,
+      "newSourceSeconds": 15,
+      "overlapSeconds": 0.2,
+      "runtimeInstalled": false,
+      "status": "preview-only-background-and-geometry-matching-pending"
+    },
+    {
+      "id": "garden-watermelon-bloom",
+      "media": "actions/production/14-garden/processed/garden-watermelon-bloom-v4.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-watermelon-bloom-v4.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        0,
+        360
+      ],
+      "seconds": 12.0
+    },
+    {
+      "id": "garden-watermelon-ripe",
+      "media": "actions/production/14-garden/processed/garden-watermelon-ripe-v4.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-watermelon-ripe-v4.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        360,
+        900
+      ],
+      "seconds": 18.0
+    }
+  ],
+  "acceptedVisualFruitCounts": {
+    "tomato": 4,
+    "strawberry": 3,
+    "watermelon": 1
+  },
+  "acceptedFruitCountNote": "Scene and fallback art show tomato4, strawberry3, watermelon1. One successful harvest remains one batch; coin rules unchanged.",
+  "visualStyleGuide": "actions/production/14-garden/prompts/quality-v4/00-visual-style.txt",
+  "qualityGuide": "actions/production/14-garden/QUALITY-GUIDE.md",
+  "qualityRevision": {
+    "tool": "built-in image_gen",
+    "rawReference": "actions/production/14-garden/reference/07-strawberry-leaf-end-v3.png",
+    "beautifiedReference": "actions/production/14-garden/reference/07-strawberry-leaf-polished-v1.png",
+    "metadata": "actions/production/14-garden/reference/07-strawberry-leaf-polished-v1.json",
+    "scope": "new reference and future prompting; existing source video unchanged",
+    "runtimeBackgroundAndAlignmentPending": false,
+    "cleanCommonReference": "actions/production/14-garden/reference/common-cotyledons-polished-v1.png",
+    "cleanCommonReferenceMetadata": "actions/production/14-garden/reference/common-cotyledons-polished-v1.json",
+    "watermelonLeafReference": "actions/production/14-garden/reference/11-watermelon-leaf-end-v4.png",
+    "watermelonLeafReferenceMetadata": "actions/production/14-garden/reference/11-watermelon-leaf-end-v4.json",
+    "continuityNote": "Neutral backgrounds removed; existing six-frame growth transitions retained with small generative redraw differences; no new generation requested."
+  },
+  "generationPolicy": {
+    "maximumNewSourceSeconds": 15,
+    "preferredNewSourceSeconds": [
+      5,
+      10
+    ],
+    "reuseFirst": true,
+    "additionalGenerationRequiredNow": false,
+    "scope": "all future newly generated desktop-pet videos; already received longer source footage and local derivative cuts are preserved",
+    "reason": "User has exhausted video generation credits; do not request extra idle, stage-watering or picking videos."
+  },
+  "runtimeManifest": "actions/production/14-garden/runtime.json",
+  "runtimeVerification": {
+    "unitTests": 196,
+    "electronSceneClipsDecoded": 11,
+    "gardenMenuEntries": 14,
+    "tenDayPhaseRouting": true,
+    "previewDoesNotMutateSave": true,
+    "hiddenWindowReleasesDecoder": true,
+    "screenshotCaptureAvailable": false
+  },
+  "completedRuntimeWork": [
+    "fixed scene in journal garden, hide duplicate plot art while playing",
+    "only permit soil-watering clip for soil stage; preserve plant in leaf/bloom watering",
+    "use approved phase-end states consistently with static art and fruit count",
+    "map successful committed harvest to existing celebration and reward-inventory feedback",
+    "program gentle phase idle/droplet feedback without video generation"
+  ]
+}

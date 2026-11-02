@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: pet-media:; media-src 'self' pet-media:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'" />
+  <title>知栖 · 陪伴手账</title>
+  <link rel="stylesheet" href="./theme.css" /><link rel="stylesheet" href="./journal.css" /><link rel="stylesheet" href="./garden.css" /><link rel="stylesheet" href="./cards.css" /><link rel="stylesheet" href="./companion-effects.css" /><link rel="stylesheet" href="./shop.css" /><link rel="stylesheet" href="./garden-themes.css" />
+</head>
+<body>
+ <main class="journal">
+  <header class="book-header"><span class="book-mark">▤</span><div><strong>知栖的花园手账</strong><small>把每日陪伴，种成甜甜的收获</small></div><button id="close" class="icon-button" aria-label="收起手账">×</button></header>
+  <nav class="tabs" aria-label="手账页面"><button id="tab-garden" class="selected" type="button" aria-selected="true">小花园</button><button id="tab-days" type="button" aria-selected="false">小记</button><button id="tab-cards" type="button" aria-selected="false">纪念卡 <span id="card-count">—</span></button><button id="tab-shop" type="button" aria-selected="false">小商店</button><span id="companion-days">初次见面</span></nav>
+  <div id="warning" role="status" hidden></div>
+  <section id="garden-page" class="page-scroll">
+   <div id="garden-warning" role="status" hidden></div>
+   <div class="garden-heading"><div><h1>知栖小花园</h1><p id="garden-checkin">种下一点点期待</p></div><span class="coin-badge">金币 <b id="garden-coins">0</b></span></div>
+   <div class="garden-scene"><div id="garden-scenery" class="garden-scenery" aria-hidden="true"></div><div class="garden-vista" aria-hidden="true"><div class="garden-vista-mascot"><img src="../assets/character/qiqi-chibi-v5-knot-sprout.png" alt="" /><div id="garden-vista-effects"></div></div></div><div id="garden-performance" class="garden-performance" hidden><div class="garden-scene-caption"><span id="garden-scene-label"></span><button id="skip-garden-scene" type="button" hidden>跳过</button></div><div class="garden-stage"><img crossorigin="anonymous" id="garden-still" alt="知栖正在照料植物" /><video crossorigin="anonymous" id="garden-video" muted playsinline preload="metadata" aria-hidden="true"></video><canvas id="garden-glaze" class="garden-glaze" aria-hidden="true"></canvas><div id="garden-drops" hidden aria-hidden="true"><i>•</i><i>•</i><i>•</i></div><span id="garden-fruit" hidden aria-hidden="true"></span><div id="garden-effects" aria-hidden="true"></div></div></div><div id="garden-plots" class="garden-plots"></div></div>
+   <div id="seed-picker" class="seed-picker" hidden><div class="seed-heading"><span>选一颗免费种子</span><button id="close-seeds" class="icon-button" type="button" aria-label="收起选种">×</button></div><div id="seed-options" class="seed-options"></div></div>
+   <div class="water-row"><button id="water-garden" class="primary-button" type="button">浇水打卡 ♧</button></div>
+   <section id="harvest-section" class="garden-section"><div class="section-title"><strong>甜甜收获箱</strong><small id="harvest-count">0 份</small></div><div id="harvest-box"></div></section>
+  </section>
+  <section id="shop-page" class="page-scroll" hidden>
+   <div class="shop-heading"><div><h2>知栖的小商店</h2><p>一点星光，送给今天的你。</p></div><span class="coin-badge">金币 <b id="shop-coins">0</b></span></div>
+   <div id="shop-preview" class="shop-preview" data-paper="plain" data-preview-only="true"><div id="shop-preview-art" class="shop-preview-art" data-scene="morning"><div id="shop-scenery" class="shop-scenery" aria-hidden="true"></div><div id="shop-preview-pot" class="shop-preview-pot"></div><div class="shop-preview-mascot"><img src="../assets/character/qiqi-chibi-v5-knot-sprout.png" alt="知栖装扮预览" /><div id="shop-preview-effects" aria-hidden="true"></div></div></div><div class="shop-preview-copy"><small id="shop-preview-status">搭配预览</small><strong id="shop-preview-name">轻轻陪伴</strong><p id="shop-preview-detail"></p><button id="shop-reset-preview" type="button" hidden>还原已装备</button></div></div>
+   <div id="shop-filters" class="shop-filters"></div><div id="shop-items" class="shop-items"></div><p class="shop-note">预览免费，买过的装扮永久拥有。</p><details class="coin-history"><summary>金币小账本 · 最近20笔</summary><div id="coin-ledger"></div></details>
+  </section>
+  <section id="days-page" class="page-scroll" hidden>
+   <div class="hero"><div><span class="eyebrow">OUR LITTLE DAYS</span><h1>今天，也一起慢慢来</h1><p id="hero-face">(˶ᵔ ᵕ ᵔ˶)</p><small id="hero-quote">一小步，也值得被记住。</small></div><img id="portrait" src="../assets/character/qiqi-chibi-v5-knot-sprout.png" alt="陪你记录每一天的知栖" /></div>
+   <div class="date-bar"><button id="previous" type="button" aria-label="前一天">‹</button><input id="date" type="date" aria-label="查看手账日期" /><button id="next" type="button" aria-label="后一天">›</button><button id="today" type="button">今天</button></div>
+   <div class="stats"><div><small>专注时光</small><strong id="focus">0<span>分钟</span></strong></div><div><small>收获番茄</small><strong id="sessions">0<span>颗</span></strong></div><div><small>连续陪伴</small><strong id="streak">1<span>天</span></strong></div></div>
+   <section class="week-section" aria-label="最近七天的专注记录"><div class="section-title"><strong>七日小足迹</strong><small id="week-total">慢慢来，也很好</small></div><div id="week" class="week"></div></section>
+   <section class="note-section"><div class="section-title"><strong>给这一天留个表情</strong><small id="save-state" role="status">保存在本机</small></div><div id="moods" class="moods" aria-label="选择今日心情"></div><label for="note" class="sr-only">今天完成了什么，或想记住的小事</label><textarea id="note" maxlength="600" placeholder="今天完成了什么？也可以只记一件开心的小事。"></textarea><div class="note-footer"><span id="note-count">0 / 600</span><button id="save" class="primary-button" type="button">收好这一天 ✿</button></div></section>
+   <p id="lifetime" class="lifetime"></p>
+  </section>
+  <section id="cards-page" class="page-scroll" hidden><div class="collection-intro"><span>✧</span><h2>知栖的秘密花笺</h2></div><div id="cards" class="cards"></div></section>
+  <section id="card-dialog" class="card-dialog" role="dialog" aria-modal="true" aria-label="知栖纪念卡" hidden><button id="close-card" class="icon-button" aria-label="关闭纪念卡">×</button><div class="postcard"><span class="eyebrow">A LITTLE KEEPSAKE</span><div id="card-icon"></div><h2 id="card-title"></h2><p id="card-text"></p><img src="../assets/character/qiqi-chibi-v5-knot-sprout.png" alt="知栖" /><span id="card-date"></span><strong>知意而栖，与你一起。<i>知栖 ✿</i></strong></div><button id="export-card" class="primary-button" type="button">保存纪念卡 PNG ↗</button><small>小小的纪念，送给认真生活的你。</small></section>
+  <div id="notice" role="status" hidden></div>
+ </main>
+ <script src="./companion-effects.js"></script><script src="./garden-art.js"></script><script src="./garden-themes.js"></script><script src="./garden-glaze.js"></script><script src="./garden-scene.js"></script><script src="./garden.js"></script><script src="./card-collection.js"></script><script src="./journal-drafts.js"></script><script src="./journal.js"></script>
+</body>
+</html>

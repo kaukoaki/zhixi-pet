@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "zhixi-pet",
+  "version": "0.1.18",
+  "description": "知栖：Windows 视频桌宠、Codex 额度与任务窗口、番茄钟。",
+  "license": "MIT",
+  "keywords": [
+    "desktop-pet",
+    "codex",
+    "pomodoro",
+    "windows"
+  ],
+  "extensions": {
+    "com.openai": {
+      "requires_local_executor": true,
+      "interface": {
+        "displayName": "知栖桌宠",
+        "shortDescription": "把知栖叫到桌边，一起工作与专注",
+        "longDescription": "在 Windows 本机打开知栖视频桌宠、Codex 任务与额度窗口，以及人物旁的番茄钟。需先安装配套桌面程序。",
+        "category": "Productivity",
+        "brandColor": "#B7A3D5",
+        "composerIcon": "./assets/character.png",
+        "logo": "./assets/character.png",
+        "defaultPrompt": [
+          "打开知栖桌宠",
+          "打开知栖的番茄钟",
+          "用知栖查看 Codex 剩余额度"
+        ]
+      }
+    }
+  }
+}

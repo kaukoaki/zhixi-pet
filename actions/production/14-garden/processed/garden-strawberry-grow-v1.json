@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/processed/garden-strawberry-grow-v3.scene.mp4",
+  "source_sha256": "70ab2a06bc2d9a7b90a7e2860a8c9fa87a1b970227e121381eeef0ae92581fe0",
+  "output": "actions/production/14-garden/processed/garden-strawberry-grow-v1.webm",
+  "media_sha256": "7a141b702c40d9d3cce26faa3c1758bf931b9a67e967721c9402c062f542a86d",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 594,
+  "frames": 594,
+  "seconds": 19.8,
+  "file_bytes": 4796727,
+  "decoded_frames": 594,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-strawberry-grow-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-strawberry-grow-v1.last-frame.png",
+  "poster_sha256": "19ea782e508916166808b8c6441bf9d037895abbc9a7228c3760932a55002dc6",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

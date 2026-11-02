@@ -1,0 +1,12 @@
+{
+  "name": "zhixi-local",
+  "interface": { "displayName": "知栖桌宠" },
+  "plugins": [
+    {
+      "name": "zhixi-pet",
+      "source": { "source": "local", "path": "./codex-plugin" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

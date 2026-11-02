@@ -1,0 +1,33 @@
+{
+  "source": "actions/production/12-wallet/variants/04-empty/source/wallet-empty-source-01.mp4",
+  "source_sha256": "d59830f02f66ddd78f07f8762a78d735e7fb94ede36889caff7ed58a46be2817",
+  "output": "actions/production/12-wallet/variants/04-empty/processed/wallet-empty-v1.webm",
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 300,
+  "start_frame": 0,
+  "end_frame_exclusive": null,
+  "selected_frames": 300,
+  "background": "white",
+  "frames": 300,
+  "seconds": 10.0,
+  "overlap_frames": 0,
+  "speed": 1,
+  "white_threshold": 210,
+  "shadow_threshold": 125,
+  "keep_regions": [
+    [
+      435,
+      30,
+      200,
+      280
+    ]
+  ],
+  "seal_effect_gaps": 3,
+  "decoded_alpha_min": 0,
+  "top_edge_contact_frames": 18,
+  "decoded_alpha_max": 255,
+  "transparent_fraction": 0.47919921875,
+  "file_bytes": 2548464
+}

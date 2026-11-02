@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-v1.webm",
+  "source_sha256": "25421560e9e37b42e58c4015bc8e4e79aeaeff083c27614d2f3a4ddbfa030eb7",
+  "output": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.webm",
+  "media_sha256": "0f4490328c838a9ed19fa0a47c42c8d5ae27b5da9dcd42cd1f0f1b023c5e4e75",
+  "processor_revision": 2,
+  "width": 960,
+  "height": 960,
+  "fps": 30.0,
+  "source_frames": 300,
+  "frames": 300,
+  "seconds": 10.0,
+  "file_bytes": 47957562,
+  "decoded_frames": 300,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.first-frame.png",
+  "first_frame_sha256": "ac0cbe710bd9f9162027a3ebb7f505d07d6c2ae0c90562e8b0d013827be285b6",
+  "last_frame": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.last-frame.png",
+  "last_frame_sha256": "60be243451b417df582739ae13b8134af3f1611c6c940c5b1429a96696ba2bb6",
+  "poster": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.first-frame.png",
+  "poster_sha256": "ac0cbe710bd9f9162027a3ebb7f505d07d6c2ae0c90562e8b0d013827be285b6",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/12-wallet/variants/02-careful/source/wallet-careful-source-01.mp4",
+  "original_source_sha256": "d56e197f1d6876766efd9e60f4d49cf01e3cfd3c75c82665bafefdd2cf5c51b0",
+  "branding": {
+    "release": "knot-sprout-all37-20261101",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "42882273011c1d17cc3812f78352709c832f8bf48870b5189e4313d138b3a891",
+    "trialReport": ".cache/branding-trials/full18-walletcareful-20261101-v5/wallet-careful-branding-pilot-v1.json",
+    "trialReportSha256": "2e6987c12173fd7ef15e15dc6aa6bca9a859219f87f1c136683c6de45ac3b8cb",
+    "encodedAlpha": {
+      "verifiedFrames": 300,
+      "maxError": 1,
+      "changedPixels": 2673517,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-branding-v2.qa.json",
+    "scope": "all remaining eighteen clips; original motion and timing retained"
+  }
+}

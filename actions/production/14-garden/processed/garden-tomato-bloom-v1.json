@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.mp4",
+  "source_sha256": "58c857b32c9d58e032ef829787a80509a96698403867ac66731c74d43d939fce",
+  "output": "actions/production/14-garden/processed/garden-tomato-bloom-v1.webm",
+  "media_sha256": "e0bbb80d055f9af269e82abe0a6607c6d48657bcc38218d49cf0c20a320f3c26",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 378,
+  "frames": 378,
+  "seconds": 12.6,
+  "file_bytes": 2476057,
+  "decoded_frames": 378,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-tomato-bloom-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-tomato-bloom-v1.last-frame.png",
+  "poster_sha256": "179cbd0a3e00fbfd62861c5cf7644f0b3f5837895ca2e1d82c08b06e2c68f276",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

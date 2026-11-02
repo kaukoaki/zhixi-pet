@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/13-pomodoro/processed/pomodoro-peek-v1.webm",
+  "source_sha256": "66da5dc57f8ca5cd5d19f278c0313b37716509c40c6bc59c2310e059c4291fd3",
+  "output": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.webm",
+  "media_sha256": "643211841fb15f3d3df62c86ed062e52f795d1375f655a4aeabdeb2c786508ed",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 360,
+  "frames": 360,
+  "seconds": 12.0,
+  "file_bytes": 12453408,
+  "decoded_frames": 360,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.first-frame.png",
+  "first_frame_sha256": "5617ed2c56d554d8ed85441398d602691e58617b3d977c62b2f48afb72719889",
+  "last_frame": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.last-frame.png",
+  "last_frame_sha256": "d8752646110ef726e49e50dfc790f9df2152b659a0079e9ff69af2db2db6eccf",
+  "poster": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.first-frame.png",
+  "poster_sha256": "5617ed2c56d554d8ed85441398d602691e58617b3d977c62b2f48afb72719889",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/13-pomodoro/source/pomodoro-part-02-source.mp4",
+  "original_source_sha256": "8682507b6fa3f0939862ff2d1a91c26c8c21de81748bb684e8c9619ce28bf429",
+  "branding": {
+    "release": "knot-sprout-all37-20261101",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "42882273011c1d17cc3812f78352709c832f8bf48870b5189e4313d138b3a891",
+    "trialReport": ".cache/branding-trials/full18-peek-20261030-v3/pomodoro-peek-branding-pilot-v1.json",
+    "trialReportSha256": "5c9e47545f29b3173fe4b6101fd269b6ef0bca6d0d16f28d8d6ce67b13f79e1d",
+    "encodedAlpha": {
+      "verifiedFrames": 360,
+      "maxError": 1,
+      "changedPixels": 1792436,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/13-pomodoro/processed/pomodoro-peek-branding-v2.qa.json",
+    "scope": "all remaining eighteen clips; original motion and timing retained"
+  }
+}

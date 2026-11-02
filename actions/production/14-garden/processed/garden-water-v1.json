@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/source/garden-water-soil-v2-source.mp4",
+  "source_sha256": "1888853851145c6579e93c5f1551d9e1949f98816a7a590aed8ace5c2178eec3",
+  "output": "actions/production/14-garden/processed/garden-water-v1.webm",
+  "media_sha256": "a756e7d3755949552f0223cddf11fa4c547644be35b92ef7f20fb0437f330cf2",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 600,
+  "frames": 600,
+  "seconds": 20.0,
+  "file_bytes": 7532138,
+  "decoded_frames": 600,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-water-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-water-v1.last-frame.png",
+  "poster_sha256": "319d1d8776b419873fe876c5f27e1af690eaacf6a77f3ae7923bc64648cf5e4f",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

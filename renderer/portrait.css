@@ -1,0 +1,18 @@
+.pet-art{position:relative;isolation:isolate}
+.portrait-poster,.portrait-canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.portrait-poster{transform:scale(.86)}
+.portrait-canvas{opacity:0}
+.mesh-ready .portrait-canvas{opacity:1}
+.mesh-ready .portrait-poster{opacity:0}
+.pet-stage{inset:51px 7px 5px}
+.action-video{display:block;opacity:0;transition:none;z-index:2}
+.action-video{transform:scale(.86);transform-origin:50% 50%}
+.action-video.is-front{opacity:0}
+.video-fallback .action-video.is-front{opacity:1}
+.action-surface{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;transform:scale(.86);transform-origin:50% 50%;z-index:3;opacity:0;transition:none;pointer-events:none}
+.action-surface.is-visible{opacity:1}
+.pet-art{opacity:1;transition:transform .28s ease}
+.pet-stage.playing .pet-art{visibility:hidden;opacity:0}
+@media(prefers-reduced-motion:reduce){.action-video,.pet-art{transition:none}.pet-stage.happy .pet-art{animation:none}}
+
+.companion-charm{position:absolute;inset:0;z-index:6;pointer-events:none}

@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/12-wallet/processed/wallet-v1.webm",
+  "source_sha256": "ecbc1be9389ee1d815a9cf411f769286553fed0d341e7bdde7ee628a588a4afb",
+  "output": "actions/production/12-wallet/processed/wallet-branding-v2.webm",
+  "media_sha256": "db67f7aa125ba87e60a6b2f4f1029486d776f9fa7ef7428c14c1fde9a6e8da11",
+  "processor_revision": 2,
+  "width": 960,
+  "height": 960,
+  "fps": 30.0,
+  "source_frames": 300,
+  "frames": 300,
+  "seconds": 10.0,
+  "file_bytes": 47371293,
+  "decoded_frames": 300,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/12-wallet/processed/wallet-branding-v2.first-frame.png",
+  "first_frame_sha256": "341082d140469a57a42dc92f50e546dc9b201ffbbc26a21e4334af33f92b7a4d",
+  "last_frame": "actions/production/12-wallet/processed/wallet-branding-v2.last-frame.png",
+  "last_frame_sha256": "aa43c337bc1f19b4bbcea9bbbf1e8d77a0279ae73bdfe2d482d1f9c1fab229a6",
+  "poster": "actions/production/12-wallet/processed/wallet-branding-v2.first-frame.png",
+  "poster_sha256": "341082d140469a57a42dc92f50e546dc9b201ffbbc26a21e4334af33f92b7a4d",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/12-wallet/source/wallet-source-01.mp4",
+  "original_source_sha256": "0251328199c13df66bade7fb4b284af2f3cf60dd603bdee03b4445d47f1357b1",
+  "branding": {
+    "release": "knot-sprout-priority-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "6dc06ed1c5d930c021f4130223733131695ba32cc1b29a05aa52589e4f8aebf2",
+    "trialReport": ".cache/branding-trials/wallet-root17/wallet-branding-pilot-v1.json",
+    "trialReportSha256": "ab2ef6e86f49b840f137726401dfb49f3f7207818ab208d75070e3aeee2c2aa8",
+    "encodedAlpha": {
+      "verifiedFrames": 300,
+      "maxError": 1,
+      "changedPixels": 2526905,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/12-wallet/processed/wallet-branding-v2.qa.json",
+    "scope": "wallet/error/pat user-reported repair"
+  }
+}

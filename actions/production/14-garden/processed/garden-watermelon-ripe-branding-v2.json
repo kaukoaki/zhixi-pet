@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/14-garden/processed/garden-watermelon-ripe-v1.webm",
+  "source_sha256": "a5fc16cb639bae49abc28fcef3059bb49645b9484a9b03c41827f06875145f3f",
+  "output": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.webm",
+  "media_sha256": "26261e96ef0d06ef002661c86b66cb6fac7d1673dc9391cab2f87fe3fc5ee9f7",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 540,
+  "frames": 540,
+  "seconds": 18.0,
+  "file_bytes": 27072635,
+  "decoded_frames": 540,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.first-frame.png",
+  "first_frame_sha256": "a3a602d2fb279818c4da2b3087f20176779b49fff2b7f49c7fbaaabd5346d314",
+  "last_frame": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.last-frame.png",
+  "last_frame_sha256": "c82d3ecbcc01daf9d27620aa7c86d9afffb9e90de34273d0ca633e39b357e898",
+  "poster": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.last-frame.png",
+  "poster_sha256": "c82d3ecbcc01daf9d27620aa7c86d9afffb9e90de34273d0ca633e39b357e898",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/14-garden/processed/garden-watermelon-ripe-v4.scene.mp4",
+  "original_source_sha256": "279659cbc2bfeed3dc2aac8aea29a0e4fa65e368ccd8728fed7ab49e3b168dd3",
+  "branding": {
+    "release": "knot-sprout-all37-20261101",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "42882273011c1d17cc3812f78352709c832f8bf48870b5189e4313d138b3a891",
+    "trialReport": ".cache/branding-trials/full18-melonripe-20261030-v1/garden-watermelon-ripe-branding-pilot-v1.json",
+    "trialReportSha256": "76ee2dbdc8d9f2def19135e5f5f5e264543e55e2dcf5fb0c52b77ed903688119",
+    "encodedAlpha": {
+      "verifiedFrames": 540,
+      "maxError": 1,
+      "changedPixels": 4627974,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/14-garden/processed/garden-watermelon-ripe-branding-v2.qa.json",
+    "scope": "all remaining eighteen clips; original motion and timing retained"
+  }
+}

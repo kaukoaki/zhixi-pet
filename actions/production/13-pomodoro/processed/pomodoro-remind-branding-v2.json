@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/13-pomodoro/processed/pomodoro-remind-v1.webm",
+  "source_sha256": "3bcfa341812c7dc28530afc7ef887aaac3887db0a52de21845e8fb698c6f161e",
+  "output": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.webm",
+  "media_sha256": "e827f6d218b6aeec12b5d8a1aaf8722f7b807bce668544d4408b888ef661ce9a",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 400,
+  "frames": 400,
+  "seconds": 13.333333333333334,
+  "file_bytes": 18166065,
+  "decoded_frames": 400,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.first-frame.png",
+  "first_frame_sha256": "eff50615eeb31a805dbe365e4c6e9daef20330d5e6eda38670719c96eafc9686",
+  "last_frame": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.last-frame.png",
+  "last_frame_sha256": "dd54176c21f67e6ee7d280400d38a223694544319ecf1adc0f2e58a7ba188864",
+  "poster": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.first-frame.png",
+  "poster_sha256": "eff50615eeb31a805dbe365e4c6e9daef20330d5e6eda38670719c96eafc9686",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/13-pomodoro/source/pomodoro-part-01-source.mp4",
+  "original_source_sha256": "99968a4f3e178b986ccc5cc82473fa39c2553b4404b8c678dc693cb332837269",
+  "branding": {
+    "release": "knot-sprout-all37-20261101",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "42882273011c1d17cc3812f78352709c832f8bf48870b5189e4313d138b3a891",
+    "trialReport": ".cache/branding-trials/full18-remind-20261030-v2/pomodoro-remind-branding-pilot-v1.json",
+    "trialReportSha256": "24f8e62c287d4d2d2bf9bb561774ccdce2aa81dc3cb8fb2a82724504931106f2",
+    "encodedAlpha": {
+      "verifiedFrames": 400,
+      "maxError": 1,
+      "changedPixels": 2166305,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/13-pomodoro/processed/pomodoro-remind-branding-v2.qa.json",
+    "scope": "all remaining eighteen clips; original motion and timing retained"
+  }
+}

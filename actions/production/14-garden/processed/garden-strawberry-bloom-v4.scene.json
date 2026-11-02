@@ -1,0 +1,31 @@
+{
+  "version": 4,
+  "status": "cut-and-decoded-awaiting-background-cleanup",
+  "source": "actions/production/14-garden/source/garden-strawberry-flower-fruit-v4-source.mp4",
+  "sourceSha256": "98613d13c5e0585b97f4a56a9460dbc4f87f4127bb17088b099cf85d2ed76a6f",
+  "media": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.mp4",
+  "mediaSha256": "a51de87f13ea54a78b04db0e0c63385ce55b68a1c03ea01dbb724e46f6e00457",
+  "sourceFrameRangeHalfOpen": [
+    0,
+    390
+  ],
+  "sourceSecondsRangeHalfOpen": [
+    0.0,
+    13.0
+  ],
+  "frames": 390,
+  "fps": 30,
+  "seconds": 13.0,
+  "width": 640,
+  "height": 640,
+  "codec": "h264",
+  "alpha": false,
+  "audio": false,
+  "decodedFrameCount": 390,
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false,
+  "firstLastSourceSamplePsnrDb": [
+    47.001,
+    43.166
+  ]
+}

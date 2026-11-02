@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-v1.webm",
+  "source_sha256": "9e8082f58a6237af367016b1fd4dc46ea03420959f4d87508a439aa404fe8595",
+  "output": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.webm",
+  "media_sha256": "af7bd1e3907b676a35e6352e7c7984669e3e8103d9239dd7b179ab851ff38b45",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 300,
+  "frames": 300,
+  "seconds": 10.0,
+  "file_bytes": 23834122,
+  "decoded_frames": 300,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.first-frame.png",
+  "first_frame_sha256": "2c73b4f909fcc5db5b3f743f895973c94a71181c397267887a5df5745f3289f3",
+  "last_frame": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.last-frame.png",
+  "last_frame_sha256": "cfced6386f51af93540eab2d80d63edf49c4612f4833a82e1a135429412365f4",
+  "poster": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.first-frame.png",
+  "poster_sha256": "2c73b4f909fcc5db5b3f743f895973c94a71181c397267887a5df5745f3289f3",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/12-wallet/variants/05-recovering/source/wallet-wait-source-01.mp4",
+  "original_source_sha256": "5ff67f8fc8d831acfdbe459c6c3d738ac120e804e953c7f2df8b7efd6f4803df",
+  "branding": {
+    "release": "knot-sprout-all37-20261101",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "42882273011c1d17cc3812f78352709c832f8bf48870b5189e4313d138b3a891",
+    "trialReport": ".cache/branding-trials/full18-walletwait-20261101-v2/wallet-wait-branding-pilot-v1.json",
+    "trialReportSha256": "4d1670321d62ea8f9dd822d5d5d65e671f15a67f24bca3609d321193c85a69e6",
+    "encodedAlpha": {
+      "verifiedFrames": 300,
+      "maxError": 1,
+      "changedPixels": 1588934,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/12-wallet/variants/05-recovering/processed/wallet-wait-branding-v2.qa.json",
+    "scope": "all remaining eighteen clips; original motion and timing retained"
+  }
+}

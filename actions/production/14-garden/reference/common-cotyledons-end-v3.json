@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "source": "actions/production/14-garden/source/garden-tomato-grow-v2-source.mp4",
+  "sourceSha256": "81e05c6095a7d7b170c99c9002cd91dfe0018a40a163c9ee9b3202c362938d2d",
+  "referenceFrame": "actions/production/14-garden/reference/common-cotyledons-end-v3.png",
+  "referenceSha256": "60f75b8108c3db6d92165a5d2fbe056f9e14ecce63c31de3cad571937c3df14c",
+  "frameIndexZeroBased": 149,
+  "seconds": 4.966666666666667,
+  "size": [
+    640,
+    640
+  ],
+  "frameEditing": "none; original full decoded RGB frame",
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false
+}

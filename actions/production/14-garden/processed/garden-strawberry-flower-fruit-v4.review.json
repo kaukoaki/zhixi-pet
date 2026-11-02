@@ -1,0 +1,65 @@
+{
+  "version": 4,
+  "status": "source-reviewed-and-cuts-decoded-awaiting-background-cleanup",
+  "source": "actions/production/14-garden/source/garden-strawberry-flower-fruit-v4-source.mp4",
+  "sourceSha256": "98613d13c5e0585b97f4a56a9460dbc4f87f4127bb17088b099cf85d2ed76a6f",
+  "seconds": 30,
+  "fps": 30,
+  "frames": 900,
+  "size": [
+    640,
+    640
+  ],
+  "review": {
+    "visibleFlowerCount": 3,
+    "ripeFruitCount": 3,
+    "fruitType": "red heart-shaped strawberries with small pale seeds and green sepals",
+    "props": "pot and can remain in place in sampled shots and tail",
+    "harvest": "none; fruit remains attached",
+    "quality": "cleaner uniform pale background and clearer character detail than prior mottled leaf source",
+    "cut": "frame390 /13.0s inside stable flower phase; all900 frames covered once"
+  },
+  "technical": {
+    "tailFrameDifferenceMedian": 0.3202221691608429,
+    "tailCanRoiDifferenceMedian": 0.06312499940395355,
+    "tailBackgroundMean": 205.3483428955078,
+    "tailBackgroundStd": 0.5316742062568665,
+    "backgroundRoiFraction": [
+      0,
+      0,
+      0.15,
+      0.4
+    ]
+  },
+  "segments": [
+    {
+      "id": "garden-strawberry-bloom",
+      "media": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        0,
+        390
+      ],
+      "seconds": 13.0
+    },
+    {
+      "id": "garden-strawberry-ripe",
+      "media": "actions/production/14-garden/processed/garden-strawberry-ripe-v4.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-strawberry-ripe-v4.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        390,
+        900
+      ],
+      "seconds": 17.0
+    }
+  ],
+  "references": {
+    "bloom": "actions/production/14-garden/reference/08-strawberry-bloom-end-v4.png",
+    "ripe": "actions/production/14-garden/reference/09-strawberry-ripe-end-v4.png"
+  },
+  "cleanupRequired": [
+    "platform watermark",
+    "match old/new background and geometry when assembling"
+  ],
+  "runtimeInstalled": false
+}

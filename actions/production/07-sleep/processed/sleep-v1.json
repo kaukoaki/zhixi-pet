@@ -1,0 +1,32 @@
+{
+  "source": "actions/production/07-sleep/source/sleep-source-01.mp4",
+  "source_sha256": "69f2db389955526801c2217ea774f37d133c3ca5a800d1cad74fe1acfb8ead47",
+  "output": "actions/production/07-sleep/processed/sleep-v1.webm",
+  "width": 720,
+  "height": 720,
+  "fps": 24.0,
+  "source_frames": 241,
+  "start_frame": 0,
+  "end_frame_exclusive": null,
+  "selected_frames": 241,
+  "background": "white",
+  "frames": 241,
+  "seconds": 10.041666666666666,
+  "overlap_frames": 0,
+  "speed": 1,
+  "white_threshold": 210,
+  "shadow_threshold": 125,
+  "keep_regions": [
+    [
+      480,
+      20,
+      225,
+      240
+    ]
+  ],
+  "decoded_alpha_min": 0,
+  "top_edge_contact_frames": 0,
+  "decoded_alpha_max": 255,
+  "transparent_fraction": 0.49418788580246914,
+  "file_bytes": 3447953
+}

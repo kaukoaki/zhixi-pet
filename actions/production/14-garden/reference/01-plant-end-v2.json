@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "clipNumber": "01",
+  "actionId": "garden-plant",
+  "status": "reviewed-continuity-reference-ready",
+  "source": "actions/production/14-garden/source/garden-plant-v2-source.mp4",
+  "sourceSha256": "4f89d632ee82a60ab5280b4fc022d1736784d2f824a7d7a905940bc32ed810ad",
+  "seconds": 20.0,
+  "fps": 30.0,
+  "frames": 600,
+  "size": [
+    640,
+    640
+  ],
+  "referenceFrame": "actions/production/14-garden/reference/01-plant-end-v2.png",
+  "referenceFrameIndexZeroBased": 597,
+  "referenceSeconds": 19.9,
+  "referenceSha256": "15e1810f12a65e8aa4d38d6f69c236e7c87f688ef18ef63083829ffe250d19f9",
+  "frameEditing": "none: full decoded RGB frame, no crop, scaling, repainting or background replacement",
+  "containsPlatformWatermark": true,
+  "background": "light gray as in generated video",
+  "watermarkPolicy": "Retained in source and this exact continuity frame; source cleanup is a separate later processing step.",
+  "runtimeInstalled": false
+}

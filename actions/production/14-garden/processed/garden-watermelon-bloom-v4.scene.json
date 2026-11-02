@@ -1,0 +1,32 @@
+{
+  "version": 4,
+  "status": "cut-and-decoded-awaiting-background-cleanup",
+  "source": "actions/production/14-garden/source/garden-watermelon-flower-fruit-v4-source.mp4",
+  "sourceSha256": "f57ce70d696b50c8e46c98d38c20fbeaa946359f6e3a1fb55e286a1730131d1e",
+  "media": "actions/production/14-garden/processed/garden-watermelon-bloom-v4.scene.mp4",
+  "mediaSha256": "b68784af9b474fd62063a7e5081738ad2b86f5324a0ed1c005068862addb13b0",
+  "sourceFrameRangeHalfOpen": [
+    0,
+    360
+  ],
+  "sourceSecondsRangeHalfOpen": [
+    0.0,
+    12.0
+  ],
+  "frames": 360,
+  "fps": 30,
+  "seconds": 12.0,
+  "width": 640,
+  "height": 640,
+  "codec": "h264",
+  "alpha": false,
+  "audio": false,
+  "decodedFrameCount": 360,
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false,
+  "firstLastSourceSamplePsnrDb": [
+    46.41,
+    41.538
+  ],
+  "generationDurationLimitNote": "15-second cap applies to future newly generated source videos; this derivative uses only existing received footage"
+}

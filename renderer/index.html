@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: pet-media:; media-src 'self' pet-media: blob:; style-src 'self'; script-src 'self'; connect-src 'self'" />
+  <title>知栖</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./portrait.css" /><link rel="stylesheet" href="./companion-effects.css" />
+</head>
+<body class="pet-mode">
+  <main id="pet-view" class="pet-view">
+    <div id="pet-stage" class="pet-stage" tabindex="0" role="button" aria-label="知栖桌宠。单击切换 Codex 用量窗口，拖动移动，双击打开任务弹窗，右键打开菜单。">
+      <div class="pet-art" data-qiqi-art></div>
+      <video id="pet-video" class="action-video" muted playsinline crossorigin="anonymous"></video>
+      <video id="pet-video-back" class="action-video" muted playsinline crossorigin="anonymous"></video>
+      <canvas id="pet-surface" class="action-surface" aria-hidden="true"></canvas>
+      <span class="companion-charm" aria-hidden="true"><i>✧</i><i>✦</i><i>·</i></span>
+    </div>
+  </main>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <audio id="companion-music" src="../assets/audio/window-light.wav" preload="auto" loop></audio>
+  <script src="./companion-music.js"></script>
+  <script src="./portrait.js"></script>
+  <script src="./playback.js"></script>
+  <script src="./drag-reaction.js"></script>
+  <script src="./gestures.js"></script>
+  <script src="./pomodoro-companion.js"></script>
+  <script src="./idle-actions.js"></script>
+  <script src="./companion-effects.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

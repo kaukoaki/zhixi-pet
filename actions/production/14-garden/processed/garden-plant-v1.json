@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/source/garden-plant-v2-source.mp4",
+  "source_sha256": "4f89d632ee82a60ab5280b4fc022d1736784d2f824a7d7a905940bc32ed810ad",
+  "output": "actions/production/14-garden/processed/garden-plant-v1.webm",
+  "media_sha256": "f9ea4e0e2c95af06260fe38c8dca2c31240605a04a752176adc12f3fe72104a8",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 600,
+  "frames": 600,
+  "seconds": 20.0,
+  "file_bytes": 5930973,
+  "decoded_frames": 600,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-plant-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-plant-v1.last-frame.png",
+  "poster_sha256": "5f7a57344ab011d19289c16438ee72c464c22b51cd1e36d3893642718e499405",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

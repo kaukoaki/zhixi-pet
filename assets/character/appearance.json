@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "name": "知栖",
+  "appearanceVersion": "v5-knot-sprout",
+  "status": "approved-current",
+  "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+  "sha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+  "width": 1254,
+  "height": 1254,
+  "mode": "RGBA",
+  "alphaExtrema": [
+    0,
+    255
+  ],
+  "chest": "Small golden star embraced by two green sprout leaves with curved stem",
+  "hairCharm": "White cord rosette, exactly two pale lavender diamond gems, fine links, one light cream tassel beside braid-side black/gold bow",
+  "initialFrontViewCharmSide": "image-right; remain on same anatomical braid side during turns",
+  "promptGuide": "docs/animation/README.md",
+  "characterLock": "docs/animation/character-lock.txt",
+  "motionTemplate": "docs/animation/motion-template.txt",
+  "historicalReferencesAreNotCurrent": true
+}

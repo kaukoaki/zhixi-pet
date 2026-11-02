@@ -1,0 +1,162 @@
+{
+  "relocations": [
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/00-idle/reference.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/01-greeting/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/01-greeting/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/02-drag/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/02-drag/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/03-thinking/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/03-thinking/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/04-working/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/04-working/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/05-success/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/05-success/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/06-error/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/06-error/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/07-sleep/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/07-sleep/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/08-return/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/08-return/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/09-focus/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/09-focus/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/10-celebrate/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/10-celebrate/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/11-pat/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/11-pat/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/idle-reference.png",
+      "sha256": "cc3dc54671ce5b528c23d8da376ac0976e3fed37b8428d4466f756d785c8a6f5",
+      "formerPath": "actions/production/12-wallet/reference.png",
+      "bytes": 455968
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/12-wallet/character-design.png",
+      "bytes": 1827556
+    },
+    {
+      "canonical": "actions/production/shared/character-design.png",
+      "sha256": "7881205225b8696b8cc3bbe9efeb8b6ee954bda8d17cbc0b41d61b16d07dec4e",
+      "formerPath": "actions/production/13-pomodoro/reference/character.png",
+      "bytes": 1827556
+    }
+  ],
+  "purpose": "Byte-identical production references consolidated; creative prompts, original videos and processed media unchanged",
+  "schemaVersion": 1
+}

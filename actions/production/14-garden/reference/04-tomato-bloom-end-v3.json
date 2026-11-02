@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "source": "actions/production/14-garden/source/garden-tomato-flower-fruit-v3-source.mp4",
+  "sourceSha256": "92413ec823aedf2bb629820587f4c6df4f3f9d4667957b3fbe7ddc5c83ccbebd",
+  "referenceFrame": "actions/production/14-garden/reference/04-tomato-bloom-end-v3.png",
+  "referenceSha256": "e2d4056dc478b759160cedda08dbc26ab5ecfff7b19f755bcd0af3a78f9d45ed",
+  "frameIndexZeroBased": 375,
+  "seconds": 12.5,
+  "size": [
+    640,
+    640
+  ],
+  "frameEditing": "none; original full decoded RGB frame",
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false
+}

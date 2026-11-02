@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 2,
+  "family": "garden",
+  "status": "superseded-by-reuse-budget-plan",
+  "reference": "actions/production/14-garden/reference/garden-stage-v2.png",
+  "referenceIdentity": "assets/character/qiqi-chibi-v3-gpt.png",
+  "referenceGeometry": "Use actual uploaded image positions; do not reframe each clip from verbal coordinates.",
+  "format": {
+    "aspectRatio": "1:1",
+    "fpsTarget": 30,
+    "resolution": "Keep the same output size after the first video is approved",
+    "firstApprovedSourceSize": [
+      640,
+      640
+    ]
+  },
+  "displayTarget": "planned fixed scene inside journal garden; not the main desktop pet video",
+  "runtimeSceneReady": false,
+  "mainClipCount": 14,
+  "optionalStageWaterClipCount": 6,
+  "stageMilestones": {
+    "soil": [
+      0,
+      1,
+      2
+    ],
+    "leaf": [
+      3,
+      4,
+      5
+    ],
+    "bloom": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "ripe": [
+      10
+    ]
+  },
+  "statePolicy": "One committed daily watering advances one day; video playback itself changes no progress, crop, coins or inventory.",
+  "fallbackWatering": "If stage-specific video is absent, planned scene uses program droplets on the actual plant, never substitutes the soil-only video.",
+  "legacyStaticArtPolicy": "V2 scene must use approved phase-end frames and consistent stage mapping, not mix pre-day-3 sprouts or day-9 green fruits from legacy SVG with soil/flower videos.",
+  "clips": [
+    {
+      "number": "01",
+      "id": "garden-plant",
+      "prompt": "actions/production/14-garden/prompts/v2/01-plant.txt",
+      "status": "source-reviewed-awaiting-processing",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "reference": "actions/production/14-garden/reference/garden-stage-v2.png"
+      },
+      "endState": "planted-soil",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true,
+      "source": "actions/production/14-garden/source/garden-plant-v2-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-plant-v2.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/01-plant-end-v2.png",
+      "actualSeconds": 20,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ]
+    },
+    {
+      "number": "02",
+      "id": "garden-water",
+      "prompt": "actions/production/14-garden/prompts/v2/02-water-soil.txt",
+      "status": "source-reviewed-awaiting-processing",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "01",
+        "selection": "reviewed frame 597 (zero-based), 19.9 seconds",
+        "reference": "actions/production/14-garden/reference/01-plant-end-v2.png"
+      },
+      "endState": "watered-soil",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true,
+      "source": "actions/production/14-garden/source/garden-water-soil-v2-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-water-soil-v2.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/02-water-soil-end-v2.png",
+      "actualSeconds": 20,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ],
+      "cleanupRequired": true
+    },
+    {
+      "number": "03",
+      "id": "garden-tomato-grow",
+      "prompt": "actions/production/14-garden/prompts/v2/03-tomato-grow.txt",
+      "status": "source-reviewed-awaiting-processing",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "02",
+        "selection": "reviewed frame 597 (zero-based), 19.9 seconds; soil-only, can returned, no puddle",
+        "reference": "actions/production/14-garden/reference/02-water-soil-end-v2.png"
+      },
+      "endState": "tomato-leaf",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false,
+      "source": "actions/production/14-garden/source/garden-tomato-grow-v2-source.mp4",
+      "review": "actions/production/14-garden/processed/garden-tomato-grow-v2.review.json",
+      "referenceFrame": "actions/production/14-garden/reference/03-tomato-grow-end-v2.png",
+      "actualSeconds": 20,
+      "actualFps": 30,
+      "actualSize": [
+        640,
+        640
+      ]
+    },
+    {
+      "number": "04",
+      "id": "garden-tomato-bloom",
+      "prompt": "actions/production/14-garden/prompts/v2/04-tomato-bloom.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "03",
+        "selection": "reviewed frame 597 (zero-based), 19.9 seconds",
+        "reference": "actions/production/14-garden/reference/03-tomato-grow-end-v2.png"
+      },
+      "endState": "tomato-bloom",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "05",
+      "id": "garden-tomato-ripe",
+      "prompt": "actions/production/14-garden/prompts/v2/05-tomato-ripe.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "04",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "tomato-ripe",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "06",
+      "id": "garden-tomato-harvest",
+      "prompt": "actions/production/14-garden/prompts/v2/06-tomato-harvest.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "05",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "tomato-harvested",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "07",
+      "id": "garden-strawberry-grow",
+      "prompt": "actions/production/14-garden/prompts/v2/07-strawberry-grow.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "02",
+        "selection": "reviewed frame 597 (zero-based), 19.9 seconds; soil-only, can returned, no puddle",
+        "reference": "actions/production/14-garden/reference/02-water-soil-end-v2.png"
+      },
+      "endState": "strawberry-leaf",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "08",
+      "id": "garden-strawberry-bloom",
+      "prompt": "actions/production/14-garden/prompts/v2/08-strawberry-bloom.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "07",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "strawberry-bloom",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "09",
+      "id": "garden-strawberry-ripe",
+      "prompt": "actions/production/14-garden/prompts/v2/09-strawberry-ripe.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "08",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "strawberry-ripe",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "10",
+      "id": "garden-strawberry-harvest",
+      "prompt": "actions/production/14-garden/prompts/v2/10-strawberry-harvest.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "09",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "strawberry-harvested",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "11",
+      "id": "garden-watermelon-grow",
+      "prompt": "actions/production/14-garden/prompts/v2/11-watermelon-grow.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "02",
+        "selection": "reviewed frame 597 (zero-based), 19.9 seconds; soil-only, can returned, no puddle",
+        "reference": "actions/production/14-garden/reference/02-water-soil-end-v2.png"
+      },
+      "endState": "watermelon-leaf",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "12",
+      "id": "garden-watermelon-bloom",
+      "prompt": "actions/production/14-garden/prompts/v2/12-watermelon-bloom.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "11",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "watermelon-bloom",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "13",
+      "id": "garden-watermelon-ripe",
+      "prompt": "actions/production/14-garden/prompts/v2/13-watermelon-ripe.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "12",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "watermelon-ripe",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "14",
+      "id": "garden-watermelon-harvest",
+      "prompt": "actions/production/14-garden/prompts/v2/14-watermelon-harvest.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "13",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "watermelon-harvested",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": false,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": false
+    },
+    {
+      "number": "15",
+      "id": "garden-tomato-water-leaf",
+      "prompt": "actions/production/14-garden/prompts/v2/15-tomato-leaf-water.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "03",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "tomato-leaf",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": true,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true
+    },
+    {
+      "number": "16",
+      "id": "garden-tomato-water-bloom",
+      "prompt": "actions/production/14-garden/prompts/v2/16-tomato-bloom-water.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "04",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "tomato-bloom",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": true,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true
+    },
+    {
+      "number": "17",
+      "id": "garden-strawberry-water-leaf",
+      "prompt": "actions/production/14-garden/prompts/v2/17-strawberry-leaf-water.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "07",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "strawberry-leaf",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": true,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true
+    },
+    {
+      "number": "18",
+      "id": "garden-strawberry-water-bloom",
+      "prompt": "actions/production/14-garden/prompts/v2/18-strawberry-bloom-water.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "08",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "strawberry-bloom",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": true,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true
+    },
+    {
+      "number": "19",
+      "id": "garden-watermelon-water-leaf",
+      "prompt": "actions/production/14-garden/prompts/v2/19-watermelon-leaf-water.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "11",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "watermelon-leaf",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": true,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true
+    },
+    {
+      "number": "20",
+      "id": "garden-watermelon-water-bloom",
+      "prompt": "actions/production/14-garden/prompts/v2/20-watermelon-bloom-water.txt",
+      "status": "prompt-ready-awaiting-video",
+      "targetSeconds": 20,
+      "firstFrame": {
+        "fromClip": "12",
+        "selection": "reviewed clear stable frame from last 2 seconds"
+      },
+      "endState": "watermelon-bloom",
+      "returnToOriginalCharacterPosition": true,
+      "endHoldSeconds": 2,
+      "optionalStageWatering": true,
+      "runtimeRouted": false,
+      "sameStartAndEndFrameAllowed": true
+    }
+  ],
+  "supersededBy": "actions/production/14-garden/storyboard-budget-v3.json"
+}

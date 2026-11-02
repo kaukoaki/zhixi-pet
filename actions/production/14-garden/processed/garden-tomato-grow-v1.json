@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/source/garden-tomato-grow-v2-source.mp4",
+  "source_sha256": "81e05c6095a7d7b170c99c9002cd91dfe0018a40a163c9ee9b3202c362938d2d",
+  "output": "actions/production/14-garden/processed/garden-tomato-grow-v1.webm",
+  "media_sha256": "76125cc1834b3a8ee7db37e2f657c5ca7d4229475b77e97e3af3b200f978bad6",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 600,
+  "frames": 600,
+  "seconds": 20.0,
+  "file_bytes": 5337171,
+  "decoded_frames": 600,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-tomato-grow-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-tomato-grow-v1.last-frame.png",
+  "poster_sha256": "093d640d87763f393cfa26055fe2adf33a26f5e9d35c1c43ee43ad674c240409",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

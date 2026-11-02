@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "source": "actions/production/14-garden/source/garden-strawberry-leaves-v3-source.mp4",
+  "sourceSha256": "0ead58fbeef9de101c7186bdc2aa54afb8bba604dd22e0374a97f3f3c720db14",
+  "referenceFrame": "actions/production/14-garden/reference/07-strawberry-leaf-end-v3.png",
+  "referenceSha256": "a933f060d8c3439ca731c40c13e268c6da7c6a42d07e191f96592b589bdf09ee",
+  "frameIndexZeroBased": 447,
+  "seconds": 14.9,
+  "size": [
+    640,
+    640
+  ],
+  "frameEditing": "none; full decoded raw video frame",
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false
+}

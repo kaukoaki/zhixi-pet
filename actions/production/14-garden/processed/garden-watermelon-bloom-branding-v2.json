@@ -1,0 +1,43 @@
+{
+  "source": "actions/production/14-garden/processed/garden-watermelon-bloom-v1.webm",
+  "source_sha256": "b9536f19f399d378cf5b6ae2e7446196d1309062c6f488a035a7ef5227c2527c",
+  "output": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.webm",
+  "media_sha256": "b60f6abc02bcffde1aea49f8c87e26da65f7bfeb2cb96847f53f1dcd0e8cfebc",
+  "processor_revision": 2,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 360,
+  "frames": 360,
+  "seconds": 12.0,
+  "file_bytes": 17674007,
+  "decoded_frames": 360,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.first-frame.png",
+  "first_frame_sha256": "ea6ac4aede1959f4c5629e61e69758a1a4e30783d95454f1f63d9407e38eee9e",
+  "last_frame": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.last-frame.png",
+  "last_frame_sha256": "cf9b68ad5564ce402de3d9b1c47eabd19dab291c10357437ff06463b5e4be928",
+  "poster": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.last-frame.png",
+  "poster_sha256": "cf9b68ad5564ce402de3d9b1c47eabd19dab291c10357437ff06463b5e4be928",
+  "audio": false,
+  "source_unchanged": true,
+  "original_source": "actions/production/14-garden/processed/garden-watermelon-bloom-v4.scene.mp4",
+  "original_source_sha256": "b68784af9b474fd62063a7e5081738ad2b86f5324a0ed1c005068862addb13b0",
+  "branding": {
+    "release": "knot-sprout-20261029",
+    "reference": "assets/character/qiqi-chibi-v5-knot-sprout.png",
+    "referenceSha256": "a1cfdd25c4cc7957200c885a15b6875c78e271110d3578171fbec6029d966c11",
+    "candidateManifestSha256": "bd49b27c687f605714d9d8f7974b84abbb2185de8e44b67c527d614c364e9a99",
+    "trialReport": ".cache/branding-trials/garden-relative-16/garden-watermelon-bloom-branding-pilot-v1.json",
+    "trialReportSha256": "b19d2cabb0618c62a707a71cb65390992236d81eef6448f6fa89e314bce311f1",
+    "encodedAlpha": {
+      "verifiedFrames": 360,
+      "maxError": 1,
+      "changedPixels": 3252114,
+      "allowedMaxError": 1
+    },
+    "qa": "actions/production/14-garden/processed/garden-watermelon-bloom-branding-v2.qa.json",
+    "scope": "reviewed16-clip installation; original motion/timing unchanged"
+  }
+}

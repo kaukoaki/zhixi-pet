@@ -1,0 +1,96 @@
+{
+  "version": 3,
+  "status": "source-reviewed-and-frame-exact-cuts-decoded-awaiting-background-cleanup",
+  "source": "actions/production/14-garden/source/garden-tomato-flower-fruit-v3-source.mp4",
+  "sourceSha256": "92413ec823aedf2bb629820587f4c6df4f3f9d4667957b3fbe7ddc5c83ccbebd",
+  "seconds": 30,
+  "fps": 30,
+  "frames": 900,
+  "size": [
+    640,
+    640
+  ],
+  "technical": {
+    "fps": 30.0,
+    "frames": 900,
+    "width": 640,
+    "height": 640,
+    "duration": 30.0,
+    "tailFrameDifferenceMedian": 0.08135741949081421,
+    "canRoiDifferenceMedian": 0.026787659153342247,
+    "potBboxTailMin": [
+      76,
+      450,
+      156,
+      129
+    ],
+    "potBboxTailMax": [
+      76,
+      450,
+      156,
+      129
+    ],
+    "matureFruitCount": 4,
+    "flowerCount": 3,
+    "matureTailFrame": 897,
+    "matureTailSeconds": 29.9,
+    "earlyHarvest": false,
+    "recommendedFlowerReferenceFrame": 375,
+    "recommendedFlowerReferenceSeconds": 12.5,
+    "recommendedSplitRangeSeconds": [
+      12.5,
+      13.0
+    ],
+    "flowerClosesByApproxSeconds": 14.0,
+    "greenFruitsPresentBySeconds": 15.0,
+    "ripeFruitsStableByApproxSeconds": 21.0,
+    "review": "usable-with-actual-fruit-count",
+    "notes": [
+      "Three open yellow flowers are clear around 8-12.5s. Flower petals already shrink after about 13s, so a fixed 15s cut would end the bloom clip on immature fruit.",
+      "Mature state contains four visible red tomatoes, not three requested. Preserve source and accept actual count for visual continuity instead of regenerating.",
+      "No picking, pot movement or watering-can displacement observed.",
+      "Background remains pale with generated mottling and bottom platform watermark; cleanup deferred to video processing.",
+      "Visual fruit count does not require changing the one-batch harvest and 50-100 coin economy."
+    ]
+  },
+  "review": {
+    "character": "same identity; returns to standing pose; no early picking",
+    "props": "pot and can remain stable",
+    "observedVisibleFlowerCount": 3,
+    "observedRipeFruitCount": 4,
+    "acceptance": "Keep actual four-fruit result rather than regenerating to enforce prompt count.",
+    "harvestUnitPolicy": "One plot harvest remains one inventory batch; visual fruit count does not multiply quotes or coins.",
+    "cut": "Frame 378 (12.6s) before green fruit; contiguous half-open ranges cover all 900 frames exactly once."
+  },
+  "segments": [
+    {
+      "id": "garden-tomato-bloom",
+      "media": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-tomato-bloom-v3.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        0,
+        378
+      ],
+      "seconds": 12.6
+    },
+    {
+      "id": "garden-tomato-ripe",
+      "media": "actions/production/14-garden/processed/garden-tomato-ripe-v3.scene.mp4",
+      "metadata": "actions/production/14-garden/processed/garden-tomato-ripe-v3.scene.json",
+      "sourceFrameRangeHalfOpen": [
+        378,
+        900
+      ],
+      "seconds": 17.4
+    }
+  ],
+  "references": {
+    "bloom": "actions/production/14-garden/reference/04-tomato-bloom-end-v3.png",
+    "ripe": "actions/production/14-garden/reference/05-tomato-ripe-end-v3.png"
+  },
+  "cleanupRequired": [
+    "platform watermark",
+    "background processing"
+  ],
+  "runtimeInstalled": false
+}

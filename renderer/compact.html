@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: pet-media:; media-src 'self' pet-media: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'" />
+  <title>知栖</title>
+  <link rel="stylesheet" href="./theme.css" />
+  <link rel="stylesheet" href="./compact.css" />
+</head>
+<body>
+  <main class="little-window">
+    <header class="titlebar"><div class="little-title"><span class="flower">✿</span><strong>知栖</strong><i id="connection" title="本机 Codex 状态"></i><span id="connection-label" class="sr-only">正在检测 CLI</span></div><div class="window-buttons"><button id="journal-button" type="button" class="icon-button" title="知栖陪伴手账" aria-label="打开陪伴手账">▤</button><button id="pomodoro-button" class="icon-button" title="番茄钟" aria-label="打开番茄钟">◷</button><button id="usage-button" type="button" title="查询当前账号额度"><span id="task-plan">读取中</span><span>额度</span></button><button id="close-button" class="icon-button" title="收起" aria-label="收起任务弹窗">×</button></div></header>
+    <form id="task-form">
+      <button id="workspace" class="workspace" type="button" title="选择工作目录"><span>⌑</span><strong id="workspace-path">选择工作目录</strong><i>更换</i></button>
+      <div class="runtime-strip" aria-label="桌宠执行环境"><div><strong id="runtime-model">正在读取模型…</strong><span id="runtime-effort"></span><button id="execution-settings-button" type="button" title="切换模型、思考强度、审批和权限">配置 ▾</button></div><small id="runtime-environment">正在确认本地运行环境</small></div>
+      <label class="sr-only" for="prompt">交给知栖的任务</label><textarea id="prompt" rows="4" maxlength="20000" placeholder="想一起做点什么？"></textarea>
+      <div class="task-buttons"><button type="button" id="open-codex" class="secondary-button">打开 Codex ↗</button><button type="button" id="run-local-task" class="secondary-button">桌宠执行</button><button type="button" id="stop-task" class="secondary-button" hidden>停止</button><button id="run-task" class="primary-button" type="submit">去 Codex 发送 ↗</button></div>
+    </form>
+    <section class="progress-box" aria-label="对话与任务进度"><div class="progress-title"><span id="status-dot"></span><strong id="task-status">等你的小任务</strong><span id="conversation-status">新的对话</span><button id="new-conversation" type="button" title="开始新的桌宠对话，旧记录继续保留">新对话</button></div><p id="thinking-summary" class="thinking-summary" role="status" hidden></p><pre id="progress" role="log" aria-live="polite">我在这里，随时可以开始。</pre><details class="execution-details" id="execution-details"><summary id="activity-summary">执行过程</summary><pre id="activity-log"></pre></details></section>
+    <section id="settings" class="settings-popover" aria-label="偏好与动作" hidden>
+      <div class="popover-title"><strong>偏好与动作</strong><button id="close-settings" class="icon-button" aria-label="收起设置">×</button></div>
+      <div class="popover-scroll"><label class="preference"><span>桌宠大小</span><input id="scale" type="range" min="0.65" max="2" step="0.05" /><output id="scale-value">165%</output></label><label class="preference"><span>置顶陪伴</span><input id="always-on-top" type="checkbox" /></label><label class="preference" title="开启后关闭陪伴音乐"><span>安静陪伴 · 静音</span><input id="quiet-mode" type="checkbox" /></label><label class="preference"><span>待机时随机播放普通动作</span><input id="random-idle" type="checkbox" /></label><div class="actions-heading"><strong>默认待机</strong></div><p class="action-note">原画轻呼吸已内置，也可换成你制作的透明待机视频。</p><div id="idle-slot"></div><div class="actions-heading"><strong>视频动作</strong><span id="action-count">0 / 0</span></div><p class="action-note">导入 WebM / MP4 / MOV；透明推荐 WebM。</p><div id="action-slots"></div><div class="actions-heading"><strong>番茄钟 · 连续小剧场</strong><span id="pomodoro-count">0 / 6</span></div><p class="action-note">独立六段，可分别预览或替换。</p><div id="pomodoro-slots"></div><div class="actions-heading"><strong>小花园 · 成长与收获</strong><span id="garden-action-count">0 / 14</span></div><p class="action-note">花园专用动作，不参与随机待机。</p><div id="garden-action-slots"></div></div>
+    </section>
+    <section id="execution-settings" class="settings-popover execution-settings" aria-label="模型与运行设置" hidden>
+      <div class="popover-title"><strong>桌宠执行设置</strong><button id="close-execution-settings" type="button" class="icon-button" aria-label="关闭模型与运行设置">×</button></div>
+      <div class="popover-scroll">
+        <p class="action-note">只用于此工作目录的“桌宠执行”，原生 Codex 对话独立设置。</p>
+        <label class="execution-field"><span>模型 <button id="refresh-models" type="button">刷新列表</button></span><select id="execution-model" aria-label="模型"></select></label>
+        <label class="execution-field"><span>思考强度</span><select id="execution-effort" aria-label="思考强度"></select></label>
+        <div class="execution-grid">
+          <label class="execution-field"><span>执行权限</span><select id="execution-sandbox" aria-label="执行权限"><option value="read-only">只读</option><option value="workspace-write">工作区可写</option><option value="danger-full-access">完全访问</option></select></label>
+          <label class="execution-field"><span>审批方式</span><select id="execution-approval" aria-label="审批方式"><option value="on-request">需要时审批</option><option value="never">不弹审批</option></select></label>
+        </div>
+        <p id="execution-description" class="action-note execution-description"></p>
+        <div class="execution-buttons"><button id="reset-execution" type="button" class="secondary-button">恢复默认</button><button id="apply-execution" type="button" class="primary-button">应用到桌宠执行</button></div>
+      </div>
+    </section>
+    <section id="approval-dialog" class="settings-popover approval-dialog" aria-label="执行审批" hidden>
+      <div class="popover-title"><strong id="approval-title">需要你批准</strong></div>
+      <p class="approval-note">请核对请求的命令、文件或权限范围。</p>
+      <pre id="approval-detail"></pre>
+      <div class="approval-buttons"><button id="approval-stop" type="button" class="secondary-button">停止任务</button><button id="approval-decline" type="button" class="secondary-button">拒绝</button><button id="approval-accept" type="button" class="primary-button">允许本次</button></div>
+    </section>
+    <div id="notice" class="notice" role="status" hidden></div>
+  </main>
+  <script src="./task-view.js"></script>
+  <script src="./execution-settings.js"></script>
+  <script src="./compact.js"></script>
+</body>
+</html>

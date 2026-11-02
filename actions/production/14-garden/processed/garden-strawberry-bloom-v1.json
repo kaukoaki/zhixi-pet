@@ -1,0 +1,23 @@
+{
+  "source": "actions/production/14-garden/processed/garden-strawberry-bloom-v4.scene.mp4",
+  "source_sha256": "a51de87f13ea54a78b04db0e0c63385ce55b68a1c03ea01dbb724e46f6e00457",
+  "output": "actions/production/14-garden/processed/garden-strawberry-bloom-v1.webm",
+  "media_sha256": "10fbd0c331452e71ee911adca429f911584968a661b0235b0269d50f8cf4cb98",
+  "processor_revision": 1,
+  "width": 640,
+  "height": 640,
+  "fps": 30.0,
+  "source_frames": 390,
+  "frames": 390,
+  "seconds": 13.0,
+  "file_bytes": 3498973,
+  "decoded_frames": 390,
+  "decoded_alpha_min": 0,
+  "decoded_alpha_max": 255,
+  "first_frame": "actions/production/14-garden/processed/garden-strawberry-bloom-v1.first-frame.png",
+  "poster": "actions/production/14-garden/processed/garden-strawberry-bloom-v1.last-frame.png",
+  "poster_sha256": "6226803ae6d8480e174bc55919b07c3168bc963d5b9799fad547e4ccb47e46da",
+  "audio": false,
+  "cleanup": "inspected border-connected neutral background; separate props retained; bottom platform-mark strip transparent; isolated watering puddle excluded",
+  "source_unchanged": true
+}

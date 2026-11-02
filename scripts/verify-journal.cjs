@@ -1,0 +1,41 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),{decodeCardImage,CARDS}=require('../main/journal.cjs');
+module.exports=async function({ROOT,journal,pomodoro,store,pause,menu,getWindow,panel,advance,cleanup,push,diagnostics}){
+ const ready=async win=>{if(win.webContents.isLoading())await new Promise(resolve=>win.webContents.once('did-finish-load',resolve));await pause(150);};
+ const savedStats=structuredClone(store.state.stats),before=journal.snapshot().total;
+ const wait=async predicate=>{const until=Date.now()+5000;while(Date.now()<until){if(await predicate())return;await pause(40);}throw Error('Journal did not reach the expected saved state.');};
+ menu().getMenuItemById('pet-journal').click();let win=getWindow();await ready(win);
+ const js=source=>win.webContents.executeJavaScript(source);
+ await js(`document.getElementById('tab-days').click()`);
+ const layout=await js(`({width:innerWidth,overflow:document.querySelector('.page-scroll').scrollWidth>document.querySelector('.page-scroll').clientWidth,moods:document.querySelectorAll('.mood').length,cards:document.querySelectorAll('.keepsake').length,errors:window.__qiqiErrors})`);
+ const explanationsRemoved=await js(`!document.querySelector('.privacy-note')&&!document.querySelector('.garden-rules')&&!document.querySelector('.water-row small')&&!document.getElementById('harvest-box').textContent.includes('等果子成熟')`);
+ const note='今天完成了专注。<b>这是文字，不是 HTML。</b>';
+ await js(`document.getElementById('note').value=${JSON.stringify(note)};document.getElementById('note').dispatchEvent(new Event('input'));document.querySelectorAll('.mood')[1].click()`);push(true);await pause(150);
+ const draftSurvived=await js(`document.getElementById('note').value===${JSON.stringify(note)}`);
+ await js(`document.getElementById('save').click()`);await wait(()=>journal.snapshot().day.note===note);
+ const saved=journal.snapshot(),plainNote=saved.day.note===note&&saved.day.mood==='happy'&&await js(`document.getElementById('note').value.includes('<b>')&&!document.querySelector('.note-section b')`);
+ const draftText='这段还没有正式收好，但关闭或恢复窗口也要留住。';
+ await js(`document.getElementById('note').value=${JSON.stringify(draftText)};document.getElementById('note').dispatchEvent(new Event('input'))`);
+ await wait(()=>journal.snapshot().draft?.note===draftText);
+ const draftNotCommitted=journal.snapshot().day.note===note;
+ const reloaded=new Promise(resolve=>win.webContents.once('did-finish-load',resolve));win.reload();await reloaded;await pause(150);
+ const noteRestored=await js(`document.getElementById('note').value===${JSON.stringify(draftText)}`);
+ await js(`document.getElementById('tab-days').click();document.getElementById('save').click()`);await wait(()=>journal.snapshot().day.note===draftText&&journal.snapshot().draft===null);
+ try{
+  pomodoro.command({type:'start',minutes:1});advance(20000);pomodoro.command({type:'pause'});const paused=journal.snapshot().total.focusMs;advance(120000);
+  const pausedNotCredited=journal.snapshot().total.focusMs===paused;pomodoro.command({type:'resume'});advance(40000);pomodoro.tick();push(true);await pause(180);
+  const after=journal.snapshot().total,focusAccurate=Math.abs(after.focusMs-before.focusMs-60000)<2&&after.sessions===before.sessions+1;
+  const displayed=await js(`Number(document.getElementById('sessions').firstChild.textContent)>=1`);
+  await js(`document.getElementById('tab-cards').click();document.querySelector('.keepsake:not(.locked)').click()`);
+  const revealDeadline=Date.now()+5000;while(Date.now()<revealDeadline&&await js(`document.getElementById('card-dialog').hidden`))await pause(40);
+  const cardOpened=await js(`!document.getElementById('card-dialog').hidden&&!!document.getElementById('card-title').textContent`);
+  const png=await js(`window.qiqiCards.createCardImage(window.qiqiCards.currentCard)`),bytes=decodeCardImage(png);fs.writeFileSync(path.join(ROOT,'.cache/019-journal-card.png'),bytes);
+  const pngValid=bytes.readUInt32BE(16)===1000&&bytes.readUInt32BE(20)===650;
+  const oldWindow=win;oldWindow.destroy();await pause(60);await panel.webContents.executeJavaScript(`document.getElementById('journal-button').click()`);win=getWindow();await ready(win);
+  const windowRecovered=win!==oldWindow&&await js(`document.getElementById('note').value===${JSON.stringify(draftText)}&&window.__qiqiErrors.length===0`);
+  const result={layout,explanationsRemoved,draftSurvived,plainNote,noteRestored,draftNotCommitted,pausedNotCredited,focusAccurate,displayed,cardOpened,pngValid,windowRecovered};
+  if(layout.overflow||layout.errors.length||layout.moods!==5||layout.cards!==CARDS.length||Object.entries(result).some(([key,value])=>key!=='layout'&&!value))throw Error('Journal verification failed: '+JSON.stringify(result));
+  diagnostics.push({check:'journal-records-ui-card-and-recreation',...result});
+  await require('./save-preview.cjs')(win,path.join(ROOT,'docs/preview-journal.png'));
+ }finally{pomodoro.command({type:'stop'});cleanup();store.state.stats=savedStats;store.save();getWindow()?.hide();}
+};

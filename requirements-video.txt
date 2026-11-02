@@ -1,0 +1,5 @@
+# Optional tools for preparing transparent pet videos; not required to run Zhixi.
+numpy>=1.26,<3
+opencv-python>=4.8,<5
+Pillow>=10,<13
+imageio-ffmpeg>=0.5,<1

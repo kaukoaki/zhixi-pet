@@ -1,0 +1,16 @@
+{
+  "version": 4,
+  "source": "actions/production/14-garden/source/garden-watermelon-flower-fruit-v4-source.mp4",
+  "sourceSha256": "f57ce70d696b50c8e46c98d38c20fbeaa946359f6e3a1fb55e286a1730131d1e",
+  "referenceFrame": "actions/production/14-garden/reference/12-watermelon-bloom-end-v4.png",
+  "referenceSha256": "736efd29bb69ef271b2af3ff727fc1f247206031a262e4772ff59c11fd114950",
+  "frameIndexZeroBased": 357,
+  "seconds": 11.9,
+  "size": [
+    640,
+    640
+  ],
+  "frameEditing": "none; full decoded raw RGB frame",
+  "containsPlatformWatermark": true,
+  "runtimeInstalled": false
+}

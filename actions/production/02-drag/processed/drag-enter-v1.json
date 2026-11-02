@@ -1,0 +1,22 @@
+{
+  "source": "actions/production/02-drag/source/drag-source-01.mp4",
+  "source_sha256": "9be8d2f8c25375238f665d09cc6a0b6ac6e2753039bf33d0c73faad41a662053",
+  "output": "actions/production/02-drag/processed/drag-enter-v1.webm",
+  "width": 720,
+  "height": 720,
+  "fps": 24.0,
+  "source_frames": 121,
+  "start_frame": 0,
+  "end_frame_exclusive": 46,
+  "selected_frames": 46,
+  "background": "black",
+  "frames": 46,
+  "seconds": 1.9166666666666667,
+  "overlap_frames": 0,
+  "white_threshold": 22,
+  "decoded_alpha_min": 0,
+  "top_edge_contact_frames": 8,
+  "decoded_alpha_max": 255,
+  "transparent_fraction": 0.4838406635802469,
+  "file_bytes": 829726
+}

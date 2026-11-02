@@ -1,0 +1,33 @@
+{
+  "source": "actions/production/12-wallet/variants/02-careful/source/wallet-careful-source-01.mp4",
+  "source_sha256": "d56e197f1d6876766efd9e60f4d49cf01e3cfd3c75c82665bafefdd2cf5c51b0",
+  "output": "actions/production/12-wallet/variants/02-careful/processed/wallet-careful-v1.webm",
+  "width": 960,
+  "height": 960,
+  "fps": 30.0,
+  "source_frames": 300,
+  "start_frame": 0,
+  "end_frame_exclusive": null,
+  "selected_frames": 300,
+  "background": "white",
+  "frames": 300,
+  "seconds": 10.0,
+  "overlap_frames": 0,
+  "speed": 1,
+  "white_threshold": 210,
+  "shadow_threshold": 125,
+  "keep_regions": [
+    [
+      650,
+      50,
+      300,
+      350
+    ]
+  ],
+  "seal_effect_gaps": 3,
+  "decoded_alpha_min": 0,
+  "top_edge_contact_frames": 0,
+  "decoded_alpha_max": 255,
+  "transparent_fraction": 0.48600911458333335,
+  "file_bytes": 5064429
+}
