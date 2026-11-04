@@ -1,5 +1,7 @@
 # Windows 安装知栖
 
+**简体中文** | [English](INSTALL-WINDOWS.en.md)
+
 适用版本：0.1.18。支持 Windows 10/11 x64。完整安装包括桌面程序与 Codex 本地插件。
 
 ## 1. 检查 Codex

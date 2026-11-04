@@ -41,7 +41,7 @@ def public_source():
     public_markdown = set(json.loads((ROOT / 'scripts/public-documents.json').read_text(encoding='utf-8'))['markdown'])
     top = ['.gitignore', '.gitattributes', 'package.json', 'package-lock.json', 'README.md', 'README.en.md',
            'CONTRIBUTING.md', 'SECURITY.md', 'LICENSE', 'LICENSE-ASSETS.md', 'NOTICE.md',
-           'THIRD_PARTY_NOTICES.md', 'requirements-video.txt', 'install.cmd', 'INSTALL-WINDOWS.md',
+           'THIRD_PARTY_NOTICES.md', 'requirements-video.txt', 'install.cmd', 'INSTALL-WINDOWS.md', 'INSTALL-WINDOWS.en.md',
            '\u542f\u52a8\u77e5\u6816.cmd']
     files = [ROOT / file for file in top]
     for folder in ['.agents', 'codex-plugin', 'main', 'renderer', 'assets', 'scripts', 'test']:
@@ -202,7 +202,7 @@ def prepare(output, source_only=False):
     entries = [(file, prefix + 'app/' + file.relative_to(runtime).as_posix()) for file in safe_files(runtime)]
     for folder in ['codex-plugin', '.agents']:
         entries.extend((file, prefix + file.relative_to(ROOT).as_posix()) for file in safe_files(ROOT / folder))
-    notices = ['install.cmd', 'INSTALL-WINDOWS.md', 'scripts/install-desktop.ps1', 'scripts/install-codex-plugin.ps1',
+    notices = ['install.cmd', 'INSTALL-WINDOWS.md', 'INSTALL-WINDOWS.en.md', 'scripts/install-desktop.ps1', 'scripts/install-codex-plugin.ps1',
                'LICENSE', 'LICENSE-ASSETS.md', 'NOTICE.md', 'THIRD_PARTY_NOTICES.md',
                'docs/RIGHTS.md', 'docs/PRIVACY.md', 'docs/USER-GUIDE.md']
     entries.extend((ROOT / name, prefix + name) for name in notices)

@@ -58,7 +58,7 @@ npm start
 
 ## 文档与许可
 
-- [Windows 安装](INSTALL-WINDOWS.md) · [使用指南](docs/USER-GUIDE.md) · [隐私与本地数据](docs/PRIVACY.md)
+- [Windows 安装](INSTALL-WINDOWS.md) · [English installation guide](INSTALL-WINDOWS.en.md) · [使用指南](docs/USER-GUIDE.md) · [隐私与本地数据](docs/PRIVACY.md)
 - [贡献说明](CONTRIBUTING.md) · [安全反馈](SECURITY.md) · [现用素材说明](actions/README.md)
 - [代码许可](LICENSE) · [素材许可](LICENSE-ASSETS.md) · [项目声明](NOTICE.md) · [第三方通知](THIRD_PARTY_NOTICES.md) · [素材来源](docs/RIGHTS.md)
 

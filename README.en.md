@@ -16,7 +16,7 @@ Zhixi is a Windows video desktop companion with Codex usage information, a task 
 2. Extract the entire ZIP and run `install.cmd`.
 3. Open **Zhixi** from the Start menu, or ask Codex to open the Zhixi desktop companion in a new chat.
 
-The Windows package includes the videos, runtime and plugin. You do not need Node.js, Python or the separate media ZIP to use it. Codex integration requires a working local Codex CLI. See the [installation guide](INSTALL-WINDOWS.md) for installation, updates and removal.
+The Windows package includes the videos, runtime and plugin. You do not need Node.js, Python or the separate media ZIP to use it. Codex integration requires a working local Codex CLI. For setup, updates and removal, see the [English installation guide](INSTALL-WINDOWS.en.md).
 
 ## Use
 
@@ -56,7 +56,7 @@ Replace the archive path with your own. See [contributing](CONTRIBUTING.md) for 
 
 ## Documentation and licensing
 
-- [Installation](INSTALL-WINDOWS.md) · [User guide](docs/USER-GUIDE.md) · [Privacy](docs/PRIVACY.md)
+- [Installation](INSTALL-WINDOWS.en.md) · [User guide](docs/USER-GUIDE.md) · [Privacy](docs/PRIVACY.md)
 - [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Current media](actions/README.md)
 - [MIT license](LICENSE) · [Asset license](LICENSE-ASSETS.md) · [Project notice](NOTICE.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Asset provenance](docs/RIGHTS.md)
 
